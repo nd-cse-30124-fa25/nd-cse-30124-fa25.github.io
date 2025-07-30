@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import yaml
-import json
 from datetime import datetime, timedelta
 
 def parse_date_or_range(date_str, year):
@@ -129,14 +128,14 @@ def adjust_schedule(schedule, semester_start, break_dates, class_days):
 def main():
     # File paths and configuration
     calendar_url = "https://registrar.nd.edu/calendars/"
-    schedule_file = "schedule.yaml"
-    semester_info_file = "semester_info.json"
-    output_file = "adjusted_schedule.yaml"
+    schedule_file = "static/yaml/schedule.yaml"
+    semester_info_file = "static/yaml/semester_info.yaml"
+    output_file = "static/yaml/adjusted_schedule.yaml"
     class_days = ['Monday', 'Wednesday']
 
-    # Load semester info
+    # Load semester info from YAML
     with open(semester_info_file, 'r') as f:
-        semester_info = json.load(f)
+        semester_info = yaml.safe_load(f)
     term = semester_info.get("Term")
     year = int(semester_info.get("Year"))
 

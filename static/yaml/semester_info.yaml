@@ -8,20 +8,13 @@ Instructor:
     Thursday: 1:00 PM - 5:00 PM | 356B Fitz
     Friday: 10:00 AM - 12:00 PM | 356B Fitz
 TAs:
-  swebster:
-    github: samjwebster
+  ccerves:
+    github: NA
     level: Graduate
-    name: Sam Webster
-    netid: swebster
+    name: Cesar Cervesa
+    netid: ccerves
     office_hours:
       Tuesday: 12:30 PM - 2:30 PM | Inno Lounge
-  tberg3:
-    github: ty-berg
-    level: Graduate
-    name: Tyler Berg
-    netid: tberg3
-    office_hours:
-      Monday: 10:30 AM - 12:30 PM | CSE Commons
   tlohman:
     github: Thomas-Lohman
     level: Undergraduate
@@ -47,18 +40,18 @@ TAs:
     office_hours:
       Sunday: 4:00 PM - 5:30 PM | CSE Commons
       Monday: 4:45 PM - 6:45 PM | CSE Commons
-  fseptien:
-    github: panchosepq19
+  jmangion:
+    github: NA
     level: Undergraduate
-    name: Francisco Septien
-    netid: fseptien
+    name: Jack Mangione
+    netid: NA
     office_hours:
       Tuesday: 3:00 PM - 5:00 PM | Inno Lounge
       Thursday: 10:00 AM - 12:00 PM | Zoom
-Term: Spring
+Term: Fall
 Year: '2025'
 Class:
-  location: 356 Fitz
+  location: 126 Debart
   times:
     Monday: 3:30 PM - 4:45 PM
     Wednesday: 3:30 PM - 4:45 PM
