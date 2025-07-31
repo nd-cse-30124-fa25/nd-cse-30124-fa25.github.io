@@ -54,7 +54,7 @@ body:       |
     There is a [class mailing list], but most day-to-day communication
     (including office hours and homework help) should take place on [Slack].
 
-    [class mailing list]: mailto:{{ term_code }}-cse-30124-01-group@nd.edu
+    [class mailing list]: mailto:sp25-cse-30124-01-group@nd.edu
 
     <div class="alert alert-warning" markdown="1">
     <p>Be aware of the following:</p><br>
@@ -79,17 +79,17 @@ body:       |
 
     2. **Fork** the class homeworks repository from the following template:
 
-        > [{{ page.external['semester_info']['Class']['gh_homework_link'] }}]({{ page.external['semester_info']['Class']['gh_homework_link'] }})
+        > [https://classroom.github.com/a/Qv4jfPvn](https://classroom.github.com/a/Qv4jfPvn)
 
         This will create a **private** `cse-30124-homeworks-$TEAMNAME`
-        repository under your own account and linked to the [nd-cse-30124-{{ term_code }}]
+        repository under your own account and linked to the [nd-cse-30124-sp25]
         organization.
 
     3. Once this is done, you can [clone] your [git] repository to your local
     machine (or the **student** machines):
 
             :::bash
-            $ git clone git@github.com:nd-cse-30124-{{ term_code }}/cse-30124-homeworks-$TEAMNAME
+            $ git clone git@github.com:nd-cse-30124-sp25/cse-30124-homeworks-$TEAMNAME
 
         <div class="alert alert-danger" markdown="1">
         **Note**, that [GitHub] has recently shutdown [password authentication].
