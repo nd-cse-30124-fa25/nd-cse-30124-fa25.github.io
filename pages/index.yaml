@@ -72,7 +72,7 @@ body:       |
                         <dd><strong>M / W</strong> 3:30 PM - 4:45 PM</dd>
 
                         <dt><i class="fa fa-home"></i> Location</dt>
-                        <dd>Fitz 356</dd>
+                        <dd>{{ page.external['semester_info']['Class']['location'] }}</dd>
 
                         <dt><i class="fa fa-slack"></i> Slack</dt>
                         <dd><a href="https://nd-cse.slack.com/messages/cse-30124-{{ term_code }}/">#cse-30124-{{ term_code }}</a></dd>
