@@ -1,0 +1,112 @@
+title:      "Reading 05: Linear Regression and Review"
+icon:       fa-book
+navigation:
+  - name: "Home"
+    link: "index.html"
+    icon: "fa-gavel"
+internal:
+external:
+body:       |
+
+    **Everyone**:
+
+    ## Materials
+
+    ### Linear Regression
+
+    1. [Foundations of Computational Agents](https://artint.info/3e/html/ArtInt3e.html)
+
+        - [Sections 7.3.2 (First few paragraphs) and 7.4.2 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch7.S3.html)
+
+    2. Additional Resources
+
+        - [Probabilistic Machine Learning - Sections 7.5, 8.1.3, Chapter 11 (Reading)](https://probml.github.io/pml-book/book1.html)
+        - [Introduction to Statistical Learning - Chapter 3 (Reading)](https://www.statlearning.com/)
+        - [Understanding Machine Learning - Chapter 9.2 (Reading)](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html)
+        - [Harvard CS50 (Video)](https://youtu.be/-g0iJjnO2_w?si=jNuQG0o83uKw0qbR&t=2371)
+        - [Stanford CS221 (Video)](https://www.youtube.com/watch?v=nEWNNt2KmfQ&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=5)
+        - [Cornell CS4780 (Video)](https://youtu.be/_21o_ylL0q4?si=ee6JJ2WxAvA9hfyr)
+        - [Linear Regression (StatQuest) (Video)](https://youtu.be/nk2CQITm_eo?si=LtdQNRlau17NbjjF)
+        - [Multiple Regression (StatQuest) (Video)](https://youtu.be/zITIFTsivN8?si=f0YbEmnZ6_XFMpY5)
+        - [Bias and Variance (StatQuest) (Video)](https://youtu.be/EuBBz3bI-aA?si=WYsqtbrIZ6ICrYGP)
+        - [L2 Regularization (StatQuest) (Video)](https://youtu.be/Q81RR3yKn30?si=tMvAc1m9RHe7WYgH)
+        - [L1 Regularization (StatQuest) (Video)](https://youtu.be/NGf0voTMlcs?si=QACQkO-8Msm95saj)
+        - [L1 vs. L2 Visualization (StatQuest) (Video)](https://youtu.be/Xm2C_gTAl8c?si=MovbjzS6Cf-PN70-)
+        - [Linear Regression (MLU) (Blog Post)](https://mlu-explain.github.io/linear-regression/)
+        - [Linear Regression (rasbt) (Notebook)](https://github.com/rasbt/machine-learning-book/blob/main/ch09/ch09.ipynb)
+        - [Linear Regression (HdM) (Blog Post)](https://hannibunny.github.io/mlbook/machinelearning/linearRegression.html)
+        - [(1805) Nouvelles M\xE9thodes Pour la D\xE9termination des Orbites des\
+            \ Com\xE8tes (Legendre)"
+        - [(1809) Theoria Motus Corporum Coelestium in Sectionibus Conicis Solem
+            Ambientium (Gauss)
+        - [(1970) Ridge Regression - Biased Estimation for Nonorthogonal Problems
+            (Hoerl and Kennard)
+        - [(1996) Regression Shrinkage and Selection via the Lasso (Tibshirani)
+
+    ### Review
+
+    
+
+    ## Quiz
+
+    Once you have done the readings, answer the following [Reading 02 Quiz]
+    questions:
+
+    <div id="quiz-questions"></div>
+
+    <div id="quiz-responses"></div>
+
+    <script src="static/js/dredd-quiz.js"></script>
+    <script>
+    loadQuiz('static/json/reading02.json');
+    </script>
+
+    <pre style="display: none;" id="dr-container" class="codehilite"><code id="dredd-response"></code></pre>
+
+    ## Submission
+
+    To submit you work, follow the same process outlined in [Reading 00]:
+
+        :::bash
+        $ git checkout master                 # Make sure we are in master branch
+        $ git pull --rebase                   # Make sure we are up-to-date with GitHub
+
+        $ git checkout -b reading02           # Create reading02 branch and check it out
+
+        $ cd reading02                        # Go into reading02 folder
+        $ $EDITOR answers.json                # Edit your answers.json file
+
+        $ ../.scripts/check.py                # Check reading02 quiz
+        Checking reading02 quiz ...
+              Q1 0.60
+              Q2 0.60
+              Q3 0.90
+              Q4 0.90
+           Score 3.00 / 3.00
+          Status Success
+
+        $ git add answers.json                # Add answers.json to staging area
+        $ git commit -m "Reading 02: Done"    # Commit work
+
+        $ git push -u origin reading02        # Push branch to GitHub
+
+    <div class="alert alert-success" markdown="1">
+    #### <i class="fa fa-github"></i> Pull Request
+
+    Once you have committed your work and pushed it to [GitHub], remember to
+    create a **pull request** and assign it to the appropriate **teaching
+    assistant** from the [Reading 02 TA List].
+
+    </div>
+
+    [GitHub]:                               https://github.com
+    [Reading 00]:                           reading00.html
+    [Reading 02 Quiz]:                      static/json/reading02.json
+    [JSON]:                                 http://www.json.org/
+    [git-branch]:                           https://git-scm.com/docs/git-branch
+    [dredd]:                                https://dredd.h4x0r.space
+    [Reading 02 TA List]:                   reading02_tas.html
+    [Competitive Programmer's Handbook]:    https://cses.fi/book.html
+    [Interview Cake]:                       https://www.interviewcake.com/
+    [C++]:                                  https://isocpp.org/
+    [Python]:                               https://www.python.org
