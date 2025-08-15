@@ -35,8 +35,8 @@ body:       |
 
     #### Optional
 
-        - [Harvard CS50](https://www.youtube.com/watch?v=WbzNRTTrX0g)
-        - [MIT 6.034](https://www.youtube.com/watch?v=j1H3jAAGlEA)
+    - [Harvard CS50](https://www.youtube.com/watch?v=WbzNRTTrX0g)
+    - [MIT 6.034](https://www.youtube.com/watch?v=j1H3jAAGlEA)
 
     ### A* Search
 
@@ -46,16 +46,14 @@ body:       |
 
     #### Optional
 
-    Testing baby:
-
-        - [Harvard CS50](https://youtu.be/WbzNRTTrX0g?si=mqYHjM8hTRsed8h4&t=3269)
-        - [Stanford CS221](https://www.youtube.com/watch?v=HEs1ZCvLH2s&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=18)
-        - [MIT 6.034](https://www.youtube.com/watch?v=gGQ-vAmdAOI)
-        - [A* Search](https://courses.grainger.illinois.edu/cs440/fa2024/lectures/astar.html)
-        - [Introduction to A*](https://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html)
-        - [Heuristics](https://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html)
-        - [(1968) A Formal Basis for the Heuristic Determination of Minimum Cost
-            Paths (Hart et al.)](https://ieeexplore.ieee.org/document/4082128)
+    - [Harvard CS50](https://youtu.be/WbzNRTTrX0g?si=mqYHjM8hTRsed8h4&t=3269)
+    - [Stanford CS221](https://www.youtube.com/watch?v=HEs1ZCvLH2s&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=18)
+    - [MIT 6.034](https://www.youtube.com/watch?v=gGQ-vAmdAOI)
+    - [A* Search](https://courses.grainger.illinois.edu/cs440/fa2024/lectures/astar.html)
+    - [Introduction to A*](https://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html)
+    - [Heuristics](https://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html)
+    - [1968: A Formal Basis for the Heuristic Determination of Minimum Cost
+        Paths (Hart et al.)](https://ieeexplore.ieee.org/document/4082128)
 
     ## Quiz
 
