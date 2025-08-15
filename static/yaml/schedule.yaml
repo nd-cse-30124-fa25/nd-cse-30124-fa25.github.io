@@ -439,9 +439,7 @@
     topics: Exam 01
     assignments:
     - Exam 01 Practice Packet
-    - Exam 01 Practice Packet Solutions
     - Exam 01
-    - Exam 01 Solutions
 - name: Supervised Learning
   days:
   - date: Wed 10/08
@@ -865,9 +863,7 @@
     topics: Exam 02
     assignments:
     - Exam 02 Practice Packet
-    - Exam 02 Practice Packet Solutions
     - Exam 02
-    - Exam 02 Solutions
 - name: 'Unit 03: Deep Learning'
 - name: Foundations of Deep Learning
   days:
@@ -1188,7 +1184,6 @@
       link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=234a27fe-5c95-4d40-bffe-b2cf014e66a5
     assignments:
     - Final Practice Packet
-    - Final Practice Packet Solutions
     - Homework 05
     - Bonus Homework
     - CIF Bribe
@@ -1197,6 +1192,4 @@
   - date: Wed 12/17
     topics: Final Exam (10:30 AM - 12:30 PM) Fitz 356 (Normal Classroom)
     assignments:
-    - Old Exam
-    - Old Exam Solutions
     - Final Exam
