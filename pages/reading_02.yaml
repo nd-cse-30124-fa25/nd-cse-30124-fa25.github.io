@@ -1,0 +1,109 @@
+title:      "Reading 02: Constraint Satisfaction and Adversarial Search"
+icon:       fa-book
+navigation:
+  - name: "Home"
+    link: "index.html"
+    icon: "fa-gavel"
+internal:
+external:
+body:       |
+
+    **Everyone**:
+
+    ## Materials
+
+    ### Constraint Satisfaction
+
+    1. [Foundations of Computational Agents](https://artint.info/3e/html/ArtInt3e.html)
+
+        - [Sections 4.1 through 4.6 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch4.html)
+
+    2. Additional Resources
+
+        - [Harvard CS50 (Video)](https://youtu.be/qK46ET1xk2A?si=tSAHHe0Sp-OxWUpD&t=3033)
+        - [Stanford CS221 (Video)](https://www.youtube.com/watch?v=-IO4fPO0rxk&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=23)
+        - [MIT 6.034 (Video)](https://www.youtube.com/watch?v=dARl_gGrS4o)
+        - [CSPs for Sudoku (Blog Post)](https://medium.com/my-udacity-ai-nanodegree-notes/solving-sudoku-think-constraint-satisfaction-problem-75763f0742c9)
+        - [Consistency in Networks of Relations (Mackworth) (Paper)](https://www.sciencedirect.com/science/article/pii/0004370277900078)
+        - [Network Based Heuristics for Constraint Satisfaction Problems (Dechter and Pearl) (Paper)](https://ics.uci.edu/~csp/r3.pdf)
+        - [Increasing Tree Search Efficiency for Constraint Satisfaction Problems (Haralick and Elliot) (Paper)](https://www.sciencedirect.com/science/article/pii/000437028090051X)
+
+    ### Adversarial Search
+
+    1. [Foundations of Computational Agents](https://artint.info/3e/html/ArtInt3e.html)
+
+        - [Sections 14.2 and 14.3 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch14.S2.html)
+
+    2. Additional Resources
+
+        - [Harvard CS50 (Video)](https://youtu.be/WbzNRTTrX0g?si=CAG9IhmN4MBSzHfi&t=4323)
+        - [Stanford CS221 (Video)](https://www.youtube.com/watch?v=3pU-Hrz_xy4&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=21)
+        - [MIT 6.034 (Video)](https://www.youtube.com/watch?v=STjW3eH0Cik)
+        - [Adversarial Search (Blog Post)](https://stackabuse.com/minimax-and-alpha-beta-pruning-in-python/)
+        - [(1928) Zur Theorie der Gesellschaftsspiele (von Neumann) (Paper)](https://link.springer.com/article/10.1007/BF01448847)
+        - [(1950) Programming a Computer for Playing Chess (Shannon) (Paper)](https://link.springer.com/chapter/10.1007/978-1-4757-1968-0_1)
+        - [(1975) An Analysis of Alpha-Beta Pruning (Knuth and Moore) (Paper)](https://www.sciencedirect.com/science/article/pii/0004370275900193)
+
+    ## Quiz
+
+    Once you have done the readings, answer the following [Reading 02 Quiz]
+    questions:
+
+    <div id="quiz-questions"></div>
+
+    <div id="quiz-responses"></div>
+
+    <script src="static/js/dredd-quiz.js"></script>
+    <script>
+    loadQuiz('static/json/reading02.json');
+    </script>
+
+    <pre style="display: none;" id="dr-container" class="codehilite"><code id="dredd-response"></code></pre>
+
+    ## Submission
+
+    To submit you work, follow the same process outlined in [Reading 00]:
+
+        :::bash
+        $ git checkout master                 # Make sure we are in master branch
+        $ git pull --rebase                   # Make sure we are up-to-date with GitHub
+
+        $ git checkout -b reading02           # Create reading02 branch and check it out
+
+        $ cd reading02                        # Go into reading02 folder
+        $ $EDITOR answers.json                # Edit your answers.json file
+
+        $ ../.scripts/check.py                # Check reading02 quiz
+        Checking reading02 quiz ...
+              Q1 0.60
+              Q2 0.60
+              Q3 0.90
+              Q4 0.90
+           Score 3.00 / 3.00
+          Status Success
+
+        $ git add answers.json                # Add answers.json to staging area
+        $ git commit -m "Reading 02: Done"    # Commit work
+
+        $ git push -u origin reading02        # Push branch to GitHub
+
+    <div class="alert alert-success" markdown="1">
+    #### <i class="fa fa-github"></i> Pull Request
+
+    Once you have committed your work and pushed it to [GitHub], remember to
+    create a **pull request** and assign it to the appropriate **teaching
+    assistant** from the [Reading 02 TA List].
+
+    </div>
+
+    [GitHub]:                               https://github.com
+    [Reading 00]:                           reading00.html
+    [Reading 02 Quiz]:                      static/json/reading02.json
+    [JSON]:                                 http://www.json.org/
+    [git-branch]:                           https://git-scm.com/docs/git-branch
+    [dredd]:                                https://dredd.h4x0r.space
+    [Reading 02 TA List]:                   reading02_tas.html
+    [Competitive Programmer's Handbook]:    https://cses.fi/book.html
+    [Interview Cake]:                       https://www.interviewcake.com/
+    [C++]:                                  https://isocpp.org/
+    [Python]:                               https://www.python.org
