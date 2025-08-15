@@ -30,6 +30,8 @@
     - name: MIT 6.034
       type: video
       link: https://www.youtube.com/watch?v=j1H3jAAGlEA
+    assignments:
+    - Reading 01
   - date: Mon 09/01
     topics: Cancelled in Observance of the National Championship Game (MLK Day)
   - date: Wed 09/03
