@@ -1,0 +1,129 @@
+title:      "Reading 04: Markov Models and Bayesian Reasoning"
+icon:       fa-book
+navigation:
+  - name: "Home"
+    link: "index.html"
+    icon: "fa-gavel"
+internal:
+external:
+body:       |
+
+    **Everyone**:
+
+    ## Materials
+
+    ### Markov Models
+
+    1. [Foundations of Computational Agents](https://artint.info/3e/html/ArtInt3e.html)
+
+        - [Sections 9.6 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch9.html)
+
+    2. Additional Resources
+
+        - [Markov Babbler (Notebook)](https://colab.research.google.com/drive/1dthRebtlLdXYt9ZSYuCsC11896ovNkCV?usp=sharing)
+        - [Harvard CS50 (Video)](https://youtu.be/D8RRq3TbtHU?si=OHgr_CzMVECPEqdc&t=5578)
+        - [Stanford CS221 (Video)](https://www.youtube.com/watch?v=neeaJb3wCYw&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=30)
+        - [PML - Sections 3.6.1.2 (Reading)](https://probml.github.io/pml-book/book1.html)
+        - [N-Gram Language Models (Blog Post)](https://web.stanford.edu/~jurafsky/slp3/3.pdf)
+        - [(1906) Extension of the Law of Large Numbers to Dependent Events (Markov) (Paper)](https://www.emis.de/journals/JEHPS/Novembre2006/Markov3pdf.pdf)
+        - [(1966) Statistical Inference for Probabilistic Functions of Finite State Markov Chains (Baum and Petrie) (Paper)](https://projecteuclid.org/journals/annals-of-mathematical-statistics/volume-37/issue-6/Statistical-Inference-for-Probabilistic-Functions-of-Finite-State-Markov-Chains/10.1214/aoms/1177699147.full)
+        - [(1989) A Tutorial on Hidden Markov Models and Selected Applications in Speech Recognition (Rabiner) (Paper)](https://ieeexplore.ieee.org/document/18626)
+
+    ### Bayesian Reasoning
+
+    1. [Foundations of Computational Agents](https://artint.info/3e/html/ArtInt3e.html)
+
+        - [Sections 9.1 through 9.4 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch9.html)
+
+    2. Additional Resources
+
+        - [Probabilistic Machine Learning - Sections 2.3, 3.6.1, 4.6, 5.1, 9.3 (Reading)](https://probml.github.io/pml-book/book1.html)
+        - [Introduction to Statistical Learning - Section 4.4.4 (Reading)](https://www.statlearning.com/)
+        - [Understanding Machine Learning - Chapter 24 (Reading)](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html)
+        - [Harvard CS50 (Video)](https://youtu.be/D8RRq3TbtHU)
+        - [Stanford CS221 (Video)](https://www.youtube.com/watch?v=fA7zP6EcVdw&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=32)
+        - [MIT 6.034 (Video)](https://www.youtube.com/watch?v=A6Ud6oUCRak)
+        - [Naive Bayes for Iris Classification (Notebook)](https://drive.google.com/file/d/1ucLp9MQWaBnmBXlaCNBuba8WYWLwl0pH/view?usp=sharing)
+        - [Naive Bayes Visualizer (Notebook)](https://colab.research.google.com/drive/1irskT_qQ0EQOZIvf35u7RNbKZu3Sea3w?usp=sharing)
+        - [Cornell CS4780 (Video)](https://youtu.be/pDHEX2usCS0?si=cPLXGP4n4A-FuNtI)
+        - [Conditional Probability (StatQuest) (Video)](https://youtu.be/1ONDvW1UIJc?si=3mNParEk5_PjfnZN)
+        - [Bayes' Theorem (StatQuest) (Video)](https://youtu.be/9wCnvr7Xw4E?si=PEhYzKTasfIq1xOx)
+        - [Likelihood (StatQuest) (Video)](https://youtu.be/pYxNSUDSFH4?si=zt0zdX9Kf8-Z58jR)
+        - [PDFs (StatQuest) (Video)](https://youtu.be/oI3hZJqXJuc?si=z0mmgAYp_kQXztLu)
+        - [MLE (StatQuest) (Video)](https://youtu.be/XepXtl9YKwc?si=eIiQ1SJeyVNEj_ey)
+        - [Naive Bayes (StatQuest) (Video)](https://youtu.be/O2L2Uv9pdDA?si=rAU-89pPD7qt_U-l)
+        - [Gaussian NB (StatQuest) (Video)](https://youtu.be/H3EjCKtlVog?si=BlD029fjYUcvGMAq)
+        - [Bayesian Reasoning (HdM) (Blog Post)](https://hannibunny.github.io/mlbook/machinelearning/parametricClassification1D.html)
+        - [Naive Bayes (Raschka) (Blog Post)](https://sebastianraschka.com/Articles/2014_naive_bayes_1.html)
+        - [(1763) An Essay towards Solving a Problem in the Doctrine of Chances (Bayes) (Paper)](https://royalsocietypublishing.org/doi/10.1098/rstl.1763.0053)
+        - [(1812) Th\xE9orie Analytique des Probabilit\xE9s (Laplace) (Paper)](https://archive.org/details/thorieanalytiqu01laplgoog)
+        - [(1985) Bayesian Networks - A Model of Self-Activated Memory for Evidential
+            Reasoning (Pearl) (Paper)](https://ftp.cs.ucla.edu/tech-report/198_-reports/850017.pdf)
+        - [(1988) Probabilistic Reasoning in Intelligent Systems - Networks of Plausible
+            Inference (Pearl) (Paper)](https://www.sciencedirect.com/book/9780080514895/probabilistic-reasoning-in-intelligent-systems)
+        - [(1998) A Comparison of Event Models for Naive Bayes Text Classification
+            (McCallum and Nigam) (Paper)](https://cdn.aaai.org/Workshops/1998/WS-98-05/WS98-05-007.pdf)
+
+    ## Quiz
+
+    Once you have done the readings, answer the following [Reading 02 Quiz]
+    questions:
+
+    <div id="quiz-questions"></div>
+
+    <div id="quiz-responses"></div>
+
+    <script src="static/js/dredd-quiz.js"></script>
+    <script>
+    loadQuiz('static/json/reading02.json');
+    </script>
+
+    <pre style="display: none;" id="dr-container" class="codehilite"><code id="dredd-response"></code></pre>
+
+    ## Submission
+
+    To submit you work, follow the same process outlined in [Reading 00]:
+
+        :::bash
+        $ git checkout master                 # Make sure we are in master branch
+        $ git pull --rebase                   # Make sure we are up-to-date with GitHub
+
+        $ git checkout -b reading02           # Create reading02 branch and check it out
+
+        $ cd reading02                        # Go into reading02 folder
+        $ $EDITOR answers.json                # Edit your answers.json file
+
+        $ ../.scripts/check.py                # Check reading02 quiz
+        Checking reading02 quiz ...
+              Q1 0.60
+              Q2 0.60
+              Q3 0.90
+              Q4 0.90
+           Score 3.00 / 3.00
+          Status Success
+
+        $ git add answers.json                # Add answers.json to staging area
+        $ git commit -m "Reading 02: Done"    # Commit work
+
+        $ git push -u origin reading02        # Push branch to GitHub
+
+    <div class="alert alert-success" markdown="1">
+    #### <i class="fa fa-github"></i> Pull Request
+
+    Once you have committed your work and pushed it to [GitHub], remember to
+    create a **pull request** and assign it to the appropriate **teaching
+    assistant** from the [Reading 02 TA List].
+
+    </div>
+
+    [GitHub]:                               https://github.com
+    [Reading 00]:                           reading00.html
+    [Reading 02 Quiz]:                      static/json/reading02.json
+    [JSON]:                                 http://www.json.org/
+    [git-branch]:                           https://git-scm.com/docs/git-branch
+    [dredd]:                                https://dredd.h4x0r.space
+    [Reading 02 TA List]:                   reading02_tas.html
+    [Competitive Programmer's Handbook]:    https://cses.fi/book.html
+    [Interview Cake]:                       https://www.interviewcake.com/
+    [C++]:                                  https://isocpp.org/
+    [Python]:                               https://www.python.org
