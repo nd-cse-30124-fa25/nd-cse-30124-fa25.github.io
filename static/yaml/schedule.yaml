@@ -156,7 +156,6 @@
       type: video
       link: https://www.youtube.com/watch?v=RIk67yGMVv4&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=44
     assignments:
-    - Homework 01
     - Reading 03
 - name: 'Unit 02: Machine Learning'
 - name: Direct Fit Models
@@ -224,6 +223,8 @@
     - name: (1984) Classification and Regression Trees (Brieman et al.)
       type: paper
       link: https://www.taylorfrancis.com/books/mono/10.1201/9781315139470/classification-regression-trees-leo-breiman-jerome-friedman-olshen-charles-stone
+    assignments:
+    - Homework 01
   - date: Wed 09/17
     topics: Markov Models
     resources:
