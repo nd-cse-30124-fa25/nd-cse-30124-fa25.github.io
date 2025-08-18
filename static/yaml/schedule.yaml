@@ -33,8 +33,6 @@
     assignments:
     - Reading 01
   - date: Mon 09/01
-    topics: Cancelled in Observance of the National Championship Game (MLK Day)
-  - date: Wed 09/03
     topics: A* Search
     resources:
     - name: Slides
@@ -70,7 +68,7 @@
       link: https://ieeexplore.ieee.org/document/4082128
     assignments:
     - Course Primer
-  - date: Mon 09/08
+  - date: Wed 09/03
     topics: Constraint Satisfaction Problems
     resources:
     - name: Slides
@@ -105,7 +103,7 @@
         (Haralick and Elliot)
       type: paper
       link: https://www.sciencedirect.com/science/article/pii/000437028090051X
-  - date: Wed 09/10
+  - date: Mon 09/08
     topics: Adversarial Search
     resources:
     - name: Slides
@@ -138,7 +136,7 @@
     - name: (1975) An Analysis of Alpha-Beta Pruning (Knuth and Moore)
       type: paper
       link: https://www.sciencedirect.com/science/article/pii/0004370275900193
-  - date: Mon 09/15
+  - date: Wed 09/10
     topics: Knowledge Representation and Feature Engineering
     resources:
     - name: Slides
@@ -161,7 +159,7 @@
 - name: 'Unit 02: Machine Learning'
 - name: Direct Fit Models
   days:
-  - date: Wed 09/17
+  - date: Mon 09/15
     topics: Decision Trees
     resources:
     - name: Slides
@@ -224,7 +222,7 @@
     - name: (1984) Classification and Regression Trees (Brieman et al.)
       type: paper
       link: https://www.taylorfrancis.com/books/mono/10.1201/9781315139470/classification-regression-trees-leo-breiman-jerome-friedman-olshen-charles-stone
-  - date: Mon 09/22
+  - date: Wed 09/17
     topics: Markov Models
     resources:
     - name: Slides
@@ -259,7 +257,7 @@
         Speech Recognition (Rabiner)
       type: paper
       link: https://ieeexplore.ieee.org/document/18626
-  - date: Wed 09/24
+  - date: Mon 09/22
     topics: Bayesian Reasoning
     resources:
     - name: Slides
@@ -343,7 +341,7 @@
         (McCallum and Nigam)
       type: paper
       link: https://cdn.aaai.org/Workshops/1998/WS-98-05/WS98-05-007.pdf
-  - date: Mon 09/29
+  - date: Wed 09/24
     topics: Linear Regression
     resources:
     - name: Slides
@@ -429,20 +427,20 @@
       link: https://www.jstor.org/stable/2346178?seq=1
 - name: Exam 01
   days:
-  - date: Wed 10/01
+  - date: Mon 09/29
     topics: Review
     resources:
     - name: Panopto
       type: video
       link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=357cce38-675e-4cd8-9620-b28901732a3a
-  - date: Mon 10/06
+  - date: Wed 10/01
     topics: Exam 01
     assignments:
     - Exam 01 Practice Packet
     - Exam 01
 - name: Supervised Learning
   days:
-  - date: Wed 10/08
+  - date: Mon 10/06
     topics: Perceptrons
     resources:
     - name: Slides
@@ -484,7 +482,7 @@
         and Papert)
       type: paper
       link: https://direct.mit.edu/books/monograph/3132/PerceptronsAn-Introduction-to-Computational
-  - date: Mon 10/13
+  - date: Wed 10/08
     topics: Logistic Regression and Gradient Descent
     resources:
     - name: Slides
@@ -545,7 +543,7 @@
       link: https://www.jstor.org/stable/2983890?seq=1
     assignments:
     - Homework 02
-  - date: Wed 10/15
+  - date: Mon 10/13
     topics: SVMs and KNNs
     resources:
     - name: Slides
@@ -608,7 +606,7 @@
 - name: Spring Break
 - name: Unsupervised Learning
   days:
-  - date: Mon 10/27
+  - date: Wed 10/15
     topics: Clustering
     resources:
     - name: Slides
@@ -644,7 +642,7 @@
     - name: Clustering (rasbt)
       type: notebook
       link: https://github.com/rasbt/machine-learning-book/blob/main/ch10/ch10.ipynb
-  - date: Wed 10/29
+  - date: Mon 10/27
     topics: Dimensionality Reduction
     resources:
     - name: Slides
@@ -694,7 +692,7 @@
       link: https://sebastianraschka.com/Articles/2014_python_lda.html
 - name: Applied ML
   days:
-  - date: Mon 11/03
+  - date: Wed 10/29
     topics: Practicum - Exploratory Data Analysis
     resources:
     - name: Slides
@@ -728,7 +726,7 @@
     - Homework 03
 - name: ML to DL
   days:
-  - date: Wed 11/05
+  - date: Mon 11/03
     topics: Multi-Layer Perceptrons (FFNs)
     resources:
     - name: Slides
@@ -791,7 +789,7 @@
     - name: Loss Functions (Raschka)
       type: blogpost
       link: https://sebastianraschka.com/blog/2022/losses-learned-part1.html
-  - date: Mon 11/10
+  - date: Wed 11/05
     topics: Gradient Descent and Backpropagation
     resources:
     - name: Slides
@@ -853,13 +851,13 @@
       link: https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b
 - name: Midterm 02
   days:
-  - date: Wed 11/12
+  - date: Mon 11/10
     topics: Review
     resources:
     - name: Panopto
       type: video
       link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6877fd1b-5dd1-4894-896e-b2b3016366a8
-  - date: Mon 11/17
+  - date: Wed 11/12
     topics: Exam 02
     assignments:
     - Exam 02 Practice Packet
@@ -867,7 +865,7 @@
 - name: 'Unit 03: Deep Learning'
 - name: Foundations of Deep Learning
   days:
-  - date: Wed 11/19
+  - date: Mon 11/17
     topics: Convolutional Neural Networks
     resources:
     - name: Slides
@@ -924,7 +922,7 @@
     - name: CNNs (Rao)
       type: blogpost
       link: https://medium.com/data-science/deep-learning-illustrated-part-3-convolutional-neural-networks-96b900b0b9e0
-  - date: Mon 11/24
+  - date: Wed 11/19
     topics: Recurrent Neural Networks
     resources:
     - name: Slides
@@ -998,7 +996,7 @@
     - Homework 04
 - name: Modern Deep Learning
   days:
-  - date: Mon 12/01
+  - date: Mon 11/24
     topics: Self-Attention and Transformers
     resources:
     - name: Slides
@@ -1066,9 +1064,9 @@
     - name: Programming Self-Attention (Raschka)
       type: blogpost
       link: https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html
-  - date: Wed 12/03
-    topics: Cancelled (Easter Monday)
-  - date: Mon 12/08
+  - date: Wed 11/26
+    topics: Cancelled (Thanksgiving Break)
+  - date: Mon 12/01
     topics: Reinforcement Learning
     resources:
     - name: Slides
@@ -1113,7 +1111,7 @@
     - name: AlphaGo (Karpathy)
       type: blogpost
       link: https://karpathy.medium.com/alphago-in-context-c47718cb95a5
-  - date: Wed 12/10
+  - date: Wed 12/03
     topics: LLMs and Agents (Guest Lecture)
     resources:
     - name: Slides
@@ -1158,7 +1156,7 @@
     - name: LLM Agents (Lilian)
       type: blogpost
       link: https://lilianweng.github.io/posts/2023-06-23-agent/
-  - date: Mon 12/15
+  - date: Mon 12/08
     topics: Diffusion Models
     resources:
     - name: Slides
@@ -1187,6 +1185,8 @@
     - Homework 05
     - Bonus Homework
     - CIF Bribe
+  - date: Wed 12/10
+    topics: Final Review?
 - name: Final
   days:
   - date: Wed 12/17
