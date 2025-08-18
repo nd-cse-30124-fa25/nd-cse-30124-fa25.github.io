@@ -733,8 +733,6 @@
     - name: Ensemble Classifier (Raschka)
       type: blogpost
       link: https://sebastianraschka.com/Articles/2014_ensemble_classifier.html
-    assignments:
-    - Homework 03
 - name: ML to DL
   days:
   - date: Mon 11/03
@@ -800,6 +798,8 @@
     - name: Loss Functions (Raschka)
       type: blogpost
       link: https://sebastianraschka.com/blog/2022/losses-learned-part1.html
+    assignments:
+    - Homework 03
   - date: Wed 11/05
     topics: Gradient Descent and Backpropagation
     resources:
@@ -1003,8 +1003,6 @@
     - name: Panopto
       type: video
       link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cb9b155b-1306-414b-b059-b2bf0156d398
-    assignments:
-    - Homework 04
 - name: Modern Deep Learning
   days:
   - date: Mon 11/24
@@ -1075,6 +1073,8 @@
     - name: Programming Self-Attention (Raschka)
       type: blogpost
       link: https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html
+    assignments:
+    - Homework 04
   - date: Wed 11/26
     topics: Cancelled (Thanksgiving Break)
   - date: Mon 12/01
@@ -1192,7 +1192,7 @@
       type: video
       link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=234a27fe-5c95-4d40-bffe-b2cf014e66a5
   - date: Wed 12/10
-    topics: Final Review?
+    topics: Review
     assignments:
     - Final Practice Packet
     - Homework 05
