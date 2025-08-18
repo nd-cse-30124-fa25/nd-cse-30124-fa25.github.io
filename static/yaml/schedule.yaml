@@ -872,6 +872,8 @@
     - name: Panopto
       type: video
       link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6877fd1b-5dd1-4894-896e-b2b3016366a8
+    assignments:
+    - Reading 10
   - date: Wed 11/12
     topics: Exam 02
     assignments:
@@ -937,6 +939,8 @@
     - name: CNNs (Rao)
       type: blogpost
       link: https://medium.com/data-science/deep-learning-illustrated-part-3-convolutional-neural-networks-96b900b0b9e0
+    assignments:
+    - Reading 11
   - date: Wed 11/19
     topics: Recurrent Neural Networks
     resources:
@@ -1007,6 +1011,8 @@
     - name: Panopto
       type: video
       link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cb9b155b-1306-414b-b059-b2bf0156d398
+    assignments:
+    - Reading 11b
 - name: Modern Deep Learning
   days:
   - date: Mon 11/24
@@ -1079,6 +1085,7 @@
       link: https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html
     assignments:
     - Homework 04
+    - Reading 12
   - date: Wed 11/26
     topics: Cancelled (Thanksgiving Break)
   - date: Mon 12/01
@@ -1126,6 +1133,8 @@
     - name: AlphaGo (Karpathy)
       type: blogpost
       link: https://karpathy.medium.com/alphago-in-context-c47718cb95a5
+    assignments:
+    - Reading 13
   - date: Wed 12/03
     topics: LLMs and Agents (Guest Lecture)
     resources:
@@ -1195,6 +1204,8 @@
     - name: Panopto
       type: video
       link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=234a27fe-5c95-4d40-bffe-b2cf014e66a5
+    assignments:
+    - Reading 14
   - date: Wed 12/10
     topics: Review
     assignments:
