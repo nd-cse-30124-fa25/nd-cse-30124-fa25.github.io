@@ -488,6 +488,8 @@
         and Papert)
       type: paper
       link: https://direct.mit.edu/books/monograph/3132/PerceptronsAn-Introduction-to-Computational
+    assignments:
+    - Reading 06
   - date: Wed 10/08
     topics: Logistic Regression and Gradient Descent
     resources:
@@ -609,7 +611,8 @@
     - name: (1995) Support-Vector Networks (Cortes and Vapnik)
       type: paper
       link: https://link.springer.com/article/10.1007/BF00994018
-- name: Spring Break
+    assignments:
+    - Reading 07
 - name: Unsupervised Learning
   days:
   - date: Wed 10/15
@@ -648,6 +651,8 @@
     - name: Clustering (rasbt)
       type: notebook
       link: https://github.com/rasbt/machine-learning-book/blob/main/ch10/ch10.ipynb
+- name: Fall Break
+- name: Unsupervised Learning
   - date: Mon 10/27
     topics: Dimensionality Reduction
     resources:
