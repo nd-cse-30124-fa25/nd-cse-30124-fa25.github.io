@@ -652,7 +652,8 @@
       type: notebook
       link: https://github.com/rasbt/machine-learning-book/blob/main/ch10/ch10.ipynb
 - name: Fall Break
-- name: Unsupervised Learning
+- name: Dimensionality Reduction
+  days:
   - date: Mon 10/27
     topics: Dimensionality Reduction
     resources:
