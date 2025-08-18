@@ -1012,7 +1012,7 @@
       type: video
       link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cb9b155b-1306-414b-b059-b2bf0156d398
     assignments:
-    - Reading 11b
+    - Reading 12
 - name: Modern Deep Learning
   days:
   - date: Mon 11/24
@@ -1085,7 +1085,7 @@
       link: https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html
     assignments:
     - Homework 04
-    - Reading 12
+    - Reading 13
   - date: Wed 11/26
     topics: Cancelled (Thanksgiving Break)
   - date: Mon 12/01
@@ -1134,7 +1134,7 @@
       type: blogpost
       link: https://karpathy.medium.com/alphago-in-context-c47718cb95a5
     assignments:
-    - Reading 13
+    - Reading 14
   - date: Wed 12/03
     topics: LLMs and Agents (Guest Lecture)
     resources:
@@ -1205,7 +1205,7 @@
       type: video
       link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=234a27fe-5c95-4d40-bffe-b2cf014e66a5
     assignments:
-    - Reading 14
+    - Reading 15
   - date: Wed 12/10
     topics: Review
     assignments:
