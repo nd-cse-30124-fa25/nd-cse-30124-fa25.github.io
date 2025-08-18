@@ -549,8 +549,6 @@
     - name: (1958) The Regression Analysis of Binary Sequences (Cox)
       type: paper
       link: https://www.jstor.org/stable/2983890?seq=1
-    assignments:
-    - Homework 02
   - date: Mon 10/13
     topics: SVMs and KNNs
     resources:
@@ -612,6 +610,7 @@
       type: paper
       link: https://link.springer.com/article/10.1007/BF00994018
     assignments:
+    - Homework 02
     - Reading 07
 - name: Unsupervised Learning
   days:
@@ -1192,13 +1191,13 @@
     - name: Panopto
       type: video
       link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=234a27fe-5c95-4d40-bffe-b2cf014e66a5
+  - date: Wed 12/10
+    topics: Final Review?
     assignments:
     - Final Practice Packet
     - Homework 05
     - Bonus Homework
     - CIF Bribe
-  - date: Wed 12/10
-    topics: Final Review?
 - name: Final
   days:
   - date: Wed 12/17
