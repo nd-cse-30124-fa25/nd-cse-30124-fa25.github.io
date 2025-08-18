@@ -702,6 +702,8 @@
     - name: LDA (Raschka)
       type: blogpost
       link: https://sebastianraschka.com/Articles/2014_python_lda.html
+    assignments:
+    - Reading 08
 - name: Applied ML
   days:
   - date: Wed 10/29
@@ -801,6 +803,7 @@
       link: https://sebastianraschka.com/blog/2022/losses-learned-part1.html
     assignments:
     - Homework 03
+    - Reading 09
   - date: Wed 11/05
     topics: Gradient Descent and Backpropagation
     resources:
