@@ -12,103 +12,31 @@ body:       |
 
     ## Materials
 
-    ### Knowledge Representation and Feature Engineering
+    ## Knowledge Representation and Feature Engineering: [Foundations of Computational Agents - Chapters 5, 15, and 16 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch5.html)
 
-    1. [Foundations of Computational Agents](https://artint.info/3e/html/ArtInt3e.html)
-
-        - [Chapters 5, 15, and 16 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch5.html)
-
-    2. Additional Resources
+    Additional Resources:
 
         - [Harvard CS50 (Video)](https://www.youtube.com/watch?v=HWQLez87vqM)
         - [Stanford CS221 (Video)](https://www.youtube.com/watch?v=RIk67yGMVv4&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=44)
 
-    ### Decision Trees
+    ## Decision Trees: [Decision Trees (MLU) (Blog Post)](https://mlu-explain.github.io/decision-tree/)
 
-    1. [Foundations of Computational Agents](https://artint.info/3e/html/ArtInt3e.html)
+    Additional Resources:
 
-        - [Sections 7.2 and 7.3.1 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch7.S3.html)
-
-    2. Additional Resources
-
-        - [Probabilistic Machine Learning - Chapter 18 (Reading)](https://probml.github.io/pml-book/book1.html)
-        - [Introduction to Statistical Learning - Chapter 8 (Reading)](https://www.statlearning.com/)
-        - [Understanding Machine Learning - Chapter 18 (Reading)](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html)
-        - [MIT 6.034 (Video)](https://www.youtube.com/watch?v=SXBG3RGr_Rc)
-        - [Cornell CS4780 (Video)](https://youtu.be/a3ioGSwfVpE?si=f0JevsrXU2q3LZw6)
-        - [Playing Tennis Decision Tree (Notebook)](https://colab.research.google.com/drive/1C8MwpktYioRquWU_tz98funLSbe8nM5x?usp=sharing)
-        - [Entropy (StatQuest) (Video)](https://youtu.be/YtebGVx-Fxw?si=zC-J1JrOOe64b8cM)
-        - [Decision Trees (StatQuest) (Video)](https://youtu.be/7VeUPuFGJHk?si=SO3AHNT9KX1vJdln)
-        - [Regression Trees (StatQuest) (Video)](https://youtu.be/g9c66TUylZ4?si=SpvGvKvq9DmjLXYi)
-        - [Information Theory (3b1b) (Video)](https://youtu.be/v68zYyaEmEA?si=0mkPXsH4BYhxzSCl)
-        - [Decision Trees (MLU) (Blog Post)](https://mlu-explain.github.io/decision-tree/)
-        - [Decision Trees (r2d3) (Blog Post)](https://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
-        - [IG and Entropy (Zhou) (Blog Post)](https://victorzhou.com/blog/information-gain/)
-        - [Information Theory (Olah) (Blog Post)](https://colah.github.io/posts/2015-09-Visual-Information/)
-        - [(1966) Experiments in Induction (Hunt et al.) (Paper)](https://www.sciencedirect.com/science/article/pii/S0020737369800283)
-        - [(1986) Induction of Decision Trees (Quinlan) (Paper)](https://link.springer.com/article/10.1007/BF00116251)
-        - [(1984) Classification and Regression Trees (Brieman et al.) (Paper)](https://www.taylorfrancis.com/books/mono/10.1201/9781315139470/classification-regression-trees-leo-breiman-jerome-friedman-olshen-charles-stone)
-
-    ## Quiz
-
-    Once you have done the readings, answer the following [Reading 02 Quiz]
-    questions:
-
-    <div id="quiz-questions"></div>
-
-    <div id="quiz-responses"></div>
-
-    <script src="static/js/dredd-quiz.js"></script>
-    <script>
-    loadQuiz('static/json/reading02.json');
-    </script>
-
-    <pre style="display: none;" id="dr-container" class="codehilite"><code id="dredd-response"></code></pre>
-
-    ## Submission
-
-    To submit you work, follow the same process outlined in [Reading 00]:
-
-        :::bash
-        $ git checkout master                 # Make sure we are in master branch
-        $ git pull --rebase                   # Make sure we are up-to-date with GitHub
-
-        $ git checkout -b reading02           # Create reading02 branch and check it out
-
-        $ cd reading02                        # Go into reading02 folder
-        $ $EDITOR answers.json                # Edit your answers.json file
-
-        $ ../.scripts/check.py                # Check reading02 quiz
-        Checking reading02 quiz ...
-              Q1 0.60
-              Q2 0.60
-              Q3 0.90
-              Q4 0.90
-           Score 3.00 / 3.00
-          Status Success
-
-        $ git add answers.json                # Add answers.json to staging area
-        $ git commit -m "Reading 02: Done"    # Commit work
-
-        $ git push -u origin reading02        # Push branch to GitHub
-
-    <div class="alert alert-success" markdown="1">
-    #### <i class="fa fa-github"></i> Pull Request
-
-    Once you have committed your work and pushed it to [GitHub], remember to
-    create a **pull request** and assign it to the appropriate **teaching
-    assistant** from the [Reading 02 TA List].
-
-    </div>
-
-    [GitHub]:                               https://github.com
-    [Reading 00]:                           reading00.html
-    [Reading 02 Quiz]:                      static/json/reading02.json
-    [JSON]:                                 http://www.json.org/
-    [git-branch]:                           https://git-scm.com/docs/git-branch
-    [dredd]:                                https://dredd.h4x0r.space
-    [Reading 02 TA List]:                   reading02_tas.html
-    [Competitive Programmer's Handbook]:    https://cses.fi/book.html
-    [Interview Cake]:                       https://www.interviewcake.com/
-    [C++]:                                  https://isocpp.org/
-    [Python]:                               https://www.python.org
+    - [Foundations of Computational Agents - Sections 7.2 and 7.3.1 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch7.S3.html)
+    - [Probabilistic Machine Learning - Chapter 18 (Reading)](https://probml.github.io/pml-book/book1.html)
+    - [Introduction to Statistical Learning - Chapter 8 (Reading)](https://www.statlearning.com/)
+    - [Understanding Machine Learning - Chapter 18 (Reading)](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html)
+    - [MIT 6.034 (Video)](https://www.youtube.com/watch?v=SXBG3RGr_Rc)
+    - [Cornell CS4780 (Video)](https://youtu.be/a3ioGSwfVpE?si=f0JevsrXU2q3LZw6)
+    - [Playing Tennis Decision Tree (Notebook)](https://colab.research.google.com/drive/1C8MwpktYioRquWU_tz98funLSbe8nM5x?usp=sharing)
+    - [Entropy (StatQuest) (Video)](https://youtu.be/YtebGVx-Fxw?si=zC-J1JrOOe64b8cM)
+    - [Decision Trees (StatQuest) (Video)](https://youtu.be/7VeUPuFGJHk?si=SO3AHNT9KX1vJdln)
+    - [Regression Trees (StatQuest) (Video)](https://youtu.be/g9c66TUylZ4?si=SpvGvKvq9DmjLXYi)
+    - [Information Theory (3b1b) (Video)](https://youtu.be/v68zYyaEmEA?si=0mkPXsH4BYhxzSCl)
+    - [Decision Trees (r2d3) (Blog Post)](https://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
+    - [IG and Entropy (Zhou) (Blog Post)](https://victorzhou.com/blog/information-gain/)
+    - [Information Theory (Olah) (Blog Post)](https://colah.github.io/posts/2015-09-Visual-Information/)
+    - [(1966) Experiments in Induction (Hunt et al.) (Paper)](https://www.sciencedirect.com/science/article/pii/S0020737369800283)
+    - [(1986) Induction of Decision Trees (Quinlan) (Paper)](https://link.springer.com/article/10.1007/BF00116251)
+    - [(1984) Classification and Regression Trees (Brieman et al.) (Paper)](https://www.taylorfrancis.com/books/mono/10.1201/9781315139470/classification-regression-trees-leo-breiman-jerome-friedman-olshen-charles-stone)
