@@ -38,12 +38,9 @@ body:       |
         - [Harvard CS50 (Video)](https://www.youtube.com/watch?v=WbzNRTTrX0g)
         - [MIT 6.034 (Video)](https://www.youtube.com/watch?v=j1H3jAAGlEA)
 
-    ### A* Search
+    ### A* Search: [Introduction to the A* Algorithm](https://www.redblobgames.com/pathfinding/a-star/introduction.html)
 
-    1. [Introduction to the A* Algorithm](https://www.redblobgames.com/pathfinding/a-star/introduction.html)
-
-
-    2. Additional Resources
+    Additional Resources
 
         - [Foundations of Computation Agents - Section 3.6 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch3.S6.html)
         - [Harvard CS50 (Video)](https://youtu.be/WbzNRTTrX0g?si=mqYHjM8hTRsed8h4&t=3269)
