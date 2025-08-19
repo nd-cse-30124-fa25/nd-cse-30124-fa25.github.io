@@ -27,30 +27,26 @@ body:       |
 
     ## Materials
 
-    ### Search
+    ### Search: [Foundations of Computational Agents - Section 3.5](https://artint.info/3e/html/ArtInt3e.Ch3.S5.html)
 
-    1. [Foundations of Computational Agents](https://artint.info/3e/html/ArtInt3e.html)
+    Additional Resources:
 
-        - [Section 3.5 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch3.S5.html)
-
-    2. Additional Resources
-
-        - [Harvard CS50 (Video)](https://www.youtube.com/watch?v=WbzNRTTrX0g)
-        - [MIT 6.034 (Video)](https://www.youtube.com/watch?v=j1H3jAAGlEA)
+    - [Harvard CS50 (Video)](https://www.youtube.com/watch?v=WbzNRTTrX0g)
+    - [MIT 6.034 (Video)](https://www.youtube.com/watch?v=j1H3jAAGlEA)
 
     ### A* Search: [Introduction to the A* Algorithm](https://www.redblobgames.com/pathfinding/a-star/introduction.html)
 
-    Additional Resources
+    Additional Resources:
 
-        - [Foundations of Computation Agents - Section 3.6 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch3.S6.html)
-        - [Harvard CS50 (Video)](https://youtu.be/WbzNRTTrX0g?si=mqYHjM8hTRsed8h4&t=3269)
-        - [Stanford CS221 (Video)](https://www.youtube.com/watch?v=HEs1ZCvLH2s&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=18)
-        - [MIT 6.034 (Video)](https://www.youtube.com/watch?v=gGQ-vAmdAOI)
-        - [A* Search (Blog Post)](https://courses.grainger.illinois.edu/cs440/fa2024/lectures/astar.html)
-        - [Introduction to A* (Blog Post)](https://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html)
-        - [Heuristics (Blog Post)](https://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html)
-        - [(1968) A Formal Basis for the Heuristic Determination of Minimum Cost
-            Paths (Hart et al.) (Paper)](https://ieeexplore.ieee.org/document/4082128)
+    - [Foundations of Computation Agents - Section 3.6 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch3.S6.html)
+    - [Harvard CS50 (Video)](https://youtu.be/WbzNRTTrX0g?si=mqYHjM8hTRsed8h4&t=3269)
+    - [Stanford CS221 (Video)](https://www.youtube.com/watch?v=HEs1ZCvLH2s&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=18)
+    - [MIT 6.034 (Video)](https://www.youtube.com/watch?v=gGQ-vAmdAOI)
+    - [A* Search (Blog Post)](https://courses.grainger.illinois.edu/cs440/fa2024/lectures/astar.html)
+    - [Introduction to A* (Blog Post)](https://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html)
+    - [Heuristics (Blog Post)](https://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html)
+    - [(1968) A Formal Basis for the Heuristic Determination of Minimum Cost
+        Paths (Hart et al.) (Paper)](https://ieeexplore.ieee.org/document/4082128)
 
     ## Quiz
 
