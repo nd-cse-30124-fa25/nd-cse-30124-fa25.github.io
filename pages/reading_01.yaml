@@ -40,12 +40,12 @@ body:       |
 
     ### A* Search
 
-    1. [Foundations of Computational Agents](https://artint.info/3e/html/ArtInt3e.html)
+    1. [Introduction to the A* Algorithm](https://www.redblobgames.com/pathfinding/a-star/introduction.html)
 
-        - [Section 3.6 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch3.S6.html)
 
     2. Additional Resources
 
+        - [Foundations of Computation Agents - Section 3.6 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch3.S6.html)
         - [Harvard CS50 (Video)](https://youtu.be/WbzNRTTrX0g?si=mqYHjM8hTRsed8h4&t=3269)
         - [Stanford CS221 (Video)](https://www.youtube.com/watch?v=HEs1ZCvLH2s&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=18)
         - [MIT 6.034 (Video)](https://www.youtube.com/watch?v=gGQ-vAmdAOI)
