@@ -222,10 +222,12 @@ body:       |
     **Note**: Most of the readings are significantly more in depth than what you will need to answer the quizzes. It's completely fine if you skim portions (especially the ones full of equations (yuck)), these are merely meant to prepare you for the lectures so you at least have some familiarity with the material (and they allow me to shift some of the exam points to the quizzes, which are hopefully less stressful).
     </div>
     
-    ### Search: [Foundations of Computational Agents - Section 3.5](https://artint.info/3e/html/ArtInt3e.Ch3.S5.html)
+    ### Search: [Search Algorithms in AI (Uninformed Search Section) (Reading)](https://www.appliedaicourse.com/blog/search-algorithms-in-ai/)
+    
 
     Additional Resources:
 
+    - [Foundations of Computational Agents - Section 3.5](https://artint.info/3e/html/ArtInt3e.Ch3.S5.html)
     - [Harvard CS50 (Video)](https://www.youtube.com/watch?v=WbzNRTTrX0g)
     - [MIT 6.034 (Video)](https://www.youtube.com/watch?v=j1H3jAAGlEA)
 
@@ -243,12 +245,5 @@ body:       |
     - [(1968) A Formal Basis for the Heuristic Determination of Minimum Cost
         Paths (Hart et al.) (Paper)](https://ieeexplore.ieee.org/document/4082128)
 
-    [CSE 30124 Introduction to Artificial Intelligence]:     index.html
-    [GitHub]:                               https://github.com
-    [Zoom]:                                 https://notredame.zoom.us/
-    [Slack]:                                https://nd-cse.slack.com/
-    [SSH Keys]:                             https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
-    [nd-cse-30124-{{ term_code }}]:         https://github.com/nd-cse-30124-{{ term_code }}
-    [git-branch]:                           https://git-scm.com/docs/git-branch
 
-    
+    ## Task 5: Quiz
