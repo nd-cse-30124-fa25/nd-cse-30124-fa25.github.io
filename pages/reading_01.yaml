@@ -80,9 +80,8 @@ body:       |
 
     3. **Either:**
     
-      A. **Fork** the class homework repository from the following template:
+      - **Fork** the class homework repository from the following template:
 
-        {% if gh_homework_link %}
         > [{{ gh_homework_link }}]({{ gh_homework_link }})
 
         This will create a **private** `cse-30124-homeworks-$TEAMNAME`
@@ -91,7 +90,7 @@ body:       |
 
         Then invite your partner to join your repository by adding them as a collaborator.
 
-      B. **Join** your partner's repository.
+      - **Join** your partner's repository.
 
     4. Once this is done, you can [clone] your [git] repository to your local
     machine (or the **student** machines):
