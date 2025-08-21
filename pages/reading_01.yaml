@@ -23,7 +23,7 @@ body:       |
 
     For this week, you should familiarize yourself with using [Slack], setup
     your [GitHub] assignments repository, decide how you will run the notebook
-    software used in this course and then submit your notebook for the course primer.
+    software used in this course and then submit your first reading quiz.
 
     </div>
 
@@ -167,21 +167,15 @@ body:       |
 
     </div>
 
-    ## Task 3: Reading
+    ## Task 3: Notebooks
 
-    The readings for **Wednesday, January 22nd** are
+    - [Jupyter Notebooks](https://realpython.com/jupyter-notebook-introduction/)
 
-    1. [CSE 30124 Introduction to Artificial Intelligence](index.html)
+    - [VSCode Notebooks](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
 
-    2. Introduction to Notebooks
+    - [Kaggle Notebooks](https://www.kaggle.com/code/alexisbcook/creating-your-own-notebooks)
 
-        - [Jupyter Notebooks](https://realpython.com/jupyter-notebook-introduction/)
-
-        - [VSCode Notebooks](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
-
-        - [Kaggle Notebooks](https://www.kaggle.com/code/alexisbcook/creating-your-own-notebooks)
-
-        - [Google Colab](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
+    - [Google Colab](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
 
     Please at least skim all four, but for the purposes of this course you just
     need to get one of the methods working to run your notebooks. Notebooks
@@ -189,7 +183,26 @@ body:       |
     recommend and use. If you have other methods, please feel free to reach out to 
     your me to discuss them.
 
-    In addition to these "start-up" readings, most weeks you will have a small reading assignment followed by a brief quiz that will cover the two upcoming lectures. Each of the two will have a primary reading and then a link to a number of additional resources that I encourage you to explore if you're interested. Once completing the readings, use the google form to submit your answers to the quiz. Quizzes are due at 3:00 PM on the day of the first lecture for the topic.
+    Once you have read the above, run the following notebook using
+    the method of your choosing:
+
+    
+    <div class="alert alert-success" markdown="1">
+    [DOWNLOAD NOTEBOOK](static/homeworks/course_primer.ipynb)
+    </div>
+
+    For your convenience the notebook is displayed below as HTML but you will likely
+    find it easier to download the raw notebook file given above.
+
+    <iframe src="static/homework_htmls/course_primer.html" width="100%" height="800px"></iframe>
+
+    ## Task 4: Reading
+
+    <pre style="display: none;" id="dr-container" class="codehilite"><code id="dredd-response"></code></pre>
+
+    ### Syllabus: [CSE 30124 Introduction to Artificial Intelligence](index.html)
+
+    Most weeks you will have a small reading assignment followed by a brief quiz that will cover the two upcoming lectures. Each of the two will have a primary reading and then a link to a number of additional resources that I encourage you to explore if you're interested. Once completing the readings, use the google form to submit your answers to the quiz. Quizzes are due at 3:00 PM on the day of the first lecture for the topic.
 
     <div class="alert alert-info" markdown="1">
     **Note**: We will be a little lenient on this first reading quiz.
@@ -219,22 +232,6 @@ body:       |
     - [Heuristics (Blog Post)](https://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html)
     - [(1968) A Formal Basis for the Heuristic Determination of Minimum Cost
         Paths (Hart et al.) (Paper)](https://ieeexplore.ieee.org/document/4082128)
-
-    ## Task 4: Notebooks
-
-    Once you have done the readings, run the following notebook using
-    the method of your choosing:
-
-    <div class="alert alert-success" markdown="1">
-    [DOWNLOAD NOTEBOOK](static/homeworks/course_primer.ipynb)
-    </div>
-
-    For your convenience the notebook is displayed below as HTML but you will likely
-    find it easier to download the raw notebook file given above.
-
-    <iframe src="static/homework_htmls/course_primer.html" width="100%" height="800px"></iframe>
-
-    <pre style="display: none;" id="dr-container" class="codehilite"><code id="dredd-response"></code></pre>
 
     [CSE 30124 Introduction to Artificial Intelligence]:     index.html
     [GitHub]:                               https://github.com
