@@ -34,7 +34,7 @@ body:       |
     tools are only a small subset of what the field encompasses as a whole.
 
     <div class="thumbnail">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Unraveling_AI_Complexity_-_A_Comparative_View_of_AI%2C_Machine_Learning%2C_Deep_Learning%2C_and_Generative_AI.png">
+        <img src="static/svg/AI_Layers.svg">
     </div>
 
     We will begin the course at the top of the circle and work our way down.
@@ -202,7 +202,7 @@ body:       |
 
     ### Syllabus: [CSE 30124 Introduction to Artificial Intelligence](index.html)
 
-    Most weeks you will have a small reading assignment followed by a brief quiz that will cover the two upcoming lectures. Each of the two will have a primary reading and then a link to a number of additional resources that I encourage you to explore if you're interested. Once completing the readings, use the google form to submit your answers to the quiz. Quizzes are due at 3:00 PM on the day of the first lecture for the topic.
+    Most weeks you will have a reading assignment followed by a brief quiz that will cover the two upcoming lectures. Each of the two will have a primary reading and then a link to a number of additional resources that I encourage you to explore if you're interested. Once completing the readings, use the google form to submit your answers to the quiz. Quizzes are due at 3:00 PM on the day of the first lecture for the topic.
 
     <div class="alert alert-info" markdown="1">
     **Note**: We will be a little lenient on this first reading quiz.
