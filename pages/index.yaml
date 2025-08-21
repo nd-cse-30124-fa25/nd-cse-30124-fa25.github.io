@@ -72,7 +72,7 @@ body:       |
                         <dd><strong>M / W</strong> 3:30 PM - 4:45 PM</dd>
 
                         <dt><i class="fa fa-home"></i> Location</dt>
-                        <dd>{{ page.external['semester_info']['Class']['location'] }}</dd>
+                        <dd>{{ page.external['semester_info']['class_location'] }}</dd>
 
                         <dt><i class="fa fa-slack"></i> Slack</dt>
                         <dd><a href="https://nd-cse.slack.com/messages/cse-30124-{{ term_code }}/">#cse-30124-{{ term_code }}</a></dd>
@@ -147,7 +147,7 @@ body:       |
             <td style="text-align: left; padding: 8px;">{{ time_slot }}</td>
             {% for day in ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] %}
                 {% if not processed_slots.get(f"{day}_{time_slot}") %}
-                    {% set class_hours = page.external['semester_info']['Class']['times'].get(day, '') %}
+                    {% set class_hours = page.external['semester_info']['class_times'].get(day, '') %}
                     {% set instructor_hours = page.external['semester_info']['Instructor']['office_hours'].get(day, '') %}
                     {% set show_cell = True %}
 
@@ -170,7 +170,7 @@ body:       |
                             <td rowspan="{{ rowspan }}" style="text-align: center; vertical-align: middle; padding: 0; background-color: rgba(204, 229, 255, 0.5);">
                                 Lecture<br>
                                 {{ class_hours }}<br>
-                                {{ page.external['semester_info']['Class']['location'] }}
+                                {{ page.external['semester_info']['class_location'] }}
                             </td>
                             {% set show_cell = False %}
                         {% end %}
