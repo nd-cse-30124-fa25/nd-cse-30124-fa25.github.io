@@ -497,7 +497,6 @@ body:       |
         </div>
     </div>
 
-
     <div class="row">
         <div class="page-header">
             <h2 id="Requirements"><i class="fa fa-balance-scale"></i> Requirements</h2>
@@ -594,15 +593,21 @@ body:       |
             <div class="alert alert-info">
                 <h4><i class="fa fa-calendar"></i> Due Dates</h4>
                 <p>
-                All <b>Homeworks</b> are to be
-                  submited to your own <b>private</b> <a
-                  href="https://github.com">GitHub</a> repository.  Unless
-                  specified otherwise:
-                </p>
-                <p>
                 <ul>
+                <li><p><b>Readings</b> are due at <b>3:00PM</b> on the <b>day</b> of the due date.</p></li>
                 <li><p><b>Homeworks</b> are due at <b>midnight</b> on the <b>Monday</b> of the due week.</p></li>
                 </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="alert alert-danger">
+                <h4><i class="fa fa-calendar"></i> Practice Packets and Exams</h4>
+                <p>
+                I do something a little different in this class than I've seen in other ones. Instead of giving you old versions of the exams with which to practice, I will release a "practice packet". If you turn in this practice packet on the day of the exam (either online or paper is fine) then you will receive points on the exam itself for actually studying. The practice packet is graded entirely on completion. There will be an entry in canvas worth 0 points for each practice packet, the points you receive for doing it will be reflected in the exam score itself. 
                 </p>
             </div>
         </div>
