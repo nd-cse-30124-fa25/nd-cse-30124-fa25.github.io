@@ -82,13 +82,13 @@ body:       |
     
         - **Fork** the class homework repository from the following template:
 
-        > [{{ gh_homework_link }}]({{ gh_homework_link }})
+          > [{{ gh_homework_link }}]({{ gh_homework_link }})
 
-        This will create a **private** `cse-30124-homeworks-$TEAMNAME`
-        repository under your own account and linked to the [nd-cse-30124-{{ term_code }}]
-        organization.
+          This will create a **private** `cse-30124-homeworks-$TEAMNAME`
+          repository under your own account and linked to the [nd-cse-30124-{{ term_code }}]
+          organization.
 
-        Then invite your partner to join your repository by adding them as a collaborator.
+          Then invite your partner to join your repository by adding them as a collaborator.
 
         - **Join** your partner's repository.
 
