@@ -10,6 +10,8 @@ external:
 body:       |
     {% set term_code = page.external['semester_info']['Term'][:2].lower() + page.external['semester_info']['Year'][-2:] %}
 
+    {% set gh_homework_link = page.external['semester_info']['gh_homework_link'] %}
+
     **Welcome** to [CSE 30124 Introduction to Artifical Intelligence](index.html), which (as the syllabus
     states) is a broad introduction to the field of artificial intelligence. We
     will begin the semester with a brief history of the field and review of relevant
@@ -69,24 +71,33 @@ body:       |
 
     ## Task 2: GitHub
 
-    All of your work, other than the notebook for the Course Primer, will be submitted to [GitHub] using [git]. 
+    All of your homeworks will be submitted to [GitHub] using [git] and may be done either with a partner or individually.
     Your third task is to setup your [GitHub] repository by doing the following:
 
-    1. **Sign-in** or **create** a [GitHub] account if you do not already have one.
+    1. (Optional) Find a partner to work with.
 
-    2. **Fork** the class homeworks repository from the following template:
+    2. **Sign-in** or **create** a [GitHub] account if you do not already have one.
 
-        > [https://classroom.github.com/a/Qv4jfPvn](https://classroom.github.com/a/Qv4jfPvn)
+    3. **Either:**
+    
+      - **Fork** the class homework repository from the following template:
+
+        {% if gh_homework_link %}
+        > [{{ gh_homework_link }}]({{ gh_homework_link }})
 
         This will create a **private** `cse-30124-homeworks-$TEAMNAME`
-        repository under your own account and linked to the [nd-cse-30124-sp25]
+        repository under your own account and linked to the [nd-cse-30124-{{ term_code }}]
         organization.
 
-    3. Once this is done, you can [clone] your [git] repository to your local
+        Then invite your partner to join your repository by adding them as a collaborator.
+
+      - **Join** your partner's repository.
+
+    4. Once this is done, you can [clone] your [git] repository to your local
     machine (or the **student** machines):
 
             :::bash
-            $ git clone git@github.com:nd-cse-30124-sp25/cse-30124-homeworks-$TEAMNAME
+            $ git clone git@github.com:nd-cse-30124-{{ term_code }}/cse-30124-homeworks-$TEAMNAME
 
         <div class="alert alert-danger" markdown="1">
         **Note**, that [GitHub] has recently shutdown [password authentication].
