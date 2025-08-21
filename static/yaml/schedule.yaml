@@ -102,7 +102,6 @@
       type: paper
       link: https://www.sciencedirect.com/science/article/pii/000437028090051X
     assignments:
-    - Course Primer
     - Reading 02
   - date: Mon 09/08
     topics: Adversarial Search
