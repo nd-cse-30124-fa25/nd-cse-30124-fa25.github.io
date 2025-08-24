@@ -375,7 +375,7 @@ body:       |
                                     <a href="{{ assignment_id }}.html" class="label label-{{ assignment_label }}">{{ assignment }}</a>
                                 {% else %}
                                     {% set assignment_label = 'caution' %}
-                                    <a href="{{ assignment_id }}.html" class="label label-{{ assignment_label }}">{{ assignment }}</a>
+                                    <a href="{{ assignment_id }}" class="label label-{{ assignment_label }}">{{ assignment }}</a>
                                 {% end %}
                             {% end %}
                             </td>
