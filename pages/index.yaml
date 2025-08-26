@@ -120,7 +120,7 @@ body:       |
                     {% if (index + 1) % 3 == 0 %}
                         <div class="row"></div>
                     {% end %}
-                {% end %} 
+                {% end %}
             </div>
         </div>
     </div>
@@ -141,7 +141,7 @@ body:       |
         </tr>
 
         {% set processed_slots = {} %}
-       
+
         {% for time_slot in ["10:00 AM - 11:00 AM", "11:00 AM - 12:00 PM", "12:00 PM - 1:00 PM", "1:00 PM - 2:00 PM", "2:00 PM - 3:00 PM", "3:00 PM - 4:00 PM", "4:00 PM - 5:00 PM", "5:00 PM - 6:00 PM", "6:00 PM - 7:00 PM", "7:00 PM - 8:00 PM", "8:00 PM - 9:00 PM"] %}
             <tr>
             <td style="text-align: left; padding: 8px;">{{ time_slot }}</td>
@@ -151,7 +151,7 @@ body:       |
                     {% set cell_rowspan = 1 %}
                     {% set cell_bg_color = "" %}
                     {% set cell_type = "" %}
-                    
+
                     <!-- Check for class times -->
                     {% set class_hours = page.external['semester_info']['class_times'].get(day, '') %}
                     {% if class_hours %}
@@ -161,16 +161,16 @@ body:       |
                         {% set end_slot = dateutil.parser.parse(end_time) %}
                         {% set time_slot_start = dateutil.parser.parse(time_slot.split(' - ')[0]) %}
                         {% set time_slot_end = dateutil.parser.parse(time_slot.split(' - ')[1]) %}
-                        
+
                         <!-- Check if this time slot overlaps with the class time -->
                         {% if (start_slot < time_slot_end and end_slot > time_slot_start) %}
-                            {% set cell_rowspan = int(((end_slot - start_slot).seconds / 3600) + 0.5) %}
+                            {% set cell_rowspan = int(((end_slot - start_slot).seconds + 3599) / 3600) %}
                             {% set cell_bg_color = "rgba(204, 229, 255, 0.5)" %}
                             {% set cell_type = "lecture" %}
                             {% set _ = cell_content.append(f"Lecture<br>{class_hours}<br>{page.external['semester_info']['class_location']}") %}
                         {% end %}
                     {% end %}
-                    
+
                     <!-- Check for instructor office hours -->
                     {% set instructor_hours = page.external['semester_info']['Instructor']['office_hours'].get(day, '') %}
                     {% if instructor_hours %}
@@ -182,10 +182,10 @@ body:       |
                         {% set end_slot = dateutil.parser.parse(end_time) %}
                         {% set time_slot_start = dateutil.parser.parse(time_slot.split(' - ')[0]) %}
                         {% set time_slot_end = dateutil.parser.parse(time_slot.split(' - ')[1]) %}
-                        
+
                         <!-- Check if this time slot overlaps with the instructor's office hours -->
                         {% if (start_slot < time_slot_end and end_slot > time_slot_start) %}
-                            {% set instructor_rowspan = int(((end_slot - start_slot).seconds / 3600) + 0.5) %}
+                            {% set instructor_rowspan = int(((end_slot - start_slot).seconds + 3599) / 3600) %}
                             {% if instructor_rowspan > cell_rowspan %}
                                 {% set cell_rowspan = instructor_rowspan %}
                             {% end %}
@@ -196,7 +196,7 @@ body:       |
                             {% set _ = cell_content.append(f"{page.external['semester_info']['Instructor']['name']}<br>{instructor_hours_time}<br>{instructor_loc}") %}
                         {% end %}
                     {% end %}
-                    
+
                     <!-- Check for TA office hours -->
                     {% for ta_id, ta in page.external['semester_info']['TAs'].items() %}
                         {% if 'office_hours' in ta and day in ta['office_hours'] %}
@@ -208,10 +208,10 @@ body:       |
                             {% set end_slot = dateutil.parser.parse(end_time) %}
                             {% set time_slot_start = dateutil.parser.parse(time_slot.split(' - ')[0]) %}
                             {% set time_slot_end = dateutil.parser.parse(time_slot.split(' - ')[1]) %}
-                            
+
                             <!-- Check if this time slot overlaps with the TA's office hours -->
                             {% if (start_slot < time_slot_end and end_slot > time_slot_start) %}
-                                {% set ta_rowspan = int(((end_slot - start_slot).seconds / 3600) + 0.5) %}
+                                {% set ta_rowspan = int(((end_slot - start_slot).seconds + 3599) / 3600) %}
                                 {% if ta_rowspan > cell_rowspan %}
                                     {% set cell_rowspan = ta_rowspan %}
                                 {% end %}
@@ -226,7 +226,7 @@ body:       |
                             {% end %}
                         {% end %}
                     {% end %}
-                    
+
                     <!-- Mark all affected time slots as processed -->
                     {% if cell_content %}
                         {% for i in range(cell_rowspan) %}
@@ -235,7 +235,7 @@ body:       |
                             {% set next_slot = (dateutil.parser.parse(time_slot.split(' - ')[0]) + hour_offset + dateutil.relativedelta.relativedelta(hours=1)).strftime("%-I:%M %p") %}
                             {% set _ = processed_slots.update({f"{day}_{curr_slot} - {next_slot}": True}) %}
                         {% end %}
-                        
+
                         <!-- Display the cell -->
                         <td rowspan="{{ cell_rowspan }}" style="text-align: center; vertical-align: middle; padding: 0; background-color: {{ cell_bg_color }};">
                             {% for i, content in enumerate(cell_content) %}
@@ -256,7 +256,7 @@ body:       |
     <div class="row">
         <div class="page-header">
             <h2 id="schedule"><i class="fa fa-calendar"></i> Schedule</h2>
-            <p>Click on the 
+            <p>Click on the
                 <i class="fa-solid fa-circle-info"></i>
                 <i class="fa-solid fa-caret-right"></i>
                 next to a topic for additional resources
@@ -619,7 +619,7 @@ body:       |
             <div class="alert alert-danger">
                 <h4><i class="fa fa-calendar"></i> Practice Packets and Exams</h4>
                 <p>
-                I do something a little different in this class than I've seen in other ones. Instead of giving you old versions of the exams with which to practice, I will release a "practice packet". If you turn in this practice packet on the day of the exam (either online or paper is fine) then you will receive points on the exam itself for actually studying. The practice packet is graded entirely on completion. There will be an entry in canvas worth 0 points for each practice packet, the points you receive for doing it will be reflected in the exam score itself. 
+                I do something a little different in this class than I've seen in other ones. Instead of giving you old versions of the exams with which to practice, I will release a "practice packet". If you turn in this practice packet on the day of the exam (either online or paper is fine) then you will receive points on the exam itself for actually studying. The practice packet is graded entirely on completion. There will be an entry in canvas worth 0 points for each practice packet, the points you receive for doing it will be reflected in the exam score itself.
                 </p>
             </div>
         </div>
@@ -744,7 +744,7 @@ body:       |
             books, online sources, and <b>AI Tools</b> as long as you <b>cite
             them properly</b>.  However, you <b>may not copy</b> solutions or
             <b>significant</b> portions of code from other students or online
-            sources, nor may you generate solutions via <b>AI Tools</b>.  
+            sources, nor may you generate solutions via <b>AI Tools</b>.
 
             <p>Finally, when preparing for exams in this class, <b>you may not
             access exams from previous semesters</b>, nor may you look at or
@@ -813,10 +813,10 @@ body:       |
             </div>
         </div>
     </div>
-            
+
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            
+
             One of the benefits of ML/AI being extremely popular is there are many online resources
             available for learning it. The best teachers of the topics release much of their material
             avaible for free online. If something in class seemed unclear, you're encouraged
@@ -897,7 +897,7 @@ body:       |
                     </div>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-md-6">
                     <h3 onclick="toggleResourceSection('supplemental-courses')">
@@ -968,7 +968,7 @@ body:       |
             const button = document.getElementById(id);
             const resourcesRow = document.getElementById(`resources-${id}`);
             const unitCell = document.getElementById(`unit-cell-${id.split('-')[0]}`);
-            
+
             if (resourcesRow.style.display === 'table-row') {
                 button.classList.remove('fa-caret-down');
                 button.classList.add('fa-caret-right');
@@ -1006,7 +1006,7 @@ body:       |
         function toggleResourceSection(id) {
             const resourcesDiv = document.getElementById(id);
             const icon = document.getElementById(`${id}-icon`);
-            
+
             if (resourcesDiv.style.display === 'none' || resourcesDiv.style.display === '') {
                 resourcesDiv.style.display = 'block';
                 icon.classList.remove('fa-caret-right');
