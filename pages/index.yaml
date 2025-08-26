@@ -152,7 +152,7 @@ body:       |
                     {% set cell_bg_color = "" %}
                     {% set cell_type = "" %}
 
-                    <!-- Check for class times -->
+                                        <!-- Check for class times -->
                     {% set class_hours = page.external['semester_info']['class_times'].get(day, '') %}
                     {% if class_hours %}
                         {% set start_time = class_hours.split(' - ')[0] %}
@@ -161,9 +161,9 @@ body:       |
                         {% set end_slot = dateutil.parser.parse(end_time) %}
                         {% set time_slot_start = dateutil.parser.parse(time_slot.split(' - ')[0]) %}
                         {% set time_slot_end = dateutil.parser.parse(time_slot.split(' - ')[1]) %}
-
-                        <!-- Check if this time slot is the start of the class time -->
-                        {% if start_slot == time_slot_start %}
+                        
+                        <!-- Check if this time slot overlaps with the class time -->
+                        {% if (start_slot < time_slot_end and end_slot > time_slot_start) %}
                             {% set cell_rowspan = int(((end_slot - start_slot).seconds + 3599) / 3600) %}
                             {% set cell_bg_color = "rgba(204, 229, 255, 0.5)" %}
                             {% set cell_type = "lecture" %}
@@ -183,8 +183,8 @@ body:       |
                         {% set time_slot_start = dateutil.parser.parse(time_slot.split(' - ')[0]) %}
                         {% set time_slot_end = dateutil.parser.parse(time_slot.split(' - ')[1]) %}
 
-                        <!-- Check if this time slot is the start of the instructor's office hours -->
-                        {% if start_slot == time_slot_start %}
+                        <!-- Check if this time slot overlaps with the instructor's office hours -->
+                        {% if (start_slot < time_slot_end and end_slot > time_slot_start) %}
                             {% set instructor_rowspan = int(((end_slot - start_slot).seconds + 3599) / 3600) %}
                             {% if instructor_rowspan > cell_rowspan %}
                                 {% set cell_rowspan = instructor_rowspan %}
@@ -209,8 +209,8 @@ body:       |
                             {% set time_slot_start = dateutil.parser.parse(time_slot.split(' - ')[0]) %}
                             {% set time_slot_end = dateutil.parser.parse(time_slot.split(' - ')[1]) %}
 
-                            <!-- Check if this time slot is the start of the TA's office hours -->
-                            {% if start_slot == time_slot_start %}
+                            <!-- Check if this time slot overlaps with the TA's office hours -->
+                            {% if (start_slot < time_slot_end and end_slot > time_slot_start) %}
                                 {% set ta_rowspan = int(((end_slot - start_slot).seconds + 3599) / 3600) %}
                                 {% if ta_rowspan > cell_rowspan %}
                                     {% set cell_rowspan = ta_rowspan %}
@@ -240,7 +240,7 @@ body:       |
                         <td rowspan="{{ cell_rowspan }}" style="text-align: center; vertical-align: middle; padding: 0; background-color: {{ cell_bg_color }};">
                             {% for i, content in enumerate(cell_content) %}
                                 {% if i > 0 %}<hr style="margin: 2px 0; border-color: rgba(0,0,0,0.2);">{% end %}
-                                {{ content }}
+                                {{ content | safe }}
                             {% end %}
                         </td>
                     {% else %}
