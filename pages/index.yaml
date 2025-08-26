@@ -181,7 +181,7 @@ body:       |
                         {% if cell_type == "" %}
                             {% set cell_bg_color = "rgba(204, 229, 255, 0.5)" %}
                             {% set cell_type = "instructor" %}
-                        {% endif %}
+                        {% end %}
                         {% set _ = cell_content.append(f"{page.external['semester_info']['Instructor']['name']}<br>{instructor_hours_time}<br>{instructor_loc}") %}
                     {% end %}
                 {% end %}
