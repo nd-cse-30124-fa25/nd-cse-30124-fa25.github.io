@@ -240,7 +240,7 @@ body:       |
                         <td rowspan="{{ cell_rowspan }}" style="text-align: center; vertical-align: middle; padding: 0; background-color: {{ cell_bg_color }};">
                             {% for i, content in enumerate(cell_content) %}
                                 {% if i > 0 %}<hr style="margin: 2px 0; border-color: rgba(0,0,0,0.2);">{% end %}
-                                {% raw %}{{ content }}{% end %}
+                                {{ content }}
                             {% end %}
                         </td>
                     {% else %}
