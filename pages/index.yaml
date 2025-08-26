@@ -140,100 +140,88 @@ body:       |
             {% end %}
         </tr>
 
-        {% set processed_slots = {} %}
-       
         {% for time_slot in ["10:00 AM - 11:00 AM", "11:00 AM - 12:00 PM", "12:00 PM - 1:00 PM", "1:00 PM - 2:00 PM", "2:00 PM - 3:00 PM", "3:00 PM - 4:00 PM", "4:00 PM - 5:00 PM", "5:00 PM - 6:00 PM", "6:00 PM - 7:00 PM", "7:00 PM - 8:00 PM", "8:00 PM - 9:00 PM"] %}
             <tr>
             <td style="text-align: left; padding: 8px;">{{ time_slot }}</td>
             {% for day in ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] %}
-                {% if not processed_slots.get(f"{day}_{time_slot}") %}
-                    {% set class_hours = page.external['semester_info']['class_times'].get(day, '') %}
-                    {% set instructor_hours = page.external['semester_info']['Instructor']['office_hours'].get(day, '') %}
-                    {% set show_cell = True %}
-
-
-                    {% if class_hours %}
-                        {% set start_time = class_hours.split(' - ')[0].split(':')[0] + ":00 " + class_hours.split(' - ')[0].split(':')[1].split(' ')[1] %}
-
+                {% set cell_content = [] %}
+                {% set cell_rowspan = 1 %}
+                {% set cell_bg_color = "" %}
+                {% set cell_type = "" %}
+                
+                <!-- Check for class times -->
+                {% set class_hours = page.external['semester_info']['class_times'].get(day, '') %}
+                {% if class_hours %}
+                    {% set start_time = class_hours.split(' - ')[0].split(':')[0] + ":00 " + class_hours.split(' - ')[0].split(':')[1].split(' ')[1] %}
+                    {% if dateutil.parser.parse(start_time).strftime("%I:%M:%S %p") == dateutil.parser.parse(time_slot.split(' - ')[0]).strftime("%I:%M:%S %p") %}
+                        {% set end_time = class_hours.split(' - ')[1].split(':')[0] + ":00 " + class_hours.split(' - ')[1].split(':')[1].split(' ')[1] %}
+                        {% set start_slot = dateutil.parser.parse(start_time) %}
+                        {% set end_slot = dateutil.parser.parse(end_time) %}
+                        {% set cell_rowspan = int(((end_slot - start_slot).seconds / 3600) + 0.5) %}
+                        {% set cell_bg_color = "rgba(204, 229, 255, 0.5)" %}
+                        {% set cell_type = "lecture" %}
+                        {% set _ = cell_content.append(f"Lecture<br>{class_hours}<br>{page.external['semester_info']['class_location']}") %}
+                    {% end %}
+                {% end %}
+                
+                <!-- Check for instructor office hours -->
+                {% set instructor_hours = page.external['semester_info']['Instructor']['office_hours'].get(day, '') %}
+                {% if instructor_hours %}
+                    {% set instructor_hours_time = instructor_hours.split('|')[0] %}
+                    {% set instructor_loc = instructor_hours.split('|')[1] %}
+                    {% set start_time = instructor_hours_time.split(' - ')[0] %}
+                    {% if dateutil.parser.parse(start_time).strftime("%I:%M:%S %p") == dateutil.parser.parse(time_slot.split(' - ')[0]).strftime("%I:%M:%S %p") %}
+                        {% set end_time = instructor_hours_time.split(' - ')[1] %}
+                        {% set start_slot = dateutil.parser.parse(start_time) %}
+                        {% set end_slot = dateutil.parser.parse(end_time) %}
+                        {% set instructor_rowspan = int(((end_slot - start_slot).seconds / 3600) + 0.5) %}
+                        {% if instructor_rowspan > cell_rowspan %}
+                            {% set cell_rowspan = instructor_rowspan %}
+                        {% end %}
+                        {% if cell_type == "" %}
+                            {% set cell_bg_color = "rgba(204, 229, 255, 0.5)" %}
+                            {% set cell_type = "instructor" %}
+                        {% endif %}
+                        {% set _ = cell_content.append(f"{page.external['semester_info']['Instructor']['name']}<br>{instructor_hours_time}<br>{instructor_loc}") %}
+                    {% end %}
+                {% end %}
+                
+                <!-- Check for TA office hours -->
+                {% for ta_id, ta in page.external['semester_info']['TAs'].items() %}
+                    {% if 'office_hours' in ta and day in ta['office_hours'] %}
+                        {% set ta_hours = ta['office_hours'][day].split('|')[0] %}
+                        {% set ta_loc = ta['office_hours'][day].split('|')[1] %}
+                        {% set start_time = ta_hours.split(' - ')[0].split(':')[0] + ":00 " + ta_hours.split(' - ')[0].split(':')[1].split(' ')[1] %}
                         {% if dateutil.parser.parse(start_time).strftime("%I:%M:%S %p") == dateutil.parser.parse(time_slot.split(' - ')[0]).strftime("%I:%M:%S %p") %}
-                            {% set end_time = class_hours.split(' - ')[1].split(':')[0] + ":00 " + class_hours.split(' - ')[1].split(':')[1].split(' ')[1] %}
+                            {% set end_time = ta_hours.split(' - ')[1].split(':')[0] + ":00 " + ta_hours.split(' - ')[1].split(':')[1].split(' ')[1] %}
                             {% set start_slot = dateutil.parser.parse(start_time) %}
                             {% set end_slot = dateutil.parser.parse(end_time) %}
-
-                            {% set rowspan = int(((end_slot - start_slot).seconds / 3600) + 0.5) %}
-
-                            {% for i in range(rowspan) %}
-                                {% set hour_offset = dateutil.relativedelta.relativedelta(hours=i) %}
-                                {% set curr_slot = (start_slot + hour_offset).strftime("%-I:%M %p") %}
-                                {% set _ = processed_slots.update({f"{day}_{curr_slot} - {(start_slot + hour_offset + dateutil.relativedelta.relativedelta(hours=1)).strftime('%-I:%M %p')}": True}) %}
+                            {% set ta_rowspan = int(((end_slot - start_slot).seconds / 3600) + 0.5) %}
+                            {% if ta_rowspan > cell_rowspan %}
+                                {% set cell_rowspan = ta_rowspan %}
                             {% end %}
-                            <td rowspan="{{ rowspan }}" style="text-align: center; vertical-align: middle; padding: 0; background-color: rgba(204, 229, 255, 0.5);">
-                                Lecture<br>
-                                {{ class_hours }}<br>
-                                {{ page.external['semester_info']['class_location'] }}
-                            </td>
-                            {% set show_cell = False %}
+                            {% if cell_type == "" %}
+                                {% set cell_bg_color = ta_colors[ta_id] %}
+                                {% set cell_type = "ta" %}
+                            {% elif cell_type == "ta" %}
+                                <!-- Multiple TAs - use a blended color or keep first TA's color -->
+                                {% set cell_bg_color = ta_colors[ta_id] %}
+                            {% end %}
+                            {% set _ = cell_content.append(f"{ta['name']}<br>{ta_hours}<br>{ta_loc}") %}
                         {% end %}
                     {% end %}
-                    
-                    {% if instructor_hours %}
-                        {% set instructor_hours = page.external['semester_info']['Instructor']['office_hours'].get(day, '').split('|')[0] %}
-                        {% set instructor_loc = page.external['semester_info']['Instructor']['office_hours'].get(day, '').split('|')[1] %}
-                        {% set start_time = instructor_hours.split(' - ')[0] %}
-
-                        {% if dateutil.parser.parse(start_time).strftime("%I:%M:%S %p") == dateutil.parser.parse(time_slot.split(' - ')[0]).strftime("%I:%M:%S %p") %}
-                            {% set end_time = instructor_hours.split(' - ')[1] %}
-                            {% set start_slot = dateutil.parser.parse(start_time) %}
-                            {% set end_slot = dateutil.parser.parse(end_time) %}
-
-                            {% set rowspan = int(((end_slot - start_slot).seconds / 3600) + 0.5) %}
-
-                            {% for i in range(rowspan) %}
-                                {% set hour_offset = dateutil.relativedelta.relativedelta(hours=i) %}
-                                {% set curr_slot = (start_slot + hour_offset).strftime("%-I:%M %p") %}
-                                {% set _ = processed_slots.update({f"{day}_{curr_slot} - {(start_slot + hour_offset + dateutil.relativedelta.relativedelta(hours=1)).strftime('%-I:%M %p')}": True}) %}
-                            {% end %}
-                            <td rowspan="{{ rowspan }}" style="text-align: center; vertical-align: middle; padding: 0; background-color: rgba(204, 229, 255, 0.5);">
-                                {{ page.external['semester_info']['Instructor']['name'] }}<br>
-                                {{ instructor_hours }}<br>
-                                {{ instructor_loc }}
-                            </td>
-                            {% set show_cell = False %}
+                {% end %}
+                
+                <!-- Display the cell -->
+                {% if cell_content %}
+                    <td rowspan="{{ cell_rowspan }}" style="text-align: center; vertical-align: middle; padding: 0; background-color: {{ cell_bg_color }};">
+                        {% for content in cell_content %}
+                            {% if not loop.first %}<hr style="margin: 2px 0; border-color: rgba(0,0,0,0.2);">{% end %}
+                            {{ content }}
                         {% end %}
-                    {% end %}
-
-                    {% for ta_id, ta in page.external['semester_info']['TAs'].items() %}
-                        {% if 'office_hours' in ta and day in ta['office_hours'] %}
-                            {% set ta_hours = ta['office_hours'][day].split('|')[0] %}
-                            {% set ta_loc = ta['office_hours'][day].split('|')[1] %}
-                            {% set start_time = ta_hours.split(' - ')[0].split(':')[0] + ":00 " + ta_hours.split(' - ')[0].split(':')[1].split(' ')[1] %}
-
-                            {% if dateutil.parser.parse(start_time).strftime("%I:%M:%S %p") == dateutil.parser.parse(time_slot.split(' - ')[0]).strftime("%I:%M:%S %p") %}
-                                {% set end_time = ta_hours.split(' - ')[1].split(':')[0] + ":00 " + ta_hours.split(' - ')[1].split(':')[1].split(' ')[1] %}
-                                {% set start_slot = dateutil.parser.parse(start_time) %}
-                                {% set end_slot = dateutil.parser.parse(end_time) %}
-
-                                {% set rowspan = int(((end_slot - start_slot).seconds / 3600) + 0.5) %}
-
-                                {% for i in range(rowspan) %}
-                                    {% set hour_offset = dateutil.relativedelta.relativedelta(hours=i) %}
-                                    {% set curr_slot = (start_slot + hour_offset).strftime("%-I:%M %p") %}
-                                    {% set _ = processed_slots.update({f"{day}_{curr_slot} - {(start_slot + hour_offset + dateutil.relativedelta.relativedelta(hours=1)).strftime('%-I:%M %p')}": True}) %}
-                                {% end %}
-
-                                <td rowspan="{{ rowspan }}" style="text-align: center; vertical-align: middle; padding: 0; background-color: {{ ta_colors[ta_id] }};">
-                                    {{ ta['name'] }}<br>
-                                    {{ ta_hours }}<br>
-                                    {{ ta_loc }}
-                                </td>
-                                {% set show_cell = False %}
-                            {% end %}
-                        {% end %}
-                    {% end %}
-                    
-                    {% if show_cell %}
-                        <td style="padding: 8px;"></td>
-                    {% end %}
+                    </td>
+                {% else %}
+                    <td style="padding: 8px;"></td>
                 {% end %}
             {% end %}
             </tr>
