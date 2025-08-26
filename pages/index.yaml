@@ -167,7 +167,7 @@ body:       |
                             {% set cell_rowspan = int(((end_slot - start_slot).seconds + 3599) / 3600) %}
                             {% set cell_bg_color = "rgba(204, 229, 255, 0.5)" %}
                             {% set cell_type = "lecture" %}
-                            {% set _ = cell_content.append(f"Lecture<br>{class_hours}<br>{page.external['semester_info']['class_location']}") %}
+                            {% set _ = cell_content.append("Lecture<br>" + class_hours + "<br>" + page.external['semester_info']['class_location']) %}
                         {% end %}
                     {% end %}
 
@@ -193,7 +193,7 @@ body:       |
                                 {% set cell_bg_color = "rgba(204, 229, 255, 0.5)" %}
                                 {% set cell_type = "instructor" %}
                             {% end %}
-                            {% set _ = cell_content.append(f"{page.external['semester_info']['Instructor']['name']}<br>{instructor_hours_time}<br>{instructor_loc}") %}
+                            {% set _ = cell_content.append(page.external['semester_info']['Instructor']['name'] + "<br>" + instructor_hours_time + "<br>" + instructor_loc) %}
                         {% end %}
                     {% end %}
 
@@ -222,7 +222,7 @@ body:       |
                                     <!-- Multiple TAs - use a blended color or keep first TA's color -->
                                     {% set cell_bg_color = ta_colors[ta_id] %}
                                 {% end %}
-                                {% set _ = cell_content.append(f"{ta['name']}<br>{ta_hours}<br>{ta_loc}") %}
+                                {% set _ = cell_content.append(ta['name'] + "<br>" + ta_hours + "<br>" + ta_loc) %}
                             {% end %}
                         {% end %}
                     {% end %}
