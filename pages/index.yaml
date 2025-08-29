@@ -164,7 +164,49 @@ body:       |
             <tr>
             {% if slot_start_dt.minute == 0 %}
                 {% set hour_label = hour_start.strftime("%-I:00 %p") + " - " + hour_end.strftime("%-I:00 %p") %}
-                <td rowspan="2" style="text-align: left; padding: 8px; {{ row_top_border }} {{ half_hour_line }}">{{ hour_label }}</td>
+                {% set hour_has_content = False %}
+                {% for day_chk in ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] %}
+                    {% if not hour_has_content %}
+                        {# Check class times #}
+                        {% set class_hours = page.external['semester_info']['class_times'].get(day_chk, '') %}
+                        {% if class_hours %}
+                            {% set c_start = dateutil.parser.parse(class_hours.split(' - ')[0]) %}
+                            {% set c_end   = dateutil.parser.parse(class_hours.split(' - ')[1]) %}
+                            {% if (c_start < hour_end and c_end > hour_start) %}
+                                {% set hour_has_content = True %}
+                            {% end %}
+                        {% end %}
+
+                        {# Check instructor hours #}
+                        {% if not hour_has_content %}
+                            {% set instr_oh = page.external['semester_info']['Instructor']['office_hours'].get(day_chk, '') %}
+                            {% if instr_oh %}
+                                {% set instr_time = instr_oh.split('|')[0] %}
+                                {% set i_start = dateutil.parser.parse(instr_time.split(' - ')[0]) %}
+                                {% set i_end   = dateutil.parser.parse(instr_time.split(' - ')[1]) %}
+                                {% if (i_start < hour_end and i_end > hour_start) %}
+                                    {% set hour_has_content = True %}
+                                {% end %}
+                            {% end %}
+                        {% end %}
+
+                        {# Check TA hours #}
+                        {% if not hour_has_content %}
+                            {% for _tid, _ta in page.external['semester_info']['TAs'].items() %}
+                                {% if 'office_hours' in _ta and day_chk in _ta['office_hours'] %}
+                                    {% set oh_time = _ta['office_hours'][day_chk].split('|')[0] %}
+                                    {% set t_start = dateutil.parser.parse(oh_time.split(' - ')[0]) %}
+                                    {% set t_end   = dateutil.parser.parse(oh_time.split(' - ')[1]) %}
+                                    {% if (t_start < hour_end and t_end > hour_start) %}
+                                        {% set hour_has_content = True %}
+                                        {% break %}
+                                    {% end %}
+                                {% end %}
+                            {% end %}
+                        {% end %}
+                    {% end %}
+                {% end %}
+                <td rowspan="2" style="text-align: left; padding: 8px; {{ row_top_border }} {% if hour_has_content %}{{ half_hour_line }}{% end %}">{{ hour_label }}</td>
             {% else %}
                 {# This row shares the time label cell above #}
             {% end %}
@@ -343,8 +385,8 @@ body:       |
                                 <td style="padding: 8px; border: 1px solid #eee; {{ row_top_border }}"></td>
                                 {% set _ = processed_slots.update({f"{day}_{time_slot}": True}) %}
                             {% else %}
-                                {# Default: span the hour by combining two half-hour rows #}
-                                <td rowspan="2" style="padding: 8px; border: 1px solid #eee; {{ row_top_border }} {{ half_hour_line }}"></td>
+                                {# Default: span the hour by combining two half-hour rows (no midline when truly empty) #}
+                                <td rowspan="2" style="padding: 8px; border: 1px solid #eee; {{ row_top_border }}"></td>
                                 {% set next_slot = (slot_start_dt + dateutil.relativedelta.relativedelta(minutes=30)).strftime("%-I:%M %p") %}
                                 {% set _ = processed_slots.update({f"{day}_{time_slot}": True}) %}
                                 {% set _ = processed_slots.update({f"{day}_{next_slot} - {(slot_start_dt + dateutil.relativedelta.relativedelta(minutes=60)).strftime('%-I:%M %p')}": True}) %}
