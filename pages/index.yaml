@@ -165,7 +165,7 @@ body:       |
                         
                         <!-- Check if this time slot overlaps with the class time -->
                         {% if (start_slot < time_slot_end and end_slot > time_slot_start) %}
-                            {% set lecture_rowspan = int(((end_slot - start_slot).seconds + 3599) / 3600) %}
+                            {% set lecture_rowspan = int(((end_slot - time_slot_start).seconds + 3599) / 3600) %}
                             {% set _ = cell_rowspans.append(lecture_rowspan) %}
                             {% set _ = cell_content.append({
                                 'name': 'Lecture',
@@ -190,7 +190,7 @@ body:       |
 
                         <!-- Check if this time slot overlaps with the instructor's office hours -->
                         {% if (start_slot < time_slot_end and end_slot > time_slot_start) %}
-                            {% set instructor_rowspan = int(((end_slot - start_slot).seconds + 3599) / 3600) %}
+                            {% set instructor_rowspan = int(((end_slot - time_slot_start).seconds + 3599) / 3600) %}
                             {% set _ = cell_rowspans.append(instructor_rowspan) %}
                             {% set _ = cell_content.append({
                                 'name': page.external['semester_info']['Instructor']['name'],
@@ -215,7 +215,7 @@ body:       |
 
                             <!-- Check if this time slot overlaps with the TA's office hours -->
                             {% if (start_slot < time_slot_end and end_slot > time_slot_start) %}
-                                {% set ta_rowspan = int(((end_slot - start_slot).seconds + 3599) / 3600) %}
+                                {% set ta_rowspan = int(((end_slot - time_slot_start).seconds + 3599) / 3600) %}
                                 {% set _ = cell_rowspans.append(ta_rowspan) %}
                                 {% set _ = cell_content.append({
                                     'name': ta['name'],
@@ -230,17 +230,18 @@ body:       |
                         {% end %}
                     {% end %}
 
-                    <!-- Decide on rowspan: if multiple entries overlap this slot, avoid rowspan to prevent layout issues -->
+                    <!-- Decide on rowspan: combine multiple overlapping entries across common duration -->
                     {% if cell_content %}
                         {% if len(cell_content) == 1 %}
-                            {% set cell_rowspan = cell_rowspans[0] %}
+                            {% set cell_rowspan = max(cell_rowspans[0], 1) %}
                             {% if cell_type == "lecture" or cell_type == "instructor" %}
                                 {% set cell_bg_color = "rgba(204, 229, 255, 0.5)" %}
                             {% elif cell_type == "ta" and not cell_bg_color %}
                                 {% set cell_bg_color = "rgba(240,240,240,0.5)" %}
                             {% end %}
                         {% else %}
-                            {% set cell_rowspan = 1 %}
+                            {% set common_span = min(cell_rowspans) if cell_rowspans else 1 %}
+                            {% set cell_rowspan = max(common_span, 1) %}
                             {% set cell_bg_color = "rgba(245, 245, 245, 0.7)" %}
                         {% end %}
 
