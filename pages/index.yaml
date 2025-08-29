@@ -206,7 +206,7 @@ body:       |
                         {% end %}
                     {% end %}
                 {% end %}
-                <td rowspan="2" style="text-align: left; padding: 8px; {{ row_top_border }} {% if hour_has_content %}{{ half_hour_line }}{% end %}">{{ hour_label }}</td>
+                <td rowspan="2" style="text-align: left; padding: 8px; {{ row_top_border }}">{{ hour_label }}</td>
             {% else %}
                 {# This row shares the time label cell above #}
             {% end %}
@@ -323,7 +323,7 @@ body:       |
                         {% end %}
 
                         <!-- Display the cell -->
-                        <td rowspan="{{ cell_rowspan }}" style="text-align: center; vertical-align: middle; padding: 6px; background-color: {{ cell_bg_color }}; border: 1px solid #ddd; {{ row_top_border }} {% if slot_start_dt.minute == 0 and cell_rowspan >= 2 %}{{ half_hour_line }}{% end %}">
+                        <td rowspan="{{ cell_rowspan }}" style="text-align: center; vertical-align: middle; padding: 6px; background-color: {{ cell_bg_color }}; border: 1px solid #ddd; {{ row_top_border }}">
                             {% for i, item in enumerate(cell_content) %}
                                 {% if i > 0 %}<hr style="margin: 4px 0; border-color: rgba(0,0,0,0.2);">{% end %}
                                 <div><strong>{{ item['name'] }}</strong></div>
