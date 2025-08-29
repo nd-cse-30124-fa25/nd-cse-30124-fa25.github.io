@@ -159,8 +159,8 @@ body:       |
             {% set hour_start = slot_start_dt.replace(minute=0, second=0, microsecond=0) %}
             {% set hour_end   = hour_start + dateutil.relativedelta.relativedelta(hours=1) %}
 
-            {% set row_top_border = 'border-top: 2px solid #bbb;' if slot_start_dt.minute == 0 else 'border-top: 1px solid #eee;' %}
-            {% set half_hour_line = 'background-image: linear-gradient(to bottom, transparent calc(50% - 0.5px), #e6e6e6 calc(50% - 0.5px), #e6e6e6 calc(50% + 0.5px), transparent calc(50% + 0.5px)); background-size: 100% 100%; background-repeat: no-repeat;' %}
+            {% set row_top_border = 'border-top: 1px solid #000;' %}
+            {% set half_hour_line = 'background-image: linear-gradient(to bottom, transparent calc(50% - 0.5px), #000000 calc(50% - 0.5px), #000000 calc(50% + 0.5px), transparent calc(50% + 0.5px)); background-size: 100% 100%; background-repeat: no-repeat;' %}
             <tr>
             {% if slot_start_dt.minute == 0 %}
                 {% set hour_label = hour_start.strftime("%-I:00 %p") + " - " + hour_end.strftime("%-I:00 %p") %}
