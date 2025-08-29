@@ -159,10 +159,12 @@ body:       |
             {% set hour_start = slot_start_dt.replace(minute=0, second=0, microsecond=0) %}
             {% set hour_end   = hour_start + dateutil.relativedelta.relativedelta(hours=1) %}
 
+            {% set row_top_border = 'border-top: 2px solid #bbb;' if slot_start_dt.minute == 0 else 'border-top: 1px solid #eee;' %}
+            {% set half_hour_line = 'background-image: linear-gradient(to bottom, transparent calc(50% - 0.5px), #e6e6e6 calc(50% - 0.5px), #e6e6e6 calc(50% + 0.5px), transparent calc(50% + 0.5px)); background-size: 100% 100%; background-repeat: no-repeat;' %}
             <tr>
             {% if slot_start_dt.minute == 0 %}
                 {% set hour_label = hour_start.strftime("%-I:00 %p") + " - " + hour_end.strftime("%-I:00 %p") %}
-                <td rowspan="2" style="text-align: left; padding: 8px;">{{ hour_label }}</td>
+                <td rowspan="2" style="text-align: left; padding: 8px; {{ row_top_border }} {{ half_hour_line }}">{{ hour_label }}</td>
             {% else %}
                 {# This row shares the time label cell above #}
             {% end %}
@@ -279,7 +281,7 @@ body:       |
                         {% end %}
 
                         <!-- Display the cell -->
-                        <td rowspan="{{ cell_rowspan }}" style="text-align: center; vertical-align: middle; padding: 6px; background-color: {{ cell_bg_color }}; border: 1px solid #ddd;">
+                        <td rowspan="{{ cell_rowspan }}" style="text-align: center; vertical-align: middle; padding: 6px; background-color: {{ cell_bg_color }}; border: 1px solid #ddd; {{ row_top_border }} {% if slot_start_dt.minute == 0 and cell_rowspan >= 2 %}{{ half_hour_line }}{% end %}">
                             {% for i, item in enumerate(cell_content) %}
                                 {% if i > 0 %}<hr style="margin: 4px 0; border-color: rgba(0,0,0,0.2);">{% end %}
                                 <div><strong>{{ item['name'] }}</strong></div>
@@ -290,13 +292,13 @@ body:       |
                     {% else %}
                         {% if slot_start_dt.minute == 0 %}
                             {# Default empty cell spans the hour by combining two half-hour rows #}
-                            <td rowspan="2" style="padding: 8px; border: 1px solid #eee;"></td>
+                            <td rowspan="2" style="padding: 8px; border: 1px solid #eee; {{ row_top_border }} {{ half_hour_line }}"></td>
                             {% set next_slot = (slot_start_dt + dateutil.relativedelta.relativedelta(minutes=30)).strftime("%-I:%M %p") %}
                             {% set _ = processed_slots.update({f"{day}_{time_slot}": True}) %}
                             {% set _ = processed_slots.update({f"{day}_{next_slot} - {(slot_start_dt + dateutil.relativedelta.relativedelta(minutes=60)).strftime('%-I:%M %p')}": True}) %}
                         {% else %}
                             {# Second half-hour empty cell when needed #}
-                            <td style="padding: 8px; border: 1px solid #eee;"></td>
+                            <td style="padding: 8px; border: 1px solid #eee; {{ row_top_border }}"></td>
                         {% end %}
                     {% end %}
                 {% end %}
