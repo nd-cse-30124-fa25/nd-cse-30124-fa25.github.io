@@ -159,8 +159,8 @@ body:       |
             {% set hour_start = slot_start_dt.replace(minute=0, second=0, microsecond=0) %}
             {% set hour_end   = hour_start + dateutil.relativedelta.relativedelta(hours=1) %}
 
-            {% set row_top_border = 'border-top: 1px solid #000;' %}
-            {% set half_hour_line = 'background-image: linear-gradient(to bottom, transparent calc(50% - 0.5px), #000000 calc(50% - 0.5px), #000000 calc(50% + 0.5px), transparent calc(50% + 0.5px)); background-size: 100% 100%; background-repeat: no-repeat;' %}
+            {% set row_top_border = 'border-top: 1px solid #ddd;' %}
+            {% set half_hour_line = 'background-image: linear-gradient(to bottom, transparent calc(50% - 0.5px), #dddddd calc(50% - 0.5px), #dddddd calc(50% + 0.5px), transparent calc(50% + 0.5px)); background-size: 100% 100%; background-repeat: no-repeat;' %}
             <tr>
             {% if slot_start_dt.minute == 0 %}
                 {% set hour_label = hour_start.strftime("%-I:00 %p") + " - " + hour_end.strftime("%-I:00 %p") %}
@@ -426,18 +426,18 @@ body:       |
 
                             {% if needs_split %}
                                 {# Only top empty cell; leave bottom half for content #}
-                                <td style="padding: 8px; border: 1px solid #eee; {{ row_top_border }}"></td>
+                                <td style="padding: 8px; border: 1px solid #ddd; {{ row_top_border }}"></td>
                                 {% set _ = processed_slots.update({f"{day}_{time_slot}": True}) %}
                             {% else %}
                                 {# Default: span the hour by combining two half-hour rows (no midline when truly empty) #}
-                                <td rowspan="2" style="padding: 8px; border: 1px solid #eee; {{ row_top_border }}"></td>
+                                <td rowspan="2" style="padding: 8px; border: 1px solid #ddd; {{ row_top_border }}"></td>
                                 {% set next_slot = (slot_start_dt + dateutil.relativedelta.relativedelta(minutes=30)).strftime("%-I:%M %p") %}
                                 {% set _ = processed_slots.update({f"{day}_{time_slot}": True}) %}
                                 {% set _ = processed_slots.update({f"{day}_{next_slot} - {(slot_start_dt + dateutil.relativedelta.relativedelta(minutes=60)).strftime('%-I:%M %p')}": True}) %}
                             {% end %}
                         {% else %}
                             {# Second half-hour empty cell when needed #}
-                            <td style="padding: 8px; border: 1px solid #eee; {{ row_top_border }}"></td>
+                            <td style="padding: 8px; border: 1px solid #ddd; {{ row_top_border }}"></td>
                         {% end %}
                     {% end %}
                 {% end %}
