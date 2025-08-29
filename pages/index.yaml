@@ -142,9 +142,26 @@ body:       |
 
         {% set processed_slots = {} %}
 
-        {% for time_slot in ["10:00 AM - 11:00 AM", "11:00 AM - 12:00 PM", "12:00 PM - 1:00 PM", "1:00 PM - 2:00 PM", "2:00 PM - 3:00 PM", "3:00 PM - 4:00 PM", "4:00 PM - 5:00 PM", "5:00 PM - 6:00 PM", "6:00 PM - 7:00 PM", "7:00 PM - 8:00 PM", "8:00 PM - 9:00 PM"] %}
+        {# Build half-hour time slots from 10:00 AM to 9:00 PM #}
+        {% set start_t = dateutil.parser.parse("10:00 AM") %}
+        {% set end_t   = dateutil.parser.parse("9:00 PM") %}
+        {% set time_slots = [] %}
+        {% set total_half_hours = int(((end_t - start_t).seconds) / 1800) %}
+        {% for i in range(total_half_hours) %}
+            {% set s = start_t + dateutil.relativedelta.relativedelta(minutes=30*i) %}
+            {% set e = s + dateutil.relativedelta.relativedelta(minutes=30) %}
+            {% set _ = time_slots.append(s.strftime("%-I:%M %p") + " - " + e.strftime("%-I:%M %p")) %}
+        {% end %}
+
+        {% for time_slot in time_slots %}
             <tr>
-            <td style="text-align: left; padding: 8px;">{{ time_slot }}</td>
+            {% set slot_start_dt = dateutil.parser.parse(time_slot.split(' - ')[0]) %}
+            {% if slot_start_dt.minute == 0 %}
+                {% set hour_label = slot_start_dt.strftime("%-I:00 %p") + " - " + (slot_start_dt + dateutil.relativedelta.relativedelta(hours=1)).strftime("%-I:00 %p") %}
+                <td style="text-align: left; padding: 8px;">{{ hour_label }}</td>
+            {% else %}
+                <td style="padding: 0;"></td>
+            {% end %}
             {% for day in ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] %}
                 {% if not processed_slots.get(f"{day}_{time_slot}") %}
                     {% set cell_content = [] %}
@@ -165,7 +182,7 @@ body:       |
                         
                         <!-- Check if this time slot overlaps with the class time -->
                         {% if (start_slot < time_slot_end and end_slot > time_slot_start) %}
-                            {% set lecture_rowspan = int(((end_slot - time_slot_start).seconds + 3599) / 3600) %}
+                            {% set lecture_rowspan = int(((end_slot - time_slot_start).seconds + 1799) / 1800) %}
                             {% set _ = cell_rowspans.append(lecture_rowspan) %}
                             {% set _ = cell_content.append({
                                 'name': 'Lecture',
@@ -190,7 +207,7 @@ body:       |
 
                         <!-- Check if this time slot overlaps with the instructor's office hours -->
                         {% if (start_slot < time_slot_end and end_slot > time_slot_start) %}
-                            {% set instructor_rowspan = int(((end_slot - time_slot_start).seconds + 3599) / 3600) %}
+                            {% set instructor_rowspan = int(((end_slot - time_slot_start).seconds + 1799) / 1800) %}
                             {% set _ = cell_rowspans.append(instructor_rowspan) %}
                             {% set _ = cell_content.append({
                                 'name': page.external['semester_info']['Instructor']['name'],
@@ -215,7 +232,7 @@ body:       |
 
                             <!-- Check if this time slot overlaps with the TA's office hours -->
                             {% if (start_slot < time_slot_end and end_slot > time_slot_start) %}
-                                {% set ta_rowspan = int(((end_slot - time_slot_start).seconds + 3599) / 3600) %}
+                                {% set ta_rowspan = int(((end_slot - time_slot_start).seconds + 1799) / 1800) %}
                                 {% set _ = cell_rowspans.append(ta_rowspan) %}
                                 {% set _ = cell_content.append({
                                     'name': ta['name'],
@@ -248,9 +265,9 @@ body:       |
                         <!-- Mark affected time slots as processed only when using rowspan -->
                         {% if cell_rowspan > 1 %}
                             {% for i in range(cell_rowspan) %}
-                                {% set hour_offset = dateutil.relativedelta.relativedelta(hours=i) %}
-                                {% set curr_slot = (dateutil.parser.parse(time_slot.split(' - ')[0]) + hour_offset).strftime("%-I:%M %p") %}
-                                {% set next_slot = (dateutil.parser.parse(time_slot.split(' - ')[0]) + hour_offset + dateutil.relativedelta.relativedelta(hours=1)).strftime("%-I:%M %p") %}
+                                {% set half_offset = dateutil.relativedelta.relativedelta(minutes=30*i) %}
+                                {% set curr_slot = (dateutil.parser.parse(time_slot.split(' - ')[0]) + half_offset).strftime("%-I:%M %p") %}
+                                {% set next_slot = (dateutil.parser.parse(time_slot.split(' - ')[0]) + half_offset + dateutil.relativedelta.relativedelta(minutes=30)).strftime("%-I:%M %p") %}
                                 {% set _ = processed_slots.update({f"{day}_{curr_slot} - {next_slot}": True}) %}
                             {% end %}
                         {% else %}
