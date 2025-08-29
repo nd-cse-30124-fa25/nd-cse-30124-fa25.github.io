@@ -141,6 +141,7 @@ body:       |
         </tr>
 
         {% set processed_slots = {} %}
+        {% set hour_flags = {} %}
 
         {# Build half-hour time slots from 10:00 AM to 9:00 PM #}
         {% set start_t = dateutil.parser.parse("10:00 AM") %}
@@ -154,11 +155,70 @@ body:       |
         {% end %}
 
         {% for time_slot in time_slots %}
-            <tr>
             {% set slot_start_dt = dateutil.parser.parse(time_slot.split(' - ')[0]) %}
+            {% set hour_start = slot_start_dt.replace(minute=0, second=0, microsecond=0) %}
+            {% set hour_end   = hour_start + dateutil.relativedelta.relativedelta(hours=1) %}
+            {% set hour_key   = hour_start.strftime("%-I:%M %p") %}
+
+            {# Determine if this hour needs half-hour resolution (only at :00) #}
             {% if slot_start_dt.minute == 0 %}
-                {% set hour_label = slot_start_dt.strftime("%-I:00 %p") + " - " + (slot_start_dt + dateutil.relativedelta.relativedelta(hours=1)).strftime("%-I:00 %p") %}
-                <td style="text-align: left; padding: 8px;">{{ hour_label }}</td>
+                {% set need_half = False %}
+                {% for day_chk in ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] %}
+                    {# Class times #}
+                    {% set class_hours = page.external['semester_info']['class_times'].get(day_chk, '') %}
+                    {% if class_hours %}
+                        {% set c_start = dateutil.parser.parse(class_hours.split(' - ')[0]) %}
+                        {% set c_end   = dateutil.parser.parse(class_hours.split(' - ')[1]) %}
+                        {% if (c_start < hour_end and c_end > hour_start) %}
+                            {% if (c_start >= hour_start and c_start < hour_end and c_start.minute == 30) or (c_end > hour_start and c_end <= hour_end and c_end.minute == 30) %}
+                                {% set need_half = True %}
+                            {% end %}
+                        {% end %}
+                    {% end %}
+
+                    {# Instructor OH #}
+                    {% set instr_oh = page.external['semester_info']['Instructor']['office_hours'].get(day_chk, '') %}
+                    {% if instr_oh %}
+                        {% set instr_time = instr_oh.split('|')[0] %}
+                        {% set i_start = dateutil.parser.parse(instr_time.split(' - ')[0]) %}
+                        {% set i_end   = dateutil.parser.parse(instr_time.split(' - ')[1]) %}
+                        {% if (i_start < hour_end and i_end > hour_start) %}
+                            {% if (i_start >= hour_start and i_start < hour_end and i_start.minute == 30) or (i_end > hour_start and i_end <= hour_end and i_end.minute == 30) %}
+                                {% set need_half = True %}
+                            {% end %}
+                        {% end %}
+                    {% end %}
+
+                    {# TA OH #}
+                    {% for _tid, _ta in page.external['semester_info']['TAs'].items() %}
+                        {% if 'office_hours' in _ta and day_chk in _ta['office_hours'] %}
+                            {% set oh_time = _ta['office_hours'][day_chk].split('|')[0] %}
+                            {% set t_start = dateutil.parser.parse(oh_time.split(' - ')[0]) %}
+                            {% set t_end   = dateutil.parser.parse(oh_time.split(' - ')[1]) %}
+                            {% if (t_start < hour_end and t_end > hour_start) %}
+                                {% if (t_start >= hour_start and t_start < hour_end and t_start.minute == 30) or (t_end > hour_start and t_end <= hour_end and t_end.minute == 30) %}
+                                    {% set need_half = True %}
+                                {% end %}
+                            {% end %}
+                        {% end %}
+                    {% end %}
+                {% end %}
+                {% set _ = hour_flags.update({hour_key: need_half}) %}
+            {% end %}
+
+            {# Skip the :30 row if this hour doesn't need half-hour resolution #}
+            {% if slot_start_dt.minute == 30 and not hour_flags.get(hour_key, False) %}
+                {% continue %}
+            {% end %}
+
+            <tr>
+            {% if slot_start_dt.minute == 0 %}
+                {% set hour_label = hour_start.strftime("%-I:00 %p") + " - " + hour_end.strftime("%-I:00 %p") %}
+                {% if hour_flags.get(hour_key, False) %}
+                    <td style="text-align: left; padding: 8px;">{{ hour_label }}</td>
+                {% else %}
+                    <td rowspan="2" style="text-align: left; padding: 8px;">{{ hour_label }}</td>
+                {% end %}
             {% else %}
                 <td style="padding: 0;"></td>
             {% end %}
