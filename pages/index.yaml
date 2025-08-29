@@ -132,7 +132,7 @@ body:       |
     </div>
 
     <div class="row">
-        <table border="2px solid black" cellpadding="5" cellspacing="0" style="table-layout: fixed; width: 100%; border-collapse: "collapse"">
+        <table cellpadding="5" cellspacing="0" style="table-layout: fixed; width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
         <tr>
             <th style="width: 150px;"></th>
             {% for day in ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] %}
@@ -148,6 +148,7 @@ body:       |
             {% for day in ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] %}
                 {% if not processed_slots.get(f"{day}_{time_slot}") %}
                     {% set cell_content = [] %}
+                    {% set cell_rowspans = [] %}
                     {% set cell_rowspan = 1 %}
                     {% set cell_bg_color = "" %}
                     {% set cell_type = "" %}
@@ -164,10 +165,10 @@ body:       |
                         
                         <!-- Check if this time slot overlaps with the class time -->
                         {% if (start_slot < time_slot_end and end_slot > time_slot_start) %}
-                            {% set cell_rowspan = int(((end_slot - start_slot).seconds + 3599) / 3600) %}
-                            {% set cell_bg_color = "rgba(204, 229, 255, 0.5)" %}
-                            {% set cell_type = "lecture" %}
+                            {% set lecture_rowspan = int(((end_slot - start_slot).seconds + 3599) / 3600) %}
+                            {% set _ = cell_rowspans.append(lecture_rowspan) %}
                             {% set _ = cell_content.append("Lecture<br>" + class_hours + "<br>" + page.external['semester_info']['class_location']) %}
+                            {% set cell_type = cell_type if cell_type != "" else "lecture" %}
                         {% end %}
                     {% end %}
 
@@ -186,14 +187,9 @@ body:       |
                         <!-- Check if this time slot overlaps with the instructor's office hours -->
                         {% if (start_slot < time_slot_end and end_slot > time_slot_start) %}
                             {% set instructor_rowspan = int(((end_slot - start_slot).seconds + 3599) / 3600) %}
-                            {% if instructor_rowspan > cell_rowspan %}
-                                {% set cell_rowspan = instructor_rowspan %}
-                            {% end %}
-                            {% if cell_type == "" %}
-                                {% set cell_bg_color = "rgba(204, 229, 255, 0.5)" %}
-                                {% set cell_type = "instructor" %}
-                            {% end %}
+                            {% set _ = cell_rowspans.append(instructor_rowspan) %}
                             {% set _ = cell_content.append(page.external['semester_info']['Instructor']['name'] + "<br>" + instructor_hours_time + "<br>" + instructor_loc) %}
+                            {% set cell_type = cell_type if cell_type != "" else "instructor" %}
                         {% end %}
                     {% end %}
 
@@ -212,39 +208,51 @@ body:       |
                             <!-- Check if this time slot overlaps with the TA's office hours -->
                             {% if (start_slot < time_slot_end and end_slot > time_slot_start) %}
                                 {% set ta_rowspan = int(((end_slot - start_slot).seconds + 3599) / 3600) %}
-                                {% if ta_rowspan > cell_rowspan %}
-                                    {% set cell_rowspan = ta_rowspan %}
-                                {% end %}
-                                {% if cell_type == "" %}
-                                    {% set cell_bg_color = ta_colors[ta_id] %}
-                                    {% set cell_type = "ta" %}
-                                {% elif cell_type == "ta" %}
-                                    <!-- Multiple TAs - use a blended color or keep first TA's color -->
-                                    {% set cell_bg_color = ta_colors[ta_id] %}
-                                {% end %}
+                                {% set _ = cell_rowspans.append(ta_rowspan) %}
                                 {% set _ = cell_content.append(ta['name'] + "<br>" + ta_hours + "<br>" + ta_loc) %}
+                                {% set cell_type = cell_type if cell_type != "" else "ta" %}
+                                {% if cell_type == "ta" and not cell_bg_color %}
+                                    {% set cell_bg_color = ta_colors.get(ta_id, "rgba(240,240,240,0.5)") %}
+                                {% end %}
                             {% end %}
                         {% end %}
                     {% end %}
 
-                    <!-- Mark all affected time slots as processed -->
+                    <!-- Decide on rowspan: if multiple entries overlap this slot, avoid rowspan to prevent layout issues -->
                     {% if cell_content %}
-                        {% for i in range(cell_rowspan) %}
-                            {% set hour_offset = dateutil.relativedelta.relativedelta(hours=i) %}
-                            {% set curr_slot = (dateutil.parser.parse(time_slot.split(' - ')[0]) + hour_offset).strftime("%-I:%M %p") %}
-                            {% set next_slot = (dateutil.parser.parse(time_slot.split(' - ')[0]) + hour_offset + dateutil.relativedelta.relativedelta(hours=1)).strftime("%-I:%M %p") %}
-                            {% set _ = processed_slots.update({f"{day}_{curr_slot} - {next_slot}": True}) %}
+                        {% if len(cell_content) == 1 %}
+                            {% set cell_rowspan = cell_rowspans[0] %}
+                            {% if cell_type == "lecture" or cell_type == "instructor" %}
+                                {% set cell_bg_color = "rgba(204, 229, 255, 0.5)" %}
+                            {% elif cell_type == "ta" and not cell_bg_color %}
+                                {% set cell_bg_color = "rgba(240,240,240,0.5)" %}
+                            {% end %}
+                        {% else %}
+                            {% set cell_rowspan = 1 %}
+                            {% set cell_bg_color = "rgba(245, 245, 245, 0.7)" %}
+                        {% end %}
+
+                        <!-- Mark affected time slots as processed only when using rowspan -->
+                        {% if cell_rowspan > 1 %}
+                            {% for i in range(cell_rowspan) %}
+                                {% set hour_offset = dateutil.relativedelta.relativedelta(hours=i) %}
+                                {% set curr_slot = (dateutil.parser.parse(time_slot.split(' - ')[0]) + hour_offset).strftime("%-I:%M %p") %}
+                                {% set next_slot = (dateutil.parser.parse(time_slot.split(' - ')[0]) + hour_offset + dateutil.relativedelta.relativedelta(hours=1)).strftime("%-I:%M %p") %}
+                                {% set _ = processed_slots.update({f"{day}_{curr_slot} - {next_slot}": True}) %}
+                            {% end %}
+                        {% else %}
+                            {% set _ = processed_slots.update({f"{day}_{time_slot}": True}) %}
                         {% end %}
 
                         <!-- Display the cell -->
-                        <td rowspan="{{ cell_rowspan }}" style="text-align: center; vertical-align: middle; padding: 0; background-color: {{ cell_bg_color }};">
+                        <td rowspan="{{ cell_rowspan }}" style="text-align: center; vertical-align: middle; padding: 0; background-color: {{ cell_bg_color }}; border: 1px solid #ddd;">
                             {% for i, content in enumerate(cell_content) %}
                                 {% if i > 0 %}<hr style="margin: 2px 0; border-color: rgba(0,0,0,0.2);">{% end %}
                                 {{ content }}
                             {% end %}
                         </td>
                     {% else %}
-                        <td style="padding: 8px;"></td>
+                        <td style="padding: 8px; border: 1px solid #eee;"></td>
                     {% end %}
                 {% end %}
             {% end %}
