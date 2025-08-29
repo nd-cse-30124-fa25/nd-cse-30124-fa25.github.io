@@ -167,7 +167,11 @@ body:       |
                         {% if (start_slot < time_slot_end and end_slot > time_slot_start) %}
                             {% set lecture_rowspan = int(((end_slot - start_slot).seconds + 3599) / 3600) %}
                             {% set _ = cell_rowspans.append(lecture_rowspan) %}
-                            {% set _ = cell_content.append("Lecture<br>" + class_hours + "<br>" + page.external['semester_info']['class_location']) %}
+                            {% set _ = cell_content.append({
+                                'name': 'Lecture',
+                                'time': class_hours,
+                                'loc' : page.external['semester_info']['class_location']
+                            }) %}
                             {% set cell_type = cell_type if cell_type != "" else "lecture" %}
                         {% end %}
                     {% end %}
@@ -188,7 +192,11 @@ body:       |
                         {% if (start_slot < time_slot_end and end_slot > time_slot_start) %}
                             {% set instructor_rowspan = int(((end_slot - start_slot).seconds + 3599) / 3600) %}
                             {% set _ = cell_rowspans.append(instructor_rowspan) %}
-                            {% set _ = cell_content.append(page.external['semester_info']['Instructor']['name'] + "<br>" + instructor_hours_time + "<br>" + instructor_loc) %}
+                            {% set _ = cell_content.append({
+                                'name': page.external['semester_info']['Instructor']['name'],
+                                'time': instructor_hours_time,
+                                'loc' : instructor_loc
+                            }) %}
                             {% set cell_type = cell_type if cell_type != "" else "instructor" %}
                         {% end %}
                     {% end %}
@@ -209,7 +217,11 @@ body:       |
                             {% if (start_slot < time_slot_end and end_slot > time_slot_start) %}
                                 {% set ta_rowspan = int(((end_slot - start_slot).seconds + 3599) / 3600) %}
                                 {% set _ = cell_rowspans.append(ta_rowspan) %}
-                                {% set _ = cell_content.append(ta['name'] + "<br>" + ta_hours + "<br>" + ta_loc) %}
+                                {% set _ = cell_content.append({
+                                    'name': ta['name'],
+                                    'time': ta_hours,
+                                    'loc' : ta_loc
+                                }) %}
                                 {% set cell_type = cell_type if cell_type != "" else "ta" %}
                                 {% if cell_type == "ta" and not cell_bg_color %}
                                     {% set cell_bg_color = ta_colors.get(ta_id, "rgba(240,240,240,0.5)") %}
@@ -245,10 +257,12 @@ body:       |
                         {% end %}
 
                         <!-- Display the cell -->
-                        <td rowspan="{{ cell_rowspan }}" style="text-align: center; vertical-align: middle; padding: 0; background-color: {{ cell_bg_color }}; border: 1px solid #ddd;">
-                            {% for i, content in enumerate(cell_content) %}
-                                {% if i > 0 %}<hr style="margin: 2px 0; border-color: rgba(0,0,0,0.2);">{% end %}
-                                {{ content }}
+                        <td rowspan="{{ cell_rowspan }}" style="text-align: center; vertical-align: middle; padding: 6px; background-color: {{ cell_bg_color }}; border: 1px solid #ddd;">
+                            {% for i, item in enumerate(cell_content) %}
+                                {% if i > 0 %}<hr style="margin: 4px 0; border-color: rgba(0,0,0,0.2);">{% end %}
+                                <div><strong>{{ item['name'] }}</strong></div>
+                                <div><small>{{ item['time'] }}</small></div>
+                                <div><small>{{ item['loc'] }}</small></div>
                             {% end %}
                         </td>
                     {% else %}
