@@ -8,14 +8,11 @@ internal:
 external:
 body:       |
 
-    **Everyone**:
-
-    ## Materials
-
-    ## Constraint Satisfaction: [Foundations of Computational Agents - Sections 4.1 through 4.6](https://artint.info/3e/html/ArtInt3e.Ch4.html)
+    ## Constraint Satisfaction: [Constraint Satisfaction: introduction (Video)](https://www.youtube.com/watch?v=_e64FiDWvqs)
 
     Additional Resources:
-
+    - [Constraint Satisfaction: the AC-3 algorithm (Video)](https://www.youtube.com/watch?v=4cCS8rrYT14)
+    - [Foundations of Computational Agents - Sections 4.1 through 4.6](https://artint.info/3e/html/ArtInt3e.Ch4.html)
     - [Harvard CS50 (Video)](https://youtu.be/qK46ET1xk2A?si=tSAHHe0Sp-OxWUpD&t=3033)
     - [Stanford CS221 (Video)](https://www.youtube.com/watch?v=-IO4fPO0rxk&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=23)
     - [MIT 6.034 (Video)](https://www.youtube.com/watch?v=dARl_gGrS4o)
@@ -29,6 +26,7 @@ body:       |
 
     Additional Resources:
 
+    - [Minimax with Alpha Beta Pruning (Video)](https://www.youtube.com/watch?v=zp3VMe0Jpf8)
     - [Foundations of Computational Agents - Sections 14.2 and 14.3 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch14.S2.html)
     - [Harvard CS50 (Video)](https://youtu.be/WbzNRTTrX0g?si=CAG9IhmN4MBSzHfi&t=4323)
     - [Stanford CS221 (Video)](https://www.youtube.com/watch?v=3pU-Hrz_xy4&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=21)
@@ -39,3 +37,9 @@ body:       |
     - [(1975) An Analysis of Alpha-Beta Pruning (Knuth and Moore) (Paper)](https://www.sciencedirect.com/science/article/pii/0004370275900193)
     - [Minimax Algorithm (Blog Post)](https://notes.bencuan.me/cs61b/algorithms/minimax/)
     - [Tic-Tac-Toe: Understanding the Minimax Algorithm (Blog Post)](https://www.neverstopbuilding.com/blog/minimax)
+
+    ## Task 5: Quiz
+
+    Please respond to the quiz below, you will need to be signed into your ND email in order to respond. You may edit your responses after each submission, so there's really no reason you shouldn't get full credit on these!
+
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeeCIsGR4FGR1ytvD0vJBax4GLaDNZreK9LEcggLuFX_bCgPA/viewform?embedded=true" width="640" height="2770" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
