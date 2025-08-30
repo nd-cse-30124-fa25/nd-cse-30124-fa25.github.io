@@ -37,7 +37,7 @@
     resources:
     - name: Slides
       type: reading
-      link: 
+      link: https://docs.google.com/presentation/d/19C80auqhEEAHaf8MW8QYXGQYB_z42dEi/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
     - name: FCA - Section 3.6
       type: reading
       link: https://artint.info/3e/html/ArtInt3e.Ch3.S6.html
