@@ -431,22 +431,9 @@
       link: https://www.jstor.org/stable/2346178?seq=1
     assignments:
     - Reading 05
-- name: Exam 01
-  days:
-  - date: Mon 09/29
-    topics: Review
-    resources:
-    - name: Panopto
-      type: video
-      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=357cce38-675e-4cd8-9620-b28901732a3a
-  - date: Wed 10/01
-    topics: Exam 01
-    assignments:
-    - Exam 01 Practice Packet
-    - Exam 01
 - name: Supervised Learning
   days:
-  - date: Mon 10/06
+  - date: Mon 09/29
     topics: Perceptrons
     resources:
     - name: Slides
@@ -490,6 +477,21 @@
       link: https://direct.mit.edu/books/monograph/3132/PerceptronsAn-Introduction-to-Computational
     assignments:
     - Reading 06
+- name: Exam 01
+  days:
+  - date: Wed 10/01
+    topics: Review
+    resources:
+    - name: Panopto
+      type: video
+      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=357cce38-675e-4cd8-9620-b28901732a3a
+  - date: Wed 10/06
+    topics: Exam 01
+    assignments:
+    - Exam 01 Practice Packet
+    - Exam 01
+- name: Supervised Learning
+  days:
   - date: Wed 10/08
     topics: Logistic Regression and Gradient Descent
     resources:
@@ -863,25 +865,9 @@
     - name: Backprop (Karpathy)
       type: blogpost
       link: https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b
-- name: Midterm 02
-  days:
-  - date: Mon 11/10
-    topics: Review
-    resources:
-    - name: Panopto
-      type: video
-      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6877fd1b-5dd1-4894-896e-b2b3016366a8
-    assignments:
-    - Reading 10
-  - date: Wed 11/12
-    topics: Exam 02
-    assignments:
-    - Exam 02 Practice Packet
-    - Exam 02
-- name: 'Unit 03: Deep Learning'
 - name: Foundations of Deep Learning
   days:
-  - date: Mon 11/17
+  - date: Mon 11/10
     topics: Convolutional Neural Networks
     resources:
     - name: Slides
@@ -940,6 +926,24 @@
       link: https://medium.com/data-science/deep-learning-illustrated-part-3-convolutional-neural-networks-96b900b0b9e0
     assignments:
     - Reading 11
+- name: Midterm 02
+  days:
+  - date: Mon 11/12
+    topics: Review
+    resources:
+    - name: Panopto
+      type: video
+      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6877fd1b-5dd1-4894-896e-b2b3016366a8
+    assignments:
+    - Reading 10
+  - date: Wed 11/17
+    topics: Exam 02
+    assignments:
+    - Exam 02 Practice Packet
+    - Exam 02
+- name: 'Unit 03: Deep Learning'
+- name: Foundations of Deep Learning
+  days:
   - date: Wed 11/19
     topics: Recurrent Neural Networks
     resources:
