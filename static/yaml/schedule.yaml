@@ -8,7 +8,7 @@
       link: https://drive.google.com/file/d/1yUot9T3myty2Tsx1KpXLxhyd77KbFlUl/view?usp=sharing
     - name: Panopto
       type: video
-      link: 
+      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a449561f-8558-4c15-9d9f-b34401576fc6
 - name: 'Unit 01: Good Old Fashioned AI (GOFAI)'
 - name: Search and Representations
   days:
@@ -23,7 +23,7 @@
       link: https://artint.info/3e/html/ArtInt3e.Ch3.S5.html
     - name: Panopto
       type: video
-      link: 
+      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=61ec6c47-5064-4cf2-aab5-b34601597a14
     - name: Harvard CS50
       type: video
       link: https://www.youtube.com/watch?v=WbzNRTTrX0g
@@ -37,13 +37,13 @@
     resources:
     - name: Slides
       type: reading
-      link: https://docs.google.com/presentation/d/19C80auqhEEAHaf8MW8QYXGQYB_z42dEi/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+      link: https://drive.google.com/file/d/1TXsuZZx0iFe7HXixaGD_vB6a8mMBZLIF/view?usp=sharing
     - name: FCA - Section 3.6
       type: reading
       link: https://artint.info/3e/html/ArtInt3e.Ch3.S6.html
     - name: Panopto
       type: video
-      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d5fecb7f-fd0b-4103-b41e-b2730130443e
+      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=17f3a92c-9d44-41a4-9027-b34b015993fd
     - name: Harvard CS50
       type: video
       link: https://youtu.be/WbzNRTTrX0g?si=mqYHjM8hTRsed8h4&t=3269
