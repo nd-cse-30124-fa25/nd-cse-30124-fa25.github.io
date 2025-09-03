@@ -5,12 +5,22 @@ RSYNC_FLAGS= 	-rv --copy-links --progress --exclude="*.swp" --exclude="*.yaml" -
 YAML=		$(shell ls pages/*.yaml)
 HTML= 		$(YAML:.yaml=.html)
 
-all:		$(HTML)
+# Notebook -> HTML (homeworks)
+HOMEWORK_IPYNB := $(wildcard static/homeworks/*.ipynb)
+HOMEWORK_HTML  := $(patsubst static/homeworks/%.ipynb, static/homework_htmls/%.html, $(HOMEWORK_IPYNB))
+
+all:		$(HTML) $(HOMEWORK_HTML)
+
 
 %.html:		%.yaml $(COMMON)
 	./scripts/yasb.py $< > $@
 
-build:		$(HTML)
+# Convert homework notebooks to HTML alongside the repo (used by build and CI)
+static/homework_htmls/%.html: static/homeworks/%.ipynb
+	mkdir -p $(dir $@)
+	python3 -m nbconvert --to html --output-dir=$(dir $@) $<
+
+build:		$(HTML) $(HOMEWORK_HTML)
 	mkdir -p $(WWWROOT)/static
 	cp -frv pages/*.html		$(WWWROOT)/.
 	cp -frv static/*		$(WWWROOT)/static/.

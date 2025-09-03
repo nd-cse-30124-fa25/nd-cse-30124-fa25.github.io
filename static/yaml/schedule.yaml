@@ -71,7 +71,7 @@
     resources:
     - name: Slides
       type: reading
-      link: 
+      link: https://docs.google.com/presentation/d/1rBfoz6GbHCgya-2dXb82mTGksstt0_kH/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
     - name: FCA - Sections 4.1 through 4.6
       type: reading
       link: https://artint.info/3e/html/ArtInt3e.Ch4.html
