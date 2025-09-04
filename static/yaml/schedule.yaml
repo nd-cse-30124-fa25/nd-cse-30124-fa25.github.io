@@ -71,13 +71,13 @@
     resources:
     - name: Slides
       type: reading
-      link: https://docs.google.com/presentation/d/1rBfoz6GbHCgya-2dXb82mTGksstt0_kH/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+      link: https://drive.google.com/file/d/1Zap5C2R7DehHFriGWHMQ6sRbLxEclROF/view?usp=sharing
     - name: FCA - Sections 4.1 through 4.6
       type: reading
       link: https://artint.info/3e/html/ArtInt3e.Ch4.html
     - name: Panopto
       type: video
-      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=950c91e2-7057-47b7-8b53-b272016b79a9
+      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e7127bc8-8355-4d55-8aba-b34d015921a9
     - name: Harvard CS50
       type: video
       link: https://youtu.be/qK46ET1xk2A?si=tSAHHe0Sp-OxWUpD&t=3033
