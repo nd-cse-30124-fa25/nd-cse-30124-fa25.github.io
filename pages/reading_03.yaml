@@ -8,16 +8,14 @@ internal:
 external:
 body:       |
 
-    **Everyone**:
-
-    ## Materials
-
-    ## Knowledge Representation and Feature Engineering: [Foundations of Computational Agents - Chapters 5, 15, and 16 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch5.html)
+    ## Knowledge Representation and Feature Engineering: [Logical-Based Artificial Intelligence and Expert Systems (blogpost)](https://www.primaryobjects.com/2018/07/23/logical-based-artificial-intelligence-and-expert-systems/)
 
     Additional Resources:
 
     - [Harvard CS50 (Video)](https://www.youtube.com/watch?v=HWQLez87vqM)
     - [Stanford CS221 (Video)](https://www.youtube.com/watch?v=RIk67yGMVv4&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=44)
+    - [Foundations of Computational Agents - Chapters 5, 15, and 16 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch5.html)
+    - [Designing an Artificial Intelligence Agent to Navigate a World (blogpost)](https://www.primaryobjects.com/2020/10/26/designing-an-artificial-intelligence-agent-to-navigate-a-world/)
 
     ## Decision Trees: [Decision Trees (MLU) (Blog Post)](https://mlu-explain.github.io/decision-tree/)
 
@@ -40,3 +38,8 @@ body:       |
     - [(1966) Experiments in Induction (Hunt et al.) (Paper)](https://www.sciencedirect.com/science/article/pii/S0020737369800283)
     - [(1986) Induction of Decision Trees (Quinlan) (Paper)](https://link.springer.com/article/10.1007/BF00116251)
     - [(1984) Classification and Regression Trees (Brieman et al.) (Paper)](https://www.taylorfrancis.com/books/mono/10.1201/9781315139470/classification-regression-trees-leo-breiman-jerome-friedman-olshen-charles-stone)
+
+
+    ## Reading Quiz 03
+
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd3UkvQcs3LuzsP-XCLhr3PNeMXyUru47i9gUR_MQeLn-26eg/viewform?embedded=true" width="640" height="2830" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
