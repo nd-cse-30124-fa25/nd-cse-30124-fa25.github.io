@@ -111,7 +111,7 @@
     resources:
     - name: Slides
       type: reading
-      link: 
+      link: https://docs.google.com/presentation/d/1NT-vQ1_5XP3wtdTlFY7zoNubtSjVK_ua/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
     - name: FCA - Sections 14.2 and 14.3
       type: reading
       link: https://artint.info/3e/html/ArtInt3e.Ch14.S2.html
