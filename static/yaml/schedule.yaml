@@ -144,7 +144,7 @@
     resources:
     - name: Slides
       type: reading
-      link: 
+      link: https://docs.google.com/presentation/d/1iVij_RXDROvklFN7HEU-x1-80KVR0JiU/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
     - name: FCA - Chapters 5, 15, and 16
       type: reading
       link: https://artint.info/3e/html/ArtInt3e.Ch5.html
