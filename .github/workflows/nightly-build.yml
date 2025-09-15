@@ -50,7 +50,18 @@ jobs:
 
       - name: Sync built docs to gh-pages/docs
         run: |
+          # Preserve existing CNAME from gh-pages if present
+          mkdir -p publish/docs
+          if [ -f publish/docs/CNAME ]; then cp publish/docs/CNAME /tmp/CNAME; fi
+          if [ -f publish/CNAME ]; then cp publish/CNAME /tmp/CNAME; fi
+          # Use CNAME from source if provided
+          if [ -f source/CNAME ]; then cp source/CNAME /tmp/CNAME; fi
+          if [ -f source/docs/CNAME ]; then cp source/docs/CNAME /tmp/CNAME; fi
+
           rsync -a --delete source/docs/ publish/docs/
+
+          # Restore CNAME into both locations to satisfy GitHub Pages
+          if [ -f /tmp/CNAME ]; then cp /tmp/CNAME publish/docs/CNAME; cp /tmp/CNAME publish/CNAME; fi
 
       - name: Commit and push to gh-pages
         working-directory: publish
