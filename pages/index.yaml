@@ -532,11 +532,11 @@ body:       |
                                 {% elif 'exam' in day['topics'].lower() %}
                                     <i class="text-danger">{{ day.get('topics', '') }}</i>
                                 {% else %}
-                                    <span onclick="toggleResources('{{ lecture_id }}')" style="cursor: pointer;">
+                                    <span onclick="toggleResources('{{ lecture_id }}','{{ unit_id }}')" style="cursor: pointer;">
                                         {{ day.get('topics', '') }}
                                         {% if day_resources %}
                                             <i class="fa-solid fa-circle-info"></i>
-                                            <i class="fa-solid fa-caret-right" id="{{ lecture_id }}"></i>
+                                            <i class="fa-solid fa-caret-right caret-icon" id="{{ lecture_id }}"></i>
                                         {% end %}
                                     </span>
                                 {% end %}
@@ -1162,22 +1162,22 @@ body:       |
     </div>
 
     <script>
-        function toggleResources(id) {
+        function toggleResources(id, unit) {
             const button = document.getElementById(id);
             const resourcesRow = document.getElementById(`resources-${id}`);
-            const unitCell = document.getElementById(`unit-cell-${id.split('-')[0]}`);
+            const unitCell = document.getElementById(`unit-cell-${unit}`);
 
             if (resourcesRow.style.display === 'table-row') {
                 button.classList.remove('fa-caret-down');
                 button.classList.add('fa-caret-right');
 
-                unitCell.rowSpan = unitCell.rowSpan - 1;
+                if (unitCell) { unitCell.rowSpan = unitCell.rowSpan - 1; }
                 resourcesRow.style.display = 'none';
             } else {
                 button.classList.remove('fa-caret-right');
                 button.classList.add('fa-caret-down');
 
-                unitCell.rowSpan = unitCell.rowSpan + 1;
+                if (unitCell) { unitCell.rowSpan = unitCell.rowSpan + 1; }
                 resourcesRow.style.display = 'table-row';
             }
         }
