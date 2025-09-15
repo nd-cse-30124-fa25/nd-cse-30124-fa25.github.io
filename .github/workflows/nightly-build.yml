@@ -5,8 +5,12 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 6 * * *' # Daily at 06:00 UTC
+    - cron: '*/30 * * * *' # Every 30 minutes (UTC)
   workflow_dispatch: {}
+
+concurrency:
+  group: build-and-publish
+  cancel-in-progress: true
 
 jobs:
   build_and_publish:
