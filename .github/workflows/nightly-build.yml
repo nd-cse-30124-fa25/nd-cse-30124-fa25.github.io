@@ -34,7 +34,12 @@ jobs:
 
       - name: Build site
         working-directory: source
-        run: make clean && make build
+        env:
+          COURSE_RESOURCES_CSV_URL: https://docs.google.com/spreadsheets/d/e/2PACX-1vRcrLDHvgcPt1pwnPWyf3glaEr7rrdHh6RWyX7sTlD1oBMNhYCk2e0tjbYp3bc8w18pdQp7tvp2tczt/pub?gid=1486073670&single=true&output=csv
+        run: |
+          mkdir -p static/csv
+          curl -L -s "$COURSE_RESOURCES_CSV_URL" -o static/csv/resources.csv
+          make clean && make build
 
       - name: Checkout gh-pages (publish)
         uses: actions/checkout@v4

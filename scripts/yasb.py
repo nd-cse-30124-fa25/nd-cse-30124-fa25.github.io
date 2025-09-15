@@ -64,22 +64,45 @@ def _load_csv_to_resources_map(src: str):
     if src.startswith('http://') or src.startswith('https://'):
         if not requests:
             raise RuntimeError("requests module not available to fetch CSV")
-        r = requests.get(src, timeout=20)
+        r = requests.get(src, timeout=30, headers={
+            'User-Agent': 'nd-cse-site-bot/1.0 (+github actions)'
+        })
         r.raise_for_status()
-        text = r.text
+        # Handle BOM and odd encodings
+        try:
+            text = r.content.decode('utf-8-sig')
+        except Exception:
+            text = r.text
     else:
-        # Local file path
-        with open(src, 'r', encoding='utf-8') as f:
-            text = f.read()
+        # Local file path; if missing, try env fallback URL
+        try:
+            with open(src, 'r', encoding='utf-8') as f:
+                text = f.read()
+        except FileNotFoundError:
+            fallback = os.environ.get('COURSE_RESOURCES_CSV_URL', '')
+            if fallback:
+                if not requests:
+                    raise RuntimeError("requests module not available to fetch CSV")
+                r = requests.get(fallback, timeout=30, headers={'User-Agent': 'nd-cse-site-bot/1.0'})
+                r.raise_for_status()
+                try:
+                    text = r.content.decode('utf-8-sig')
+                except Exception:
+                    text = r.text
+            else:
+                raise
 
     reader = csv.DictReader(io.StringIO(text))
     reader.fieldnames = normalize_headers(reader.fieldnames or [])
 
     out = {}
+    total_rows = 0
+    kept_rows = 0
     for raw in reader:
+        total_rows += 1
         row = {k: (v or '').strip() for k, v in raw.items()}
 
-        lecture_id = best_of(row, 'lecture_id', 'lecture', 'id')
+        lecture_id = best_of(row, 'lecture_id', 'lecture', 'lecture id', 'topic_id')
         name = best_of(row, 'name', 'title', 'resource', 'resource_name')
         link = best_of(row, 'link', 'url', 'href')
         rtype = best_of(row, 'type', 'category', 'format') or 'reading'
@@ -93,6 +116,7 @@ def _load_csv_to_resources_map(src: str):
             entry['student'] = student
 
         out.setdefault(lecture_id, []).append(entry)
+        kept_rows += 1
 
     # Deduplicate
     for k, items in list(out.items()):
@@ -105,6 +129,12 @@ def _load_csv_to_resources_map(src: str):
             seen.add(sig)
             deduped.append(it)
         out[k] = deduped
+    # Basic debug to stderr to aid troubleshooting in Actions logs
+    try:
+        import sys
+        sys.stderr.write(f"[yasb] CSV resources: rows={total_rows}, kept={kept_rows}, lectures={len(out)}\n")
+    except Exception:
+        pass
     return out
 
 

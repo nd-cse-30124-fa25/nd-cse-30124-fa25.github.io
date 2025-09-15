@@ -6,7 +6,7 @@ navigation:
     icon: "fa-gavel"
 internal:
 external:
-    resources:  'csv:https://docs.google.com/spreadsheets/d/e/2PACX-1vRcrLDHvgcPt1pwnPWyf3glaEr7rrdHh6RWyX7sTlD1oBMNhYCk2e0tjbYp3bc8w18pdQp7tvp2tczt/pub?gid=1486073670&single=true&output=csv'
+    resources:  'csv:static/csv/resources.csv'
 body:       |
 
     {% set lec_markov = 'lec-' + slugify('Markov Models') %}
