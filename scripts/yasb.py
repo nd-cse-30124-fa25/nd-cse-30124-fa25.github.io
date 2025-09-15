@@ -17,6 +17,9 @@
 """ Yet Another Static Blogger """
 
 import collections
+import csv
+import io
+import os
 import itertools
 import sys
 
@@ -27,18 +30,94 @@ import markdown.extensions.codehilite
 import markdown.extensions.toc
 import markdown.extensions.footnotes
 import yaml
+import re
+
+try:
+    import requests  # type: ignore
+except Exception:
+    requests = None
 
 # Page
 
 PageFields = 'title prefix icon navigation internal external body'.split()
 Page       = collections.namedtuple('Page', PageFields)
 
+def _load_csv_to_resources_map(src: str):
+    """
+    Load CSV from a URL or file path and return a mapping:
+        { lecture_id: [ {name, type, link, student?}, ... ] }
+
+    The CSV should contain columns: lecture_id, name, link, [type], [student].
+    Header names are case-insensitive and spaces become underscores.
+    """
+    def normalize_headers(headers):
+        return [h.strip().lower().replace(' ', '_') for h in headers]
+
+    def best_of(row, *cands):
+        for c in cands:
+            if c in row and row[c]:
+                return str(row[c]).strip()
+        return ''
+
+    # Fetch content
+    text = ''
+    if src.startswith('http://') or src.startswith('https://'):
+        if not requests:
+            raise RuntimeError("requests module not available to fetch CSV")
+        r = requests.get(src, timeout=20)
+        r.raise_for_status()
+        text = r.text
+    else:
+        # Local file path
+        with open(src, 'r', encoding='utf-8') as f:
+            text = f.read()
+
+    reader = csv.DictReader(io.StringIO(text))
+    reader.fieldnames = normalize_headers(reader.fieldnames or [])
+
+    out = {}
+    for raw in reader:
+        row = {k: (v or '').strip() for k, v in raw.items()}
+
+        lecture_id = best_of(row, 'lecture_id', 'lecture', 'id')
+        name = best_of(row, 'name', 'title', 'resource', 'resource_name')
+        link = best_of(row, 'link', 'url', 'href')
+        rtype = best_of(row, 'type', 'category', 'format') or 'reading'
+        student = best_of(row, 'student', 'submitted_by', 'attribution', 'credit')
+
+        if not lecture_id or not name or not link:
+            continue
+
+        entry = {'name': name, 'type': rtype, 'link': link}
+        if student:
+            entry['student'] = student
+
+        out.setdefault(lecture_id, []).append(entry)
+
+    # Deduplicate
+    for k, items in list(out.items()):
+        seen = set()
+        deduped = []
+        for it in items:
+            sig = (it.get('type', ''), it.get('name', ''), it.get('link', ''))
+            if sig in seen:
+                continue
+            seen.add(sig)
+            deduped.append(it)
+        out[k] = deduped
+    return out
+
+
 def load_page_from_yaml(path):
     data     = yaml.safe_load(open(path))
     external = data.get('external', {}) or {}
 
     for k, v in external.items():
-        data['external'][k] = yaml.safe_load(open(v))
+        if isinstance(v, str) and v.startswith('csv:'):
+            src = v[len('csv:'):]
+            data['external'][k] = _load_csv_to_resources_map(src)
+        else:
+            data['external'][k] = yaml.safe_load(open(v))
 
     if 'prefix' not in data:
         data['prefix'] = ''
@@ -59,10 +138,17 @@ def render_page(page):
 '''.format(markdown.markdown(page.body, extensions=['extra', toc, hilite, footnotes], output_format='html5'))
 
     template = tornado.template.Template(layout, loader=loader)
+    def slugify(s: str) -> str:
+        s = (s or '').lower()
+        s = re.sub(r"[^a-z0-9]+", "-", s)
+        s = s.strip('-')
+        return s
+
     settings = {
         'page'      : page,
         'dateutil'  : dateutil,
         'itertools' : itertools,
+        'slugify'   : slugify,
     }
     print(template.generate(**settings).decode())
 
