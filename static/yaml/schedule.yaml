@@ -66,6 +66,10 @@
         Paths (Hart et al.)
       type: paper
       link: https://ieeexplore.ieee.org/document/4082128
+    - name: A* in Minecraft
+      type: video
+      student: Grant Flesher '26
+      link: https://www.youtube.com/watch?v=Zg0Cxn8AVZA
   - date: Wed 09/03
     topics: Constraint Satisfaction Problems
     resources:
@@ -740,6 +744,10 @@
     - name: Ensemble Classifier (Raschka)
       type: blogpost
       link: https://sebastianraschka.com/Articles/2014_ensemble_classifier.html
+    - name: Precision vs. Recall
+      type: video
+      student: Catherine Healy '26
+      link: https://www.youtube.com/watch?v=qWfzIYCvBqo
 - name: ML to DL
   days:
   - date: Mon 11/03
