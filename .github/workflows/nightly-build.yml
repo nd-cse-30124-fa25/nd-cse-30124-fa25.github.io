@@ -1,12 +1,16 @@
 name: Nightly Build and Publish
 
 on:
+  push:
+    branches:
+      - '**'
   schedule:
     - cron: '0 6 * * *' # Daily at 06:00 UTC
   workflow_dispatch: {}
 
 jobs:
   build:
+    if: ${{ github.actor != 'github-actions[bot]' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write

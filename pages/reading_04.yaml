@@ -6,56 +6,128 @@ navigation:
     icon: "fa-gavel"
 internal:
 external:
+    resources:  'csv:https://docs.google.com/spreadsheets/d/e/2PACX-1vRcrLDHvgcPt1pwnPWyf3glaEr7rrdHh6RWyX7sTlD1oBMNhYCk2e0tjbYp3bc8w18pdQp7tvp2tczt/pub?gid=1486073670&single=true&output=csv'
 body:       |
+
+    {% set lec_markov = 'lec-' + slugify('Markov Models') %}
+    {% set lec_bayes  = 'lec-' + slugify('Bayesian Reasoning') %}
+    {% set res_markov = page.external.get('resources', {}).get(lec_markov, []) %}
+    {% set res_bayes  = page.external.get('resources', {}).get(lec_bayes,  []) %}
 
     **Everyone**:
 
-    ## Materials
+    ## Markov Models
 
-    ### Markov Models
+    <div class="row">
+        <div class="col-md-4">
+            <h4><i class="fa-solid fa-book"></i> Readings</h4>
+            <ul>
+            {% for r in res_markov %}
+                {% if r['type'] == 'reading' %}
+                    <li><a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}</li>
+                {% end %}
+            {% end %}
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h4><i class="fa-solid fa-video-camera"></i> Videos</h4>
+            <ul>
+            {% for r in res_markov %}
+                {% if r['type'] == 'video' %}
+                    <li><a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}</li>
+                {% end %}
+            {% end %}
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h4><i class="fa-brands fa-python"></i> Notebooks</h4>
+            <ul>
+            {% for r in res_markov %}
+                {% if r['type'] == 'notebook' %}
+                    <li><a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}</li>
+                {% end %}
+            {% end %}
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h4><i class="fa-solid fa-share-alt"></i> Blogposts</h4>
+            <ul>
+            {% for r in res_markov %}
+                {% if r['type'] == 'blogpost' %}
+                    <li><a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}</li>
+                {% end %}
+            {% end %}
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h4><i class="fa-solid fa-file-pdf"></i> Papers</h4>
+            <ul>
+            {% for r in res_markov %}
+                {% if r['type'] == 'paper' %}
+                    <li><a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}</li>
+                {% end %}
+            {% end %}
+            </ul>
+        </div>
+    </div>
 
-    1. [Foundations of Computational Agents](https://artint.info/3e/html/ArtInt3e.html)
+    ---
 
-        - [Sections 9.6 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch9.html)
+    ## Bayesian Reasoning
 
-    2. Additional Resources
-
-        - [Markov Babbler (Notebook)](https://colab.research.google.com/drive/1dthRebtlLdXYt9ZSYuCsC11896ovNkCV?usp=sharing)
-        - [Harvard CS50 (Video)](https://youtu.be/D8RRq3TbtHU?si=OHgr_CzMVECPEqdc&t=5578)
-        - [Stanford CS221 (Video)](https://www.youtube.com/watch?v=neeaJb3wCYw&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=30)
-        - [PML - Sections 3.6.1.2 (Reading)](https://probml.github.io/pml-book/book1.html)
-        - [N-Gram Language Models (Blog Post)](https://web.stanford.edu/~jurafsky/slp3/3.pdf)
-        - [(1906) Extension of the Law of Large Numbers to Dependent Events (Markov) (Paper)](https://www.emis.de/journals/JEHPS/Novembre2006/Markov3pdf.pdf)
-        - [(1966) Statistical Inference for Probabilistic Functions of Finite State Markov Chains (Baum and Petrie) (Paper)](https://projecteuclid.org/journals/annals-of-mathematical-statistics/volume-37/issue-6/Statistical-Inference-for-Probabilistic-Functions-of-Finite-State-Markov-Chains/10.1214/aoms/1177699147.full)
-        - [(1989) A Tutorial on Hidden Markov Models and Selected Applications in Speech Recognition (Rabiner) (Paper)](https://ieeexplore.ieee.org/document/18626)
-
-    ## Bayesian Reasoning: [Naive Bayes (Raschka) (Blog Post)](https://sebastianraschka.com/Articles/2014_naive_bayes_1.html)
-
-    Additional Resources:
-
-    - [Foundations of Computational Agents - Sections 9.1 through 9.4 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch9.html)
-    - [Probabilistic Machine Learning - Sections 2.3, 3.6.1, 4.6, 5.1, 9.3 (Reading)](https://probml.github.io/pml-book/book1.html)
-    - [Introduction to Statistical Learning - Section 4.4.4 (Reading)](https://www.statlearning.com/)
-    - [Understanding Machine Learning - Chapter 24 (Reading)](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html)
-    - [Harvard CS50 (Video)](https://youtu.be/D8RRq3TbtHU)
-    - [Stanford CS221 (Video)](https://www.youtube.com/watch?v=fA7zP6EcVdw&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=32)
-    - [MIT 6.034 (Video)](https://www.youtube.com/watch?v=A6Ud6oUCRak)
-    - [Naive Bayes for Iris Classification (Notebook)](https://drive.google.com/file/d/1ucLp9MQWaBnmBXlaCNBuba8WYWLwl0pH/view?usp=sharing)
-    - [Naive Bayes Visualizer (Notebook)](https://colab.research.google.com/drive/1irskT_qQ0EQOZIvf35u7RNbKZu3Sea3w?usp=sharing)
-    - [Cornell CS4780 (Video)](https://youtu.be/pDHEX2usCS0?si=cPLXGP4n4A-FuNtI)
-    - [Conditional Probability (StatQuest) (Video)](https://youtu.be/1ONDvW1UIJc?si=3mNParEk5_PjfnZN)
-    - [Bayes' Theorem (StatQuest) (Video)](https://youtu.be/9wCnvr7Xw4E?si=PEhYzKTasfIq1xOx)
-    - [Likelihood (StatQuest) (Video)](https://youtu.be/pYxNSUDSFH4?si=zt0zdX9Kf8-Z58jR)
-    - [PDFs (StatQuest) (Video)](https://youtu.be/oI3hZJqXJuc?si=z0mmgAYp_kQXztLu)
-    - [MLE (StatQuest) (Video)](https://youtu.be/XepXtl9YKwc?si=eIiQ1SJeyVNEj_ey)
-    - [Naive Bayes (StatQuest) (Video)](https://youtu.be/O2L2Uv9pdDA?si=rAU-89pPD7qt_U-l)
-    - [Gaussian NB (StatQuest) (Video)](https://youtu.be/H3EjCKtlVog?si=BlD029fjYUcvGMAq)
-    - [Bayesian Reasoning (HdM) (Blog Post)](https://hannibunny.github.io/mlbook/machinelearning/parametricClassification1D.html)
-    - [(1763) An Essay towards Solving a Problem in the Doctrine of Chances (Bayes) (Paper)](https://royalsocietypublishing.org/doi/10.1098/rstl.1763.0053)
-    - [(1812) Th\xE9orie Analytique des Probabilit\xE9s (Laplace) (Paper)](https://archive.org/details/thorieanalytiqu01laplgoog)
-    - [(1985) Bayesian Networks - A Model of Self-Activated Memory for Evidential
-        Reasoning (Pearl) (Paper)](https://ftp.cs.ucla.edu/tech-report/198_-reports/850017.pdf)
-    - [(1988) Probabilistic Reasoning in Intelligent Systems - Networks of Plausible
-        Inference (Pearl) (Paper)](https://www.sciencedirect.com/book/9780080514895/probabilistic-reasoning-in-intelligent-systems)
-    - [(1998) A Comparison of Event Models for Naive Bayes Text Classification
-        (McCallum and Nigam) (Paper)](https://cdn.aaai.org/Workshops/1998/WS-98-05/WS98-05-007.pdf)
+    <div class="row">
+        <div class="col-md-4">
+            <h4><i class="fa-solid fa-book"></i> Readings</h4>
+            <ul>
+            {% for r in res_bayes %}
+                {% if r['type'] == 'reading' %}
+                    <li><a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}</li>
+                {% end %}
+            {% end %}
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h4><i class="fa-solid fa-video-camera"></i> Videos</h4>
+            <ul>
+            {% for r in res_bayes %}
+                {% if r['type'] == 'video' %}
+                    <li><a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}</li>
+                {% end %}
+            {% end %}
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h4><i class="fa-brands fa-python"></i> Notebooks</h4>
+            <ul>
+            {% for r in res_bayes %}
+                {% if r['type'] == 'notebook' %}
+                    <li><a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}</li>
+                {% end %}
+            {% end %}
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h4><i class="fa-solid fa-share-alt"></i> Blogposts</h4>
+            <ul>
+            {% for r in res_bayes %}
+                {% if r['type'] == 'blogpost' %}
+                    <li><a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}</li>
+                {% end %}
+            {% end %}
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h4><i class="fa-solid fa-file-pdf"></i> Papers</h4>
+            <ul>
+            {% for r in res_bayes %}
+                {% if r['type'] == 'paper' %}
+                    <li><a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}</li>
+                {% end %}
+            {% end %}
+            </ul>
+        </div>
+    </div>
