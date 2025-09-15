@@ -1,22 +1,26 @@
-name: Nightly Build and Publish
+name: Build and Publish
 
 on:
   push:
     branches:
-      - '**'
+      - main
   schedule:
     - cron: '0 6 * * *' # Daily at 06:00 UTC
   workflow_dispatch: {}
 
 jobs:
-  build:
+  build_and_publish:
     if: ${{ github.actor != 'github-actions[bot]' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Checkout
+      - name: Checkout main (source)
         uses: actions/checkout@v4
+        with:
+          ref: main
+          path: source
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -29,16 +33,29 @@ jobs:
           pip install tornado markdown PyYAML python-dateutil requests nbconvert
 
       - name: Build site
-        run: make build
+        working-directory: source
+        run: make clean && make build
 
-      - name: Commit and push changes
+      - name: Checkout gh-pages (publish)
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: publish
+          fetch-depth: 0
+
+      - name: Sync built docs to gh-pages/docs
+        run: |
+          rsync -a --delete source/docs/ publish/docs/
+
+      - name: Commit and push to gh-pages
+        working-directory: publish
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A docs pages/*.html static/homework_htmls || true
+          git add -A docs
           if ! git diff --cached --quiet; then
-            git commit -m "Nightly build: refresh resources from CSV"
-            git push
+            git commit -m "Automated build: refresh resources from CSV"
+            git push origin gh-pages
           else
             echo "No changes to commit"
           fi
