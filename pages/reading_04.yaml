@@ -18,8 +18,9 @@ body:       |
 
     ## Markov Models
 
-    {% set resources = res_markov %}
-    {% include "templates/resource_sections.tmpl" %}
+    {% set lecture_id = lecture_id_for('Markov Models') %}
+    {% set resources = page.external.get('resources', {}).get(lecture_id, []) %}
+    {% include "resource_sections.tmpl" %}
 
     ---
 
