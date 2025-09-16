@@ -10,13 +10,10 @@ external:
 body:       |
 
     ## Markov Models
-    {% set lecture_id = lecture_id_for('Markov Models') %}
-    {% set day_resources = page.external.get('resources', {}).get(lecture_id, []) %}
-
     <table>
-        <tr id="resources-{{ lecture_id }}" class="resource-row">
+        <tr>
             <td colspan="3">
-                {% set resources = day_resources %}
+                {% set resources =  page.external.get('resources', {}).get(lecture_id_for('Markov Models'), [])%}
                 {% include "resource_sections.tmpl" %}
             </td>
         </tr>
@@ -25,10 +22,10 @@ body:       |
     ---
 
     ## Bayesian Reasoning
-    {% set resources = resources_for(page.external.get('resources', {}), 'lec-bayesian-reasoning') %}
     <table>
         <tr>
             <td colspan="3">
+                {% set resources =  page.external.get('resources', {}).get(lecture_id_for('Bayesian Reasoning'), [])%}
                 {% include "resource_sections.tmpl" %}
             </td>
         </tr>
