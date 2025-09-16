@@ -10,11 +10,12 @@ external:
 body:       |
 
     ## Markov Models
+    {% set day_resources = page.external.get('resources', {}).get('Markov Models', []) %}
 
     <table>
         <tr id="resources-{{ lecture_id }}" class="resource-row" style="display: none;">
             <td colspan="3">
-                {% set resources = page.external.get('resources', {}).get(lecture_id_for('Markov Models'), []) %}
+                {% set resources = day_resources %}
                 {% include "resource_sections.tmpl" %}
             </td>
         </tr>
