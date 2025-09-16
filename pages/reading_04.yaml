@@ -9,18 +9,16 @@ external:
     resources:  'csv:static/csv/resources.csv'
 body:       |
 
-    **Everyone:**
-
-    {% set lec_markov = 'lec-' + slugify('Markov Models') %}
-    {% set lec_bayes  = 'lec-' + slugify('Bayesian Reasoning') %}
-    {% set res_markov = page.external.get('resources', {}).get(lec_markov, []) %}
-    {% set res_bayes  = page.external.get('resources', {}).get(lec_bayes,  []) %}
-
     ## Markov Models
 
-    {% set lecture_id = lecture_id_for('Markov Models') %}
-    {% set resources = page.external.get('resources', {}).get(lecture_id, []) %}
-    {% include "resource_sections.tmpl" %}
+    <table>
+        <tr id="resources-{{ lecture_id }}" class="resource-row" style="display: none;">
+            <td colspan="3">
+                {% set resources = page.external.get('resources', {}).get(lecture_id_for('Markov Models'), []) %}
+                {% include "resource_sections.tmpl" %}
+            </td>
+        </tr>
+    </table>
 
     ---
 
