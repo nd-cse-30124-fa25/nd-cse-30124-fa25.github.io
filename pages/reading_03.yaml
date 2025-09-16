@@ -9,45 +9,18 @@ external:
     resources:  'csv:static/csv/resources.csv'
 body:       |
 
-    ## Knowledge Representation and Feature Engineering: [Logical-Based Artificial Intelligence and Expert Systems (blogpost)](https://www.primaryobjects.com/2018/07/23/logical-based-artificial-intelligence-and-expert-systems/)
+    ## Knowledge Representation and Feature Engineering: 
 
-    Additional Resources:
-
-    - [Harvard CS50 (Video)](https://www.youtube.com/watch?v=HWQLez87vqM)
-    - [Stanford CS221 (Video)](https://www.youtube.com/watch?v=RIk67yGMVv4&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=44)
-    - [Foundations of Computational Agents - Chapters 5, 15, and 16 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch5.html)
-    - [Designing an Artificial Intelligence Agent to Navigate a World (blogpost)](https://www.primaryobjects.com/2020/10/26/designing-an-artificial-intelligence-agent-to-navigate-a-world/)
-
-    {% set lec_kr = 'lec-' + slugify('Knowledge Representation and Feature Engineering') %}
+    {% set lec_kr = lecture_id_for('Knowledge Representation and Feature Engineering') %}
     {% set resources = page.external.get('resources', {}).get(lec_kr, []) %}
     {% include "resource_sections.tmpl" %}
 
-    ## Decision Trees: [Decision Trees (MLU) (Blog Post)](https://mlu-explain.github.io/decision-tree/)
+    ## Decision Trees:
 
-    Additional Resources:
-
-    - [Foundations of Computational Agents - Sections 7.2 and 7.3.1 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch7.S3.html)
-    - [Probabilistic Machine Learning - Chapter 18 (Reading)](https://probml.github.io/pml-book/book1.html)
-    - [Introduction to Statistical Learning - Chapter 8 (Reading)](https://www.statlearning.com/)
-    - [Understanding Machine Learning - Chapter 18 (Reading)](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html)
-    - [MIT 6.034 (Video)](https://www.youtube.com/watch?v=SXBG3RGr_Rc)
-    - [Cornell CS4780 (Video)](https://youtu.be/a3ioGSwfVpE?si=f0JevsrXU2q3LZw6)
-    - [Playing Tennis Decision Tree (Notebook)](https://colab.research.google.com/drive/1C8MwpktYioRquWU_tz98funLSbe8nM5x?usp=sharing)
-    - [Entropy (StatQuest) (Video)](https://youtu.be/YtebGVx-Fxw?si=zC-J1JrOOe64b8cM)
-    - [Decision Trees (StatQuest) (Video)](https://youtu.be/7VeUPuFGJHk?si=SO3AHNT9KX1vJdln)
-    - [Regression Trees (StatQuest) (Video)](https://youtu.be/g9c66TUylZ4?si=SpvGvKvq9DmjLXYi)
-    - [Information Theory (3b1b) (Video)](https://youtu.be/v68zYyaEmEA?si=0mkPXsH4BYhxzSCl)
-    - [Decision Trees (r2d3) (Blog Post)](https://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
-    - [IG and Entropy (Zhou) (Blog Post)](https://victorzhou.com/blog/information-gain/)
-    - [Information Theory (Olah) (Blog Post)](https://colah.github.io/posts/2015-09-Visual-Information/)
-    - [(1966) Experiments in Induction (Hunt et al.) (Paper)](https://www.sciencedirect.com/science/article/pii/S0020737369800283)
-    - [(1986) Induction of Decision Trees (Quinlan) (Paper)](https://link.springer.com/article/10.1007/BF00116251)
-    - [(1984) Classification and Regression Trees (Brieman et al.) (Paper)](https://www.taylorfrancis.com/books/mono/10.1201/9781315139470/classification-regression-trees-leo-breiman-jerome-friedman-olshen-charles-stone)
-
+    {% set lec_dt = lecture_id_for('Decision Trees') %}
+    {% set resources = page.external.get('resources', {}).get(lec_dt, []) %}
+    {% include "resource_sections.tmpl" %}
 
     ## Reading Quiz 03
 
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd3UkvQcs3LuzsP-XCLhr3PNeMXyUru47i9gUR_MQeLn-26eg/viewform?embedded=true" width="640" height="2830" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    {% set lec_dt = 'lec-' + slugify('Decision Trees') %}
-    {% set resources = page.external.get('resources', {}).get(lec_dt, []) %}
-    {% include "resource_sections.tmpl" %}

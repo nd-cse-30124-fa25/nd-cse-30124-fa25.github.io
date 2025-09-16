@@ -183,11 +183,23 @@ def render_page(page):
         s = s.strip('-')
         return s
 
+    # Known aliases where the topic text doesn't match the desired slug
+    LECTURE_ALIASES = {
+        'syllabus, history of ai': 'introduction',
+        'intro to ai': 'introduction',
+    }
+
+    def lecture_id_for(topic: str) -> str:
+        key = (topic or '').strip().lower()
+        slug = LECTURE_ALIASES.get(key, slugify(topic))
+        return f"lec-{slug}" if slug else ''
+
     settings = {
         'page'      : page,
         'dateutil'  : dateutil,
         'itertools' : itertools,
         'slugify'   : slugify,
+        'lecture_id_for': lecture_id_for,
     }
     print(template.generate(**settings).decode())
 

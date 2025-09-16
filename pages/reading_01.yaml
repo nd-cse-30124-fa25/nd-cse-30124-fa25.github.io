@@ -225,7 +225,7 @@ body:       |
     
     ### Search: [Search Algorithms in AI (Uninformed Search Section) (Reading)](https://www.appliedaicourse.com/blog/search-algorithms-in-ai/)
 
-    {% set lec_search = 'lec-' + slugify('Search') %}
+    {% set lec_search = lecture_id_for('Search') %}
     {% set resources = page.external.get('resources', {}).get(lec_search, []) %}
     {% include "resource_sections.tmpl" %}
     
@@ -238,7 +238,7 @@ body:       |
 
     ### A* Search: [Introduction to the A* Algorithm](https://www.redblobgames.com/pathfinding/a-star/introduction.html)
 
-    {% set lec_astar = 'lec-' + slugify('A* Search') %}
+    {% set lec_astar = lecture_id_for('A* Search') %}
     {% set resources = page.external.get('resources', {}).get(lec_astar, []) %}
     {% include "resource_sections.tmpl" %}
 

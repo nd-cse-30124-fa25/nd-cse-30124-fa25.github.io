@@ -23,7 +23,7 @@ body:       |
     - [Increasing Tree Search Efficiency for Constraint Satisfaction Problems (Haralick and Elliot) (Paper)](https://www.sciencedirect.com/science/article/pii/000437028090051X)
     - [CMU 15-281 (Blog Post)](https://www.cs.cmu.edu/~15281-s23/coursenotes/constraints/index.html)
 
-    {% set lec_csp = 'lec-' + slugify('Constraint Satisfaction Problems') %}
+    {% set lec_csp = lecture_id_for('Constraint Satisfaction Problems') %}
     {% set resources = page.external.get('resources', {}).get(lec_csp, []) %}
     {% include "resource_sections.tmpl" %}
 
@@ -48,6 +48,6 @@ body:       |
     Please respond to the quiz below, you will need to be signed into your ND email in order to respond. You may edit your responses after each submission, so there's really no reason you shouldn't get full credit on these!
 
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeeCIsGR4FGR1ytvD0vJBax4GLaDNZreK9LEcggLuFX_bCgPA/viewform?embedded=true" width="640" height="2770" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    {% set lec_adv = 'lec-' + slugify('Adversarial Search') %}
+    {% set lec_adv = lecture_id_for('Adversarial Search') %}
     {% set resources = page.external.get('resources', {}).get(lec_adv, []) %}
     {% include "resource_sections.tmpl" %}

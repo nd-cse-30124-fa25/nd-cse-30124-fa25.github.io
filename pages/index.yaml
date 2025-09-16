@@ -522,8 +522,7 @@ body:       |
 
                             <td class="text-center text-strong"><tt>{{ day['date'] }}</tt></td>
                             <td class="text-strong">
-                            {% set lecture_slug = slugify(day.get('topics', '')) %}
-                            {% set lecture_id = ('lec-' + lecture_slug) if lecture_slug else (unit_id + '-' + day['date'].replace(' ', '_').replace('/', '-')) %}
+                            {% set lecture_id = lecture_id_for(day.get('topics', '')) or (unit_id + '-' + day['date'].replace(' ', '_').replace('/', '-')) %}
                             {% set day_resources = page.external.get('resources', {}).get(lecture_id, []) %}
 
                             {% if 'topics' in day %}
