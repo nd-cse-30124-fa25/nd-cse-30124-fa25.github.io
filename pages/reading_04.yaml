@@ -17,11 +17,11 @@ body:       |
     ## Markov Models
 
     {% set resources = res_markov %}
-    {% include "resource_sections.tmpl" %}
+    {% include "templates/resource_sections.tmpl" %}
 
     ---
 
     ## Bayesian Reasoning
 
     {% set resources = res_bayes %}
-    {% include "resource_sections.tmpl" %}
+    {% include "/templates/resource_sections.tmpl" %}
