@@ -10,7 +10,8 @@ external:
 body:       |
 
     ## Markov Models
-    {% set day_resources = page.external.get('resources', {}).get('Markov Models', []) %}
+    {% set lecture_id = lecture_id_for('Markov Models') %}
+    {% set day_resources = page.external.get('resources', {}).get(lecture_id, []) %}
 
     <table>
         <tr id="resources-{{ lecture_id }}" class="resource-row" style="display: none;">
@@ -24,6 +25,3 @@ body:       |
     ---
 
     ## Bayesian Reasoning
-
-    {% set resources = res_bayes %}
-    {% include "/templates/resource_sections.tmpl" %}
