@@ -9,17 +9,21 @@ external:
     resources:  'csv:static/csv/resources.csv'
 body:       |
 
-    {% set res_markov = resources_for(page.external.get('resources', {}), 'lec-markov-models') %}
-    {% set res_bayes  = resources_for(page.external.get('resources', {}), 'lec-bayesian-reasoning') %}
+    **Everyone:**
+
+    {% set lec_markov = 'lec-' + slugify('Markov Models') %}
+    {% set lec_bayes  = 'lec-' + slugify('Bayesian Reasoning') %}
+    {% set res_markov = page.external.get('resources', {}).get(lec_markov, []) %}
+    {% set res_bayes  = page.external.get('resources', {}).get(lec_bayes,  []) %}
 
     ## Markov Models
 
     {% set resources = res_markov %}
-    {% include "resource_sections.tmpl" %}
+    {% include "templates/resource_sections.tmpl" %}
 
     ---
 
     ## Bayesian Reasoning
 
     {% set resources = res_bayes %}
-    {% include "resource_sections.tmpl" %}
+    {% include "/templates/resource_sections.tmpl" %}
