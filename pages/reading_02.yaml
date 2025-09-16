@@ -1,4 +1,4 @@
-title:      "Reading 02: Constraint Satisfaction and Adversarial Search"
+title:      "Reading 02: Constraint Satisfaction Problems and Adversarial Search"
 icon:       fa-book
 navigation:
   - name: "Home"
@@ -9,38 +9,28 @@ external:
     resources:  'csv:static/csv/resources.csv'
 body:       |
 
-    ## Constraint Satisfaction: [Constraint Satisfaction: introduction (Video)](https://www.youtube.com/watch?v=_e64FiDWvqs)
+    ## Constraint Satisfaction Problems:
 
-    Additional Resources:
-    - [Constraint Satisfaction: the AC-3 algorithm (Video)](https://www.youtube.com/watch?v=4cCS8rrYT14)
-    - [Foundations of Computational Agents - Sections 4.1 through 4.6](https://artint.info/3e/html/ArtInt3e.Ch4.html)
-    - [Harvard CS50 (Video)](https://youtu.be/qK46ET1xk2A?si=tSAHHe0Sp-OxWUpD&t=3033)
-    - [Stanford CS221 (Video)](https://www.youtube.com/watch?v=-IO4fPO0rxk&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=23)
-    - [MIT 6.034 (Video)](https://www.youtube.com/watch?v=dARl_gGrS4o)
-    - [CSPs for Sudoku (Blog Post)](https://medium.com/my-udacity-ai-nanodegree-notes/solving-sudoku-think-constraint-satisfaction-problem-75763f0742c9)
-    - [Consistency in Networks of Relations (Mackworth) (Paper)](https://www.sciencedirect.com/science/article/pii/0004370277900078)
-    - [Network Based Heuristics for Constraint Satisfaction Problems (Dechter and Pearl) (Paper)](https://ics.uci.edu/~csp/r3.pdf)
-    - [Increasing Tree Search Efficiency for Constraint Satisfaction Problems (Haralick and Elliot) (Paper)](https://www.sciencedirect.com/science/article/pii/000437028090051X)
-    - [CMU 15-281 (Blog Post)](https://www.cs.cmu.edu/~15281-s23/coursenotes/constraints/index.html)
+    <table>
+        <tr>
+            <td colspan="3">
+                {% set resources =  page.external.get('resources', {}).get(lecture_id_for('Constraint Satisfaction Problems'), [])%}
+                {% include "resource_sections.tmpl" %}
+            </td>
+        </tr>
+    </table>
 
-    {% set resources = resources_for(page.external.get('resources', {}), 'lec-constraint-satisfaction-problems') %}
-    {% include "resource_sections.tmpl" %}
+    
+    ## Adversarial Search:
 
-    ## Adversarial Search: [Minimax Algorithm and Alpha-Beta Pruning (Blog Post)](https://mathspp.com/blog/minimax-algorithm-and-alpha-beta-pruning)
-
-    Additional Resources:
-
-    - [Minimax with Alpha Beta Pruning (Video)](https://www.youtube.com/watch?v=zp3VMe0Jpf8)
-    - [Foundations of Computational Agents - Sections 14.2 and 14.3 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch14.S2.html)
-    - [Harvard CS50 (Video)](https://youtu.be/WbzNRTTrX0g?si=CAG9IhmN4MBSzHfi&t=4323)
-    - [Stanford CS221 (Video)](https://www.youtube.com/watch?v=3pU-Hrz_xy4&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=21)
-    - [MIT 6.034 (Video)](https://www.youtube.com/watch?v=STjW3eH0Cik)
-    - [Adversarial Search (Blog Post)](https://stackabuse.com/minimax-and-alpha-beta-pruning-in-python/)
-    - [(1928) Zur Theorie der Gesellschaftsspiele (von Neumann) (Paper)](https://link.springer.com/article/10.1007/BF01448847)
-    - [(1950) Programming a Computer for Playing Chess (Shannon) (Paper)](https://link.springer.com/chapter/10.1007/978-1-4757-1968-0_1)
-    - [(1975) An Analysis of Alpha-Beta Pruning (Knuth and Moore) (Paper)](https://www.sciencedirect.com/science/article/pii/0004370275900193)
-    - [Minimax Algorithm (Blog Post)](https://notes.bencuan.me/cs61b/algorithms/minimax/)
-    - [Tic-Tac-Toe: Understanding the Minimax Algorithm (Blog Post)](https://www.neverstopbuilding.com/blog/minimax)
+    <table>
+        <tr>
+            <td colspan="3">
+                {% set resources =  page.external.get('resources', {}).get(lecture_id_for('Adversarial Search'), [])%}
+                {% include "resource_sections.tmpl" %}
+            </td>
+        </tr>
+    </table>
 
     ## Task 5: Quiz
 
