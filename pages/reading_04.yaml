@@ -14,17 +14,22 @@ body:       |
     {% set res_markov = page.external.get('resources', {}).get(lec_markov, []) %}
     {% set res_bayes  = page.external.get('resources', {}).get(lec_bayes,  []) %}
 
-    **Everyone**:
-
     ## Markov Models
 
     <div class="row">
         <div class="col-md-4">
-            <h4><i class="fa-solid fa-book"></i> Readings</h4>
-            <ul>
+            <h4><i class="fa-solid fa-book"></i> Readings <span style="font-size: 0.8em; color:#999;">(star = required)</span></h4>
+            <ul style="list-style: none; padding-left: 0;">
             {% for r in res_markov %}
                 {% if r['type'] == 'reading' %}
-                    <li><a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}</li>
+                    <li>
+                        {% if r.get('primary') %}
+                            <i class="fa-solid fa-star" style="color: #f0ad4e;"></i>
+                        {% else %}
+                            <span style="display:inline-block; width: 1em;">&bull;</span>
+                        {% end %}
+                        <a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}
+                    </li>
                 {% end %}
             {% end %}
             </ul>
@@ -79,11 +84,18 @@ body:       |
 
     <div class="row">
         <div class="col-md-4">
-            <h4><i class="fa-solid fa-book"></i> Readings</h4>
-            <ul>
+            <h4><i class="fa-solid fa-book"></i> Readings <span style="font-size: 0.8em; color:#999;">(star = required)</span></h4>
+            <ul style="list-style: none; padding-left: 0;">
             {% for r in res_bayes %}
                 {% if r['type'] == 'reading' %}
-                    <li><a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}</li>
+                    <li>
+                        {% if r.get('primary') %}
+                            <i class="fa-solid fa-star" style="color: #f0ad4e;"></i>
+                        {% else %}
+                            <span style="display:inline-block; width: 1em;">&bull;</span>
+                        {% end %}
+                        <a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}
+                    </li>
                 {% end %}
             {% end %}
             </ul>

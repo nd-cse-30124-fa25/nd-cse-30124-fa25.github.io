@@ -107,6 +107,13 @@ def _load_csv_to_resources_map(src: str):
         link = best_of(row, 'link', 'url', 'href')
         rtype = best_of(row, 'type', 'category', 'format') or 'reading'
         student = best_of(row, 'student', 'submitted_by', 'attribution', 'credit')
+        is_primary_raw = best_of(row, 'is_primary', 'primary', 'required')
+
+        def to_bool(s: str) -> bool:
+            if not s:
+                return False
+            s = s.strip().lower()
+            return s in ('1', 'true', 'yes', 'y', 'required')
 
         if not lecture_id or not name or not link:
             continue
@@ -114,6 +121,8 @@ def _load_csv_to_resources_map(src: str):
         entry = {'name': name, 'type': rtype, 'link': link}
         if student:
             entry['student'] = student
+        if to_bool(is_primary_raw):
+            entry['primary'] = True
 
         out.setdefault(lecture_id, []).append(entry)
         kept_rows += 1
