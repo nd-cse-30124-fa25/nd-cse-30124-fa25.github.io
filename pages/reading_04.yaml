@@ -26,4 +26,10 @@ body:       |
 
     ## Bayesian Reasoning
     {% set resources = resources_for(page.external.get('resources', {}), 'lec-bayesian-reasoning') %}
-    {% include "resource_sections.tmpl" %}
+    <table>
+        <tr>
+            <td colspan="3">
+                {% include "resource_sections.tmpl" %}
+            </td>
+        </tr>
+    </table>
