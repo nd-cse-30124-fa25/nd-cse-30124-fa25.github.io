@@ -194,12 +194,24 @@ def render_page(page):
         slug = LECTURE_ALIASES.get(key, slugify(topic))
         return f"lec-{slug}" if slug else ''
 
+    def resources_for(resources_map, topic_or_id: str):
+        if not isinstance(resources_map, dict):
+            return []
+        key = (topic_or_id or '').strip()
+        # If caller passed a full id like 'lec-...'
+        if key.startswith('lec-'):
+            return resources_map.get(key, [])
+        # Otherwise compute from topic text
+        lid = lecture_id_for(key)
+        return resources_map.get(lid, [])
+
     settings = {
         'page'      : page,
         'dateutil'  : dateutil,
         'itertools' : itertools,
         'slugify'   : slugify,
         'lecture_id_for': lecture_id_for,
+        'resources_for': resources_for,
     }
     print(template.generate(**settings).decode())
 
