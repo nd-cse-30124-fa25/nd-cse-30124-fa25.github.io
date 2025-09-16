@@ -6,6 +6,7 @@ navigation:
     icon: "fa-gavel"
 internal:
 external:
+    resources:  'csv:static/csv/resources.csv'
     semester_info: 'static/yaml/semester_info.yaml'
 body:       |
     {% set term_code = page.external['semester_info']['Term'][:2].lower() + page.external['semester_info']['Year'][-2:] %}
@@ -223,6 +224,10 @@ body:       |
     </div>
     
     ### Search: [Search Algorithms in AI (Uninformed Search Section) (Reading)](https://www.appliedaicourse.com/blog/search-algorithms-in-ai/)
+
+    {% set lec_search = 'lec-' + slugify('Search') %}
+    {% set resources = page.external.get('resources', {}).get(lec_search, []) %}
+    {% include "resource_sections.tmpl" %}
     
 
     Additional Resources:
@@ -232,6 +237,10 @@ body:       |
     - [MIT 6.034 (Video)](https://www.youtube.com/watch?v=j1H3jAAGlEA)
 
     ### A* Search: [Introduction to the A* Algorithm](https://www.redblobgames.com/pathfinding/a-star/introduction.html)
+
+    {% set lec_astar = 'lec-' + slugify('A* Search') %}
+    {% set resources = page.external.get('resources', {}).get(lec_astar, []) %}
+    {% include "resource_sections.tmpl" %}
 
     Additional Resources:
 

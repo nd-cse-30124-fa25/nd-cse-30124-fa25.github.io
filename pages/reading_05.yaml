@@ -6,6 +6,7 @@ navigation:
     icon: "fa-gavel"
 internal:
 external:
+    resources:  'csv:static/csv/resources.csv'
 body:       |
 
     **Everyone**:
@@ -42,6 +43,10 @@ body:       |
         - [(1970) Ridge Regression - Biased Estimation for Nonorthogonal Problems
             (Hoerl and Kennard)
         - [(1996) Regression Shrinkage and Selection via the Lasso (Tibshirani)
+
+    {% set lec_lr = 'lec-' + slugify('Linear Regression') %}
+    {% set resources = page.external.get('resources', {}).get(lec_lr, []) %}
+    {% include "resource_sections.tmpl" %}
 
     ### Review
 

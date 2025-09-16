@@ -1,0 +1,89 @@
+<div class="row">
+    <div class="col-md-4">
+        <h4><i class="fa-solid fa-book"></i> Readings</h4>
+        <ul style="list-style: none; padding-left: 0;">
+        {% for r in resources %}
+            {% if r['type'] == 'reading' %}
+                <li>
+                    {% if r.get('primary') %}
+                        <i class="fa-solid fa-star" style="color: #f0ad4e;"></i>
+                    {% else %}
+                        <span style="display:inline-block; width: 1em;">&bull;</span>
+                    {% end %}
+                    <a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}
+                </li>
+            {% end %}
+        {% end %}
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <h4><i class="fa-solid fa-video-camera"></i> Videos</h4>
+        <ul style="list-style: none; padding-left: 0;">
+        {% for r in resources %}
+            {% if r['type'] == 'video' %}
+                <li>
+                    {% if r.get('primary') %}
+                        <i class="fa-solid fa-star" style="color: #f0ad4e;"></i>
+                    {% else %}
+                        <span style="display:inline-block; width: 1em;">&bull;</span>
+                    {% end %}
+                    <a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}
+                </li>
+            {% end %}
+        {% end %}
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <h4><i class="fa-brands fa-python"></i> Notebooks</h4>
+        <ul style="list-style: none; padding-left: 0;">
+        {% for r in resources %}
+            {% if r['type'] == 'notebook' %}
+                <li>
+                    {% if r.get('primary') %}
+                        <i class="fa-solid fa-star" style="color: #f0ad4e;"></i>
+                    {% else %}
+                        <span style="display:inline-block; width: 1em;">&bull;</span>
+                    {% end %}
+                    <a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}
+                </li>
+            {% end %}
+        {% end %}
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <h4><i class="fa-solid fa-share-alt"></i> Blogposts</h4>
+        <ul style="list-style: none; padding-left: 0;">
+        {% for r in resources %}
+            {% if r['type'] == 'blogpost' %}
+                <li>
+                    {% if r.get('primary') %}
+                        <i class="fa-solid fa-star" style="color: #f0ad4e;"></i>
+                    {% else %}
+                        <span style="display:inline-block; width: 1em;">&bull;</span>
+                    {% end %}
+                    <a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}
+                </li>
+            {% end %}
+        {% end %}
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h4><i class="fa-solid fa-file-pdf"></i> Papers</h4>
+        <ul style="list-style: none; padding-left: 0;">
+        {% for r in resources %}
+            {% if r['type'] == 'paper' %}
+                <li>
+                    {% if r.get('primary') %}
+                        <i class="fa-solid fa-star" style="color: #f0ad4e;"></i>
+                    {% else %}
+                        <span style="display:inline-block; width: 1em;">&bull;</span>
+                    {% end %}
+                    <a href="{{ r['link'] }}">{{ r['name'] }}</a>{% if r.get('student') %} <span style="font-size: 0.8em; color: #999;">{{ r['student'] }}</span>{% end %}
+                </li>
+            {% end %}
+        {% end %}
+        </ul>
+    </div>
+</div>

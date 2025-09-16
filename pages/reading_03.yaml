@@ -6,6 +6,7 @@ navigation:
     icon: "fa-gavel"
 internal:
 external:
+    resources:  'csv:static/csv/resources.csv'
 body:       |
 
     ## Knowledge Representation and Feature Engineering: [Logical-Based Artificial Intelligence and Expert Systems (blogpost)](https://www.primaryobjects.com/2018/07/23/logical-based-artificial-intelligence-and-expert-systems/)
@@ -16,6 +17,10 @@ body:       |
     - [Stanford CS221 (Video)](https://www.youtube.com/watch?v=RIk67yGMVv4&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=44)
     - [Foundations of Computational Agents - Chapters 5, 15, and 16 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch5.html)
     - [Designing an Artificial Intelligence Agent to Navigate a World (blogpost)](https://www.primaryobjects.com/2020/10/26/designing-an-artificial-intelligence-agent-to-navigate-a-world/)
+
+    {% set lec_kr = 'lec-' + slugify('Knowledge Representation and Feature Engineering') %}
+    {% set resources = page.external.get('resources', {}).get(lec_kr, []) %}
+    {% include "resource_sections.tmpl" %}
 
     ## Decision Trees: [Decision Trees (MLU) (Blog Post)](https://mlu-explain.github.io/decision-tree/)
 
@@ -43,3 +48,6 @@ body:       |
     ## Reading Quiz 03
 
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd3UkvQcs3LuzsP-XCLhr3PNeMXyUru47i9gUR_MQeLn-26eg/viewform?embedded=true" width="640" height="2830" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    {% set lec_dt = 'lec-' + slugify('Decision Trees') %}
+    {% set resources = page.external.get('resources', {}).get(lec_dt, []) %}
+    {% include "resource_sections.tmpl" %}
