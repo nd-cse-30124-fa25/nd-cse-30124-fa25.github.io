@@ -6,32 +6,30 @@ navigation:
     icon: "fa-gavel"
 internal:
 external:
+    resources:  'csv:static/csv/resources.csv'
 body:       |
 
-    **Everyone**:
+    ## Multi-Layer Perceptrons (FFNs)
 
-    ## Materials
+    <table>
+        <tr>
+            <td colspan="3">
+                {% set resources =  page.external.get('resources', {}).get(lecture_id_for('Multi-Layer Perceptrons (FFNs)'), [])%}
+                {% include "resource_sections.tmpl" %}
+            </td>
+        </tr>
+    </table>
 
-    ### Perceptrons
+    ## Gradient Descent and Backpropagation
 
-    1. [Probabilistic Machine Learning](https://probml.github.io/pml-book/book1.html)
-
-        - [Sections 10.2.5 (Reading)](https://probml.github.io/pml-book/book1.html)
-
-    2. Additional Resources
-
-
-    ### Logistic Regression
-
-    1. [Foundations of Computational Agents](https://artint.info/3e/html/ArtInt3e.html)
-
-        - [Section 7.3.2 (Reading)](https://artint.info/3e/html/ArtInt3e.Ch7.S3.html)
-
-    2. Additional Resources
-
-    ### Gradient Descent
-
-    
+    <table>
+        <tr>
+            <td colspan="3">
+                {% set resources =  page.external.get('resources', {}).get(lecture_id_for('Gradient Descent and Backpropagation'), [])%}
+                {% include "resource_sections.tmpl" %}
+            </td>
+        </tr>
+    </table>
 
     ## Quiz
 
