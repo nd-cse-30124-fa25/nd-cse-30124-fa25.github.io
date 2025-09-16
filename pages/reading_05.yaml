@@ -44,7 +44,7 @@ body:       |
             (Hoerl and Kennard)
         - [(1996) Regression Shrinkage and Selection via the Lasso (Tibshirani)
 
-    {% set resources = resources_for(page.external.get('resources', {}), 'Linear Regression') %}
+    {% set resources = resources_for(page.external.get('resources', {}), 'lec-linear-regression') %}
     {% include "resource_sections.tmpl" %}
 
     ### Review

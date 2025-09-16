@@ -11,12 +11,12 @@ body:       |
 
     ## Knowledge Representation and Feature Engineering: 
 
-    {% set resources = resources_for(page.external.get('resources', {}), 'Knowledge Representation and Feature Engineering') %}
+    {% set resources = resources_for(page.external.get('resources', {}), 'lec-knowledge-representation-and-feature-engineering') %}
     {% include "resource_sections.tmpl" %}
 
     ## Decision Trees:
 
-    {% set resources = resources_for(page.external.get('resources', {}), 'Decision Trees') %}
+    {% set resources = resources_for(page.external.get('resources', {}), 'lec-decision-trees') %}
     {% include "resource_sections.tmpl" %}
 
     ## Reading Quiz 03

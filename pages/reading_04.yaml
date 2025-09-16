@@ -9,8 +9,8 @@ external:
     resources:  'csv:static/csv/resources.csv'
 body:       |
 
-    {% set res_markov = resources_for(page.external.get('resources', {}), 'Markov Models') %}
-    {% set res_bayes  = resources_for(page.external.get('resources', {}), 'Bayesian Reasoning') %}
+    {% set res_markov = resources_for(page.external.get('resources', {}), 'lec-markov-models') %}
+    {% set res_bayes  = resources_for(page.external.get('resources', {}), 'lec-bayesian-reasoning') %}
 
     ## Markov Models
 
