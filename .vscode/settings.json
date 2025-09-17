@@ -1,10 +1,5 @@
 {
-    "workbench.colorCustomizations": {
-        "editor.background": "#000000",
-        "activityBar.background": "#322B34",
-        "titleBar.activeBackground": "#463C48",
-        "titleBar.activeForeground": "#FAFAFB"
-    },
+    "workbench.colorCustomizations": {},
     "makefile.configureOnOpen": false,
     "python-envs.defaultEnvManager": "ms-python.python:system",
     "python-envs.pythonProjects": []
