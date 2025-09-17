@@ -1,4 +1,4 @@
-title:      "Reading 06: Perceptrons, Logistic Regression, and Gradient Descent"
+title:      "Reading 06: Logistic Regression and Gradient Descent"
 icon:       fa-book
 navigation:
   - name: "Home"
@@ -8,17 +8,6 @@ internal:
 external:
     resources:  'csv:static/csv/resources.csv'
 body:       |
-
-    ## Perceptrons
-
-    <table>
-        <tr>
-            <td colspan="3">
-                {% set resources =  page.external.get('resources', {}).get(lecture_id_for('Perceptrons'), [])%}
-                {% include "resource_sections.tmpl" %}
-            </td>
-        </tr>
-    </table>
 
     ## Logistic Regression and Gradient Descent
 
@@ -32,65 +21,3 @@ body:       |
     </table>
 
     ## Quiz
-
-    Once you have done the readings, answer the following [Reading 02 Quiz]
-    questions:
-
-    <div id="quiz-questions"></div>
-
-    <div id="quiz-responses"></div>
-
-    <script src="static/js/dredd-quiz.js"></script>
-    <script>
-    loadQuiz('static/json/reading02.json');
-    </script>
-
-    <pre style="display: none;" id="dr-container" class="codehilite"><code id="dredd-response"></code></pre>
-
-    ## Submission
-
-    To submit you work, follow the same process outlined in [Reading 00]:
-
-        :::bash
-        $ git checkout master                 # Make sure we are in master branch
-        $ git pull --rebase                   # Make sure we are up-to-date with GitHub
-
-        $ git checkout -b reading02           # Create reading02 branch and check it out
-
-        $ cd reading02                        # Go into reading02 folder
-        $ $EDITOR answers.json                # Edit your answers.json file
-
-        $ ../.scripts/check.py                # Check reading02 quiz
-        Checking reading02 quiz ...
-              Q1 0.60
-              Q2 0.60
-              Q3 0.90
-              Q4 0.90
-           Score 3.00 / 3.00
-          Status Success
-
-        $ git add answers.json                # Add answers.json to staging area
-        $ git commit -m "Reading 02: Done"    # Commit work
-
-        $ git push -u origin reading02        # Push branch to GitHub
-
-    <div class="alert alert-success" markdown="1">
-    #### <i class="fa fa-github"></i> Pull Request
-
-    Once you have committed your work and pushed it to [GitHub], remember to
-    create a **pull request** and assign it to the appropriate **teaching
-    assistant** from the [Reading 02 TA List].
-
-    </div>
-
-    [GitHub]:                               https://github.com
-    [Reading 00]:                           reading00.html
-    [Reading 02 Quiz]:                      static/json/reading02.json
-    [JSON]:                                 http://www.json.org/
-    [git-branch]:                           https://git-scm.com/docs/git-branch
-    [dredd]:                                https://dredd.h4x0r.space
-    [Reading 02 TA List]:                   reading02_tas.html
-    [Competitive Programmer's Handbook]:    https://cses.fi/book.html
-    [Interview Cake]:                       https://www.interviewcake.com/
-    [C++]:                                  https://isocpp.org/
-    [Python]:                               https://www.python.org

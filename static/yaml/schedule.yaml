@@ -42,13 +42,11 @@
   days:
   - date: Mon 09/29
     topics: Perceptrons
-    assignments:
-    - Reading 06
 - name: Exam 01
   days:
   - date: Wed 10/01
     topics: Review
-  - date: Wed 10/06
+  - date: Mon 10/06
     topics: Exam 01
     assignments:
     - Exam 01 Practice Packet
@@ -57,6 +55,8 @@
   days:
   - date: Wed 10/08
     topics: Logistic Regression and Gradient Descent
+    assignments:
+    - Reading 06
   - date: Mon 10/13
     topics: SVMs and KNNs
     assignments:
