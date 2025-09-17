@@ -106,7 +106,29 @@ def _load_csv_to_resources_map(src: str):
         name = best_of(row, 'name', 'title', 'resource', 'resource_name')
         link = best_of(row, 'link', 'url', 'href')
         rtype = best_of(row, 'type', 'category', 'format') or 'reading'
-        student = best_of(row, 'student', 'submitted_by', 'attribution', 'credit')
+        student = best_of(
+            row,
+            'student',
+            'student_name',
+            'student_credit',
+            'student_contributor',
+            'submitted_by',
+            'submittedby',
+            'attribution',
+            'credit',
+        )
+        if not student:
+            # Fall back to any remaining column that looks like a student credit.
+            EXCLUDE_STUDENT_KEYS = ('repository', 'id', 'email', 'netid', 'username', 'link')
+            for key, value in row.items():
+                if not value:
+                    continue
+                if 'student' not in key:
+                    continue
+                if any(ex in key for ex in EXCLUDE_STUDENT_KEYS):
+                    continue
+                student = value
+                break
         is_primary_raw = best_of(row, 'is_primary', 'primary', 'required')
 
         def to_bool(s: str) -> bool:
