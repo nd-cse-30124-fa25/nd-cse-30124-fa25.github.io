@@ -258,6 +258,7 @@ neural-networks-zhou,Neural Networks (Zhou),blogpost,https://victorzhou.com/blog
 softmax-zhou,Softmax (Zhou),blogpost,https://victorzhou.com/blog/softmax/,FALSE,,lec-multi-layer-perceptrons-ffns-
 onehot-zhou,One-hot (Zhou),blogpost,https://victorzhou.com/blog/one-hot/,FALSE,,lec-multi-layer-perceptrons-ffns-
 loss-functions-raschka,Loss Functions (Raschka),blogpost,https://sebastianraschka.com/blog/2022/losses-learned-part1.html,FALSE,,lec-multi-layer-perceptrons-ffns-
+but-what-is-a-neural-network-deep-learning-chapter-1,But what is a neural network? | Deep learning chapter 1,video,https://www.youtube.com/watch?v=aircAruvnKk,TRUE,,lec-multi-layer-perceptrons-ffns-
 slides,Slides,reading,,FALSE,,lec-gradient-descent-and-backpropagation
 fca-sections-811-and-82,FCA - Sections 8.1.1 and 8.2,reading,https://artint.info/3e/html/ArtInt3e.Ch8.S1.html,FALSE,,lec-gradient-descent-and-backpropagation
 pml-section-133,PML - Section 13.3,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-gradient-descent-and-backpropagation
@@ -277,6 +278,9 @@ building-micograd-karpathy,Building Micograd (Karpathy),video,https://www.youtub
 pytorch-computation-graphs-rasbt,Pytorch Computation Graphs (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch13/ch13_part1.ipynb,FALSE,,lec-gradient-descent-and-backpropagation
 backprop-olah,Backprop (Olah),blogpost,https://colah.github.io/posts/2015-08-Backprop/,FALSE,,lec-gradient-descent-and-backpropagation
 backprop-karpathy,Backprop (Karpathy),blogpost,https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b,FALSE,,lec-gradient-descent-and-backpropagation
+gradient-descent-how-neural-networks-learn-deep-learning-chapter-2,"Gradient descent, how neural networks learn | Deep Learning Chapter 2",video,https://www.youtube.com/watch?v=IHZwWFHWa-w,TRUE,,lec-gradient-descent-and-backpropagation
+backpropagation-intuitively-deep-learning-chapter-3,"Backpropagation, intuitively | Deep Learning Chapter 3",video,https://www.youtube.com/watch?v=Ilg3gGewQ5U,TRUE,,lec-gradient-descent-and-backpropagation
+backpropagation-calculus-deep-learning-chapter-4,Backpropagation calculus | Deep Learning Chapter 4,video,https://www.youtube.com/watch?v=tIeHLnjs5U8,FALSE,,lec-gradient-descent-and-backpropagation
 slides,Slides,reading,,FALSE,,lec-convolutional-neural-networks
 fca-section-84,FCA - Section 8.4,reading,https://artint.info/3e/html/ArtInt3e.Ch8.S4.html,FALSE,,lec-convolutional-neural-networks
 pml-chapter-14,PML - Chapter 14,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-convolutional-neural-networks
@@ -289,9 +293,9 @@ cnns-statquest,CNNs (StatQuest),video,https://youtu.be/HGwBXDKFk9I?si=5k2GTtevGN
 convolution-3b1b,Convolution (3b1b),video,https://youtu.be/KuXjwB4LzSA?si=ulXCDjK3Qd2WZOc0,FALSE,,lec-convolutional-neural-networks
 convolution-2-3b1b,Convolution 2 (3b1b),video,https://www.youtube.com/watch?v=8rrHTtUzyZA,FALSE,,lec-convolutional-neural-networks
 cnns-hdm,CNNs (HdM),reading,https://hannibunny.github.io/mlbook/neuralnetworks/03ConvolutionNeuralNetworks.html,FALSE,,lec-convolutional-neural-networks
-cnn-animations-hdm,CNN Animations (HdM),reading,https://hannibunny.github.io/mlbook/neuralnetworks/convolutionDemos.html,FALSE,,lec-convolutional-neural-networks
+cnn-animations-hdm,CNN Animations (HdM),reading,https://hannibunny.github.io/mlbook/neuralnetworks/convolutionDemos.html,TRUE,,lec-convolutional-neural-networks
 cnn-rasbt,CNN (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch14/ch14_part1.ipynb,FALSE,,lec-convolutional-neural-networks
-cnns-zhou,CNNs (Zhou),blogpost,https://victorzhou.com/blog/intro-to-cnns-part-1/,FALSE,,lec-convolutional-neural-networks
+cnns-zhou,CNNs (Zhou),blogpost,https://victorzhou.com/blog/intro-to-cnns-part-1/,TRUE,,lec-convolutional-neural-networks
 convolutions-olah,Convolutions (Olah),blogpost,https://colah.github.io/posts/2014-07-Understanding-Convolutions/,FALSE,,lec-convolutional-neural-networks
 cnns-olah,CNNs (Olah),blogpost,https://colah.github.io/posts/2014-07-Conv-Nets-Modular/,FALSE,,lec-convolutional-neural-networks
 cnns-rao,CNNs (Rao),blogpost,https://medium.com/data-science/deep-learning-illustrated-part-3-convolutional-neural-networks-96b900b0b9e0,FALSE,,lec-convolutional-neural-networks
@@ -310,20 +314,21 @@ rnn-hdm,RNN (HdM),reading,https://hannibunny.github.io/mlbook/neuralnetworks/02R
 rnn-cheatsheet-stanford,RNN Cheatsheet (Stanford),reading,https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks,FALSE,,lec-recurrent-neural-networks
 word-embeddings-lilian,Word Embeddings (Lilian),blogpost,https://lilianweng.github.io/posts/2017-10-15-word-embedding/,FALSE,,lec-recurrent-neural-networks
 rnn-stock-prices-lilian,RNN Stock Prices (Lilian),blogpost,https://lilianweng.github.io/posts/2017-07-08-stock-rnn-part-1/,FALSE,,lec-recurrent-neural-networks
-rnns-zhou,RNNs (Zhou),blogpost,https://victorzhou.com/blog/intro-to-rnns/,FALSE,,lec-recurrent-neural-networks
+rnns-zhou,RNNs (Zhou),blogpost,https://victorzhou.com/blog/intro-to-rnns/,TRUE,,lec-recurrent-neural-networks
 bow-zhou,BoW (Zhou),blogpost,https://victorzhou.com/blog/bag-of-words/,FALSE,,lec-recurrent-neural-networks
 word-embeddings-olah,Word Embeddings (Olah),blogpost,https://colah.github.io/posts/2014-07-NLP-RNNs-Representations/,FALSE,,lec-recurrent-neural-networks
 lstms-olah,LSTMs (Olah),blogpost,https://colah.github.io/posts/2015-08-Understanding-LSTMs/,FALSE,,lec-recurrent-neural-networks
 neural-machine-translation-by-jointly-learning-to-align-and-translate-bahdanau-et-al,Neural Machine Translation by Jointly Learning to Align and Translate (Bahdanau et al.),paper,https://arxiv.org/pdf/1409.0473,FALSE,,lec-recurrent-neural-networks
 rnns-karpathy,RNNs (Karpathy),blogpost,https://karpathy.github.io/2015/05/21/rnn-effectiveness/,FALSE,,lec-recurrent-neural-networks
 sp25-panopto,sp25 Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cb9b155b-1306-414b-b059-b2bf0156d398,FALSE,,lec-recurrent-neural-networks
+yes-you-should-understand-backprop,Yes you should understand backprop,blogpost,https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b,TRUE,,lec-recurrent-neural-networks
 slides,Slides,reading,,FALSE,,lec-self-attention-and-transformers
 fca-section-854,FCA - Section 8.5.4,reading,https://artint.info/3e/html/ArtInt3e.Ch8.S5.html,FALSE,,lec-self-attention-and-transformers
 pml-section-154,PML - Section 15.4,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-self-attention-and-transformers
 d2l-sections-111-through-116,D2L - Sections 11.1 through 11.6,reading,https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html,FALSE,,lec-self-attention-and-transformers
 panopto,Panopto,video,,FALSE,,lec-self-attention-and-transformers
 harvard-cs50-3540-5415,Harvard CS50 (35:40 - 54:15),video,https://www.youtube.com/watch?v=QAZc9xsQNjQ,FALSE,,lec-self-attention-and-transformers
-3b1b,3b1b,video,https://www.youtube.com/watch?v=eMlx5fFNoYc,FALSE,,lec-self-attention-and-transformers
+3b1b,3b1b,video,https://www.youtube.com/watch?v=eMlx5fFNoYc,TRUE,,lec-self-attention-and-transformers
 simple-selfattention,Simple Self-Attention,notebook,https://colab.research.google.com/drive/1zrnOd6wE57gefw9VJMFDD_9LTzeng9D8?usp=sharing,FALSE,,lec-self-attention-and-transformers
 attention-statquest,Attention (StatQuest),video,https://youtu.be/PSs6nxngL6k?si=gfuV6LQqtS0jDxQc,FALSE,,lec-self-attention-and-transformers
 matrix-math-statquest,Matrix Math (StatQuest),video,https://youtu.be/KphmOJnLAdI?si=dkXEgyn5ImhMdDnD,FALSE,,lec-self-attention-and-transformers
@@ -332,7 +337,7 @@ attention-rasbt,Attention (rasbt),notebook,https://github.com/rasbt/machine-lear
 attention-lilian,Attention (Lilian),blogpost,https://lilianweng.github.io/posts/2018-06-24-attention/,FALSE,,lec-self-attention-and-transformers
 annotated-transformer-harvard,Annotated Transformer (Harvard),blogpost,http://nlp.seas.harvard.edu/annotated-transformer/,FALSE,,lec-self-attention-and-transformers
 attention-is-all-you-need-vaswani-et-al,Attention is All You Need (Vaswani et al.),paper,https://arxiv.org/abs/1706.03762,FALSE,,lec-self-attention-and-transformers
-illustrated-transformer-alammar,Illustrated Transformer (Alammar),blogpost,https://jalammar.github.io/illustrated-transformer/,FALSE,,lec-self-attention-and-transformers
+illustrated-transformer-alammar,Illustrated Transformer (Alammar),blogpost,https://jalammar.github.io/illustrated-transformer/,TRUE,,lec-self-attention-and-transformers
 transformers-lilian,Transformers (Lilian),blogpost,https://lilianweng.github.io/posts/2023-01-27-the-transformer-family-v2/,FALSE,,lec-self-attention-and-transformers
 transformer-family-tree-amatriain-et-al,Transformer Family Tree (Amatriain et al.),paper,https://arxiv.org/pdf/2302.07730,FALSE,,lec-self-attention-and-transformers
 bert-pretraining-of-deep-bidirectional-transformers-for-language-understanding-devlin-et-al,BERT Pre-training of Deep Bidirectional Transformers for Language Understanding (Devlin et al.),paper,https://arxiv.org/pdf/1810.04805,FALSE,,lec-self-attention-and-transformers
