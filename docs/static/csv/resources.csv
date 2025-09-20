@@ -187,8 +187,8 @@ mit-6034-knns,MIT 6.034 KNNs,video,https://www.youtube.com/watch?v=09mb78oiPkA,F
 cornell-cs4780-knns,Cornell CS4780 KNNs,video,https://youtu.be/oymtGlGdT-k?si=Lg6X6xXHV2BlrJsF,FALSE,,lec-svms-and-knns
 cornell-cs4780-svms-1,Cornell CS4780 SVMs 1,video,https://youtu.be/xpHQ6UhMlx4?si=o64fVVn6-FDP3Ar3,FALSE,,lec-svms-and-knns
 cornell-cs4780-svms-2,Cornell CS4780 SVMs 2,video,https://youtu.be/RwF1esLCG4U?si=780GX0R-c0qWDogU,FALSE,,lec-svms-and-knns
-svms-statquest,SVMs (StatQuest),video,https://youtu.be/efR1C6CvhmE?si=i5q-s8QuxKEAQ3Az,FALSE,,lec-svms-and-knns
-knn-statquest,KNN (StatQuest),video, https://youtu.be/HVXime0nQeI?si=vUOtkw1Q6nxt9Aj3,FALSE,,lec-svms-and-knns
+svms-statquest,SVMs (StatQuest),video,https://youtu.be/efR1C6CvhmE?si=i5q-s8QuxKEAQ3Az,TRUE,,lec-svms-and-knns
+knn-statquest,KNN (StatQuest),video, https://youtu.be/HVXime0nQeI?si=vUOtkw1Q6nxt9Aj3,TRUE,,lec-svms-and-knns
 knn-hdm,KNN (HdM),reading,https://hannibunny.github.io/mlbook/machinelearning/knn.html,FALSE,,lec-svms-and-knns
 svms-hdm,SVMs (HdM),reading,https://hannibunny.github.io/mlbook/machinelearning/svm.html,FALSE,,lec-svms-and-knns
 kernel-methods-raschka,Kernel Methods (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_kernel_pca.html,FALSE,,lec-svms-and-knns
