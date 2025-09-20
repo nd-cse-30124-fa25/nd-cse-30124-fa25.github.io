@@ -195,6 +195,9 @@ kernel-methods-raschka,Kernel Methods (Raschka),blogpost,https://sebastianraschk
 1963-a-note-on-one-class-of-perceptrons-vapnik-and-chervonenkis,(1963) A Note on One Class of Perceptrons (Vapnik and Chervonenkis),paper,https://www.semanticscholar.org/paper/A-note-one-class-of-perceptrons-Vapnik/4c2d9e61b7f406f2ca35e63cbbb23e7cf7a85c2a,FALSE,,lec-svms-and-knns
 1992-a-training-algorithm-for-optimal-margin-classifiers-boser-et-al,(1992) A Training Algorithm for Optimal Margin Classifiers (Boser et al.),paper,https://dl.acm.org/doi/10.1145/130385.130401,FALSE,,lec-svms-and-knns
 1995-supportvector-networks-cortes-and-vapnik,(1995) Support-Vector Networks (Cortes and Vapnik),paper, https://link.springer.com/article/10.1007/BF00994018,FALSE,,lec-svms-and-knns
+an-idiots-guide-to-support-vector-machines,An Idiot's Guide to Support Vector Machines,reading,https://web.mit.edu/6.034/wwwbob/svm.pdf,FALSE,,lec-svms-and-knns
+machine-learning-algorithms-explained-support-vector-machine,Machine Learning Algorithms Explained: Support Vector Machine,blogpost,https://www.stratascratch.com/blog/machine-learning-algorithms-explained-support-vector-machine/,FALSE,,lec-svms-and-knns
+knearest-neighbor-knn-explained,K-Nearest Neighbor (KNN) Explained,blogpost,https://www.pinecone.io/learn/k-nearest-neighbor/,FALSE,,lec-svms-and-knns
 slides,Slides,reading,,FALSE,,lec-clustering
 pantopto,Pantopto,video,,FALSE,,lec-clustering
 fca-section-103,FCA - Section 10.3,reading,https://artint.info/3e/html/ArtInt3e.Ch10.S3.html,FALSE,,lec-clustering
@@ -207,6 +210,7 @@ gmm-clustering,GMM Clustering,notebook,https://colab.research.google.com/drive/1
 hierarchical-statquest,Hierarchical (StatQuest),video,https://youtu.be/7xHsRkOdVwo?si=f8UkfIYcaxpyEUVk,FALSE,,lec-clustering
 kmeans-statquest,K-Means (StatQuest),video,https://youtu.be/4b5d3muPQmA?si=T2ow71QcEXdbKt7V,FALSE,,lec-clustering
 clustering-rasbt,Clustering (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch10/ch10.ipynb,FALSE,,lec-clustering
+clustering-how-it-works-in-plain-english,Clustering: How It Works (In Plain English!),blogpost,https://blog.dataiku.com/clustering-how-it-works-in-plain-english?utm_source=chatgpt.com,TRUE,,lec-clustering
 slides,Slides,reading,,FALSE,,lec-dimensionality-reduction
 pantopto,Pantopto,video,,FALSE,,lec-dimensionality-reduction
 pml-section-201,PML - Section 20.1,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-dimensionality-reduction
