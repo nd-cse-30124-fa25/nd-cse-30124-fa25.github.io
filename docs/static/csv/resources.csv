@@ -116,7 +116,7 @@ bayesian-networks-an-introduction,Bayesian networks - an introduction,reading,ht
 bayes-rule-explained-for-beginners,Bayes' Rule - Explained for Beginners,blogpost,https://www.freecodecamp.org/news/bayes-rule-explained/,TRUE,,lec-bayesian-reasoning
 slides,Slides,reading,https://docs.google.com/presentation/d/1Wj5eMtfT_ucHW6gIKhLz6pQkHNZtzz9H/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-bayesian-reasoning
 probability-vs-likelihood,Probability vs. Likelihood,blogpost,https://medium.com/@wl8380/probability-vs-likelihood-the-most-misunderstood-duo-in-data-science-759fc4dcb730,FALSE,,lec-bayesian-reasoning
-slides,Slides,reading,,FALSE,,lec-linear-regression
+slides,Slides,reading,https://docs.google.com/presentation/d/1Q7wF9YruRBgDkFpnrG7dF9ZAEIaC8Uyj/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-linear-regression
 panopto,Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f05aae98-bacc-46cd-86a0-b287016e7805,FALSE,,lec-linear-regression
 fca-sections-732-first-few-paragraphs-and-742,FCA - Sections 7.3.2 (First few paragraphs) and 7.4.2,reading,https://artint.info/3e/html/ArtInt3e.Ch7.S3.html,FALSE,,lec-linear-regression
 pml-sections-75-813-chapter-11,"PML - Sections 7.5, 8.1.3, Chapter 11",reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-linear-regression
