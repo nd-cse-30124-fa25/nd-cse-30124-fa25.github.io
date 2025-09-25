@@ -129,9 +129,9 @@ uml-chapter-92,UML - Chapter 9.2,reading,https://www.cs.huji.ac.il/~shais/Unders
 stanford-cs221,Stanford CS221,reading,https://www.youtube.com/watch?v=nEWNNt2KmfQ&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=5,FALSE,,lec-linear-regression
 harvard-cs50,Harvard CS50,reading,https://youtu.be/-g0iJjnO2_w?si=jNuQG0o83uKw0qbR&t=2371,FALSE,,lec-linear-regression
 cornell-cs4780,Cornell CS4780,reading,https://youtu.be/_21o_ylL0q4?si=ee6JJ2WxAvA9hfyr,FALSE,,lec-linear-regression
--singular-value-decomposition, Singular Value Decomposition,notebook,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5aad0ebb-3b39-45cc-a3f3-b2740169d60b,FALSE,,lec-linear-regression
-linear-regression-and-regularization,Linear Regression and Regularization,notebook,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5aad0ebb-3b39-45cc-a3f3-b2740169d60b,FALSE,,lec-linear-regression
-polynomial-regression,Polynomial Regression,notebook,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5aad0ebb-3b39-45cc-a3f3-b2740169d60b,FALSE,,lec-linear-regression
+-singular-value-decomposition, Singular Value Decomposition,notebook,https://colab.research.google.com/drive/1aCfC28VxUD-V5lKOZseAkCbWNrqyg1zn?usp=sharing,FALSE,,lec-linear-regression
+linear-regression-and-regularization,Linear Regression and Regularization,notebook,https://colab.research.google.com/drive/12I7itMdgphH0ByQPgIIcDlCaYFeCRO0e?usp=sharing,FALSE,,lec-linear-regression
+polynomial-regression,Polynomial Regression,notebook,https://colab.research.google.com/drive/1-cJATF_fPmO8CyFtjqDM04RRnhCMRfNg?usp=sharing,FALSE,,lec-linear-regression
 -linear-regression-statquest, Linear Regression (StatQuest),video,https://youtu.be/nk2CQITm_eo?si=LtdQNRlau17NbjjF,FALSE,,lec-linear-regression
 multiple-regression-statquest,Multiple Regression (StatQuest),video, https://youtu.be/zITIFTsivN8?si=f0YbEmnZ6_XFMpY5,FALSE,,lec-linear-regression
 bias-and-variance-statquest,Bias and Variance (StatQuest),video,https://youtu.be/EuBBz3bI-aA?si=WYsqtbrIZ6ICrYGP,FALSE,,lec-linear-regression
