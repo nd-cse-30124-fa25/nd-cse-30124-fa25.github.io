@@ -146,6 +146,7 @@ linear-regression-hdm,Linear Regression (HdM),reading,https://hannibunny.github.
 1809-theoria-motus-corporum-coelestium-in-sectionibus-conicis-solem-ambientium-gauss,(1809) Theoria Motus Corporum Coelestium in Sectionibus Conicis Solem Ambientium (Gauss),paper,https://archive.org/details/bub_gb_ORUOAAAAQAAJ,FALSE,,lec-linear-regression
 1970-ridge-regression-biased-estimation-for-nonorthogonal-problems-hoerl-and-kennard,(1970) Ridge Regression - Biased Estimation for Nonorthogonal Problems (Hoerl and Kennard),paper,https://homepages.math.uic.edu/~lreyzin/papers/ridge.pdf,FALSE,,lec-linear-regression
 1996-regression-shrinkage-and-selection-via-the-lasso-tibshirani,(1996) Regression Shrinkage and Selection via the Lasso (Tibshirani),paper,https://www.jstor.org/stable/2346178?seq=1,FALSE,,lec-linear-regression
+panopto,Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fcd2e1b6-c4f4-45a5-a961-b360015db604,FALSE,,lec-linear-regression
 slides,Slides,reading,,FALSE,,lec-perceptrons
 pml-section-1025,PML - Section 10.2.5,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-perceptrons
 uml-section-912,UML - Section 9.1.2,reading,https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html,FALSE,,lec-perceptrons
