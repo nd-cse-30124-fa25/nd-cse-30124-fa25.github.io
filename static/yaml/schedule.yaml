@@ -45,7 +45,7 @@
 - name: Exam 01
   days:
   - date: Wed 10/01
-    topics: Review
+    topics: Review 01
   - date: Mon 10/06
     topics: Exam 01
     assignments:
