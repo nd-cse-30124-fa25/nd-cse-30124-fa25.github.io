@@ -279,7 +279,7 @@ body:       |
                                             {% set assignment_label = 'success' %}
                                         {% elif 'homework' in assignment_type or 'assignment' in assignment_type or 'project' in assignment_type %}
                                             {% set assignment_label = 'caution' %}
-                                        {% endif %}
+                                        {% end %}
                                     {% end %}
                                     <a href="{{ assignment_resource.get('link') }}" class="label label-{{ assignment_label }}">{{ assignment }}</a>
                                 {% else %}
