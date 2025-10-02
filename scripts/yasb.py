@@ -227,6 +227,64 @@ def render_page(page):
         lid = lecture_id_for(key)
         return resources_map.get(lid, [])
 
+    def _normalized(value: str) -> str:
+        return (value or '').strip().lower()
+
+    def _search_resources(resources_map, ids_iter, target_name, keywords=None):
+        for lid in ids_iter:
+            if not lid:
+                continue
+            for resource in resources_map.get(lid, []):
+                if _normalized(resource.get('name')) != target_name:
+                    continue
+                rtype = _normalized(resource.get('type'))
+                if keywords:
+                    if not rtype:
+                        continue
+                    if not any(keyword in rtype for keyword in keywords):
+                        continue
+                return resource
+        return None
+
+    def find_assignment_resource(resources_map, assignment_name: str, lecture_id: str = ''):
+        if not isinstance(resources_map, dict):
+            return None
+
+        target_name = _normalized(assignment_name)
+        if not target_name:
+            return None
+
+        preferred_keywords = (
+            'assignment',
+            'homework',
+            'project',
+            'exam',
+            'quiz',
+            'practice',
+            'solution',
+        )
+
+        candidate_ids = []
+        if lecture_id:
+            candidate_ids.append(lecture_id)
+        slug = lecture_id_for(assignment_name)
+        if slug and slug not in candidate_ids:
+            candidate_ids.append(slug)
+
+        resource = _search_resources(resources_map, candidate_ids, target_name, preferred_keywords)
+        if resource:
+            return resource
+
+        resource = _search_resources(resources_map, candidate_ids, target_name)
+        if resource:
+            return resource
+
+        resource = _search_resources(resources_map, resources_map.keys(), target_name, preferred_keywords)
+        if resource:
+            return resource
+
+        return _search_resources(resources_map, resources_map.keys(), target_name)
+
     settings = {
         'page'      : page,
         'dateutil'  : dateutil,
@@ -234,6 +292,7 @@ def render_page(page):
         'slugify'   : slugify,
         'lecture_id_for': lecture_id_for,
         'resources_for': resources_for,
+        'find_assignment_resource': find_assignment_resource,
     }
     print(template.generate(**settings).decode())
 

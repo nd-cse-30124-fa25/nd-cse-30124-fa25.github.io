@@ -286,8 +286,39 @@
                                 {% end %}
                             {% end %}
 
-                            {# TA OH for this day #}
+                           {# TA OH for this day #}
                             {% for _tid, _ta in page.external['semester_info']['TAs'].items() %}
                                 {% if 'office_hours' in _ta and day in _ta['office_hours'] %}
                                     {% set oh_time = _ta['office_hours'][day].split('|')[0] %}
                                     {% set t_start = dateutil.parser.parse(oh_time.split(' - ')[0]) %}
+                                    {% set t_end   = dateutil.parser.parse(oh_time.split(' - ')[1]) %}
+                                    {% set overlap_top = (t_start < half1_end and t_end > half1_start) %}
+                                    {% set overlap_bottom = (t_start < half2_end and t_end > half2_start) %}
+                                    {% if (overlap_bottom and not overlap_top) %}
+                                        {% set needs_split = True %}
+                                    {% end %}
+                                {% end %}
+                            {% end %}
+
+                            {% if needs_split %}
+                                {# Only top empty cell; leave bottom half for content #}
+                                <td style="padding: 8px; border: 1px solid #ddd; {{ row_top_border }}"></td>
+                                {% set _ = processed_slots.update({f"{day}_{time_slot}": True}) %}
+                            {% else %}
+                                {# Default: span the hour by combining two half-hour rows (no midline when truly empty) #}
+                                <td rowspan="2" style="padding: 8px; border: 1px solid #ddd; {{ row_top_border }}"></td>
+                                {% set next_slot = (slot_start_dt + dateutil.relativedelta.relativedelta(minutes=30)).strftime("%-I:%M %p") %}
+                                {% set _ = processed_slots.update({f"{day}_{time_slot}": True}) %}
+                                {% set _ = processed_slots.update({f"{day}_{next_slot} - {(slot_start_dt + dateutil.relativedelta.relativedelta(minutes=60)).strftime('%-I:%M %p')}": True}) %}
+                            {% end %}
+                        {% else %}
+                            {# Second half-hour empty cell when needed #}
+                            <td style="padding: 8px; border: 1px solid #ddd; {{ row_top_border }}"></td>
+                        {% end %}
+                    {% end %}
+                {% end %}
+            {% end %}
+            </tr>
+        {% end %}
+        </table>
+    </div> 
