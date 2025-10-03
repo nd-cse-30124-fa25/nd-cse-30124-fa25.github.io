@@ -32,7 +32,7 @@ cmu-15281,CMU 15-281,blogpost,https://www.cs.cmu.edu/~15281-s23/coursenotes/cons
 1980-increasing-tree-search-efficiency-for-constraint-satisfaction-problems-haralick-and-elliot,(1980) Increasing Tree Search Efficiency for Constraint Satisfaction Problems (Haralick and Elliot),paper,https://www.sciencedirect.com/science/article/pii/000437028090051X,FALSE,,lec-constraint-satisfaction-problems
 sudoku-csp-python-code,Sudoku CSP python code,notebook,https://drive.google.com/file/d/18xHvWJXqeaI_CcPXUhRJVyXgjVHC9s-d/view?usp=sharing,FALSE,,lec-constraint-satisfaction-problems
 panopto,Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e7127bc8-8355-4d55-8aba-b34d015921a9,FALSE,,lec-constraint-satisfaction-problems
-slides,Slides,reading,https://drive.google.com/file/d/1Ir-99SJIcfGAtTDAZOF_werU4EbsA9Fh/view?usp=sharing,FALSE,,lec-constraint-satisfaction-problems
+slides,Slides,reading,https://drive.google.com/file/d/1Zap5C2R7DehHFriGWHMQ6sRbLxEclROF/view?usp=sharing,FALSE,,lec-constraint-satisfaction-problems
 minimax-algorithm-and-alphabeta-pruning,Minimax Algorithm and Alpha-Beta Pruning,blogpost,https://mathspp.com/blog/minimax-algorithm-and-alpha-beta-pruning,TRUE,,lec-adversarial-search
 minimax-with-alpha-beta-pruning,Minimax with Alpha Beta Pruning,video,https://www.youtube.com/watch?v=zp3VMe0Jpf8,,,lec-adversarial-search
 foundations-of-computational-agents-sections-142-and-143,Foundations of Computational Agents - Sections 14.2 and 14.3,reading,https://artint.info/3e/html/ArtInt3e.Ch14.S2.html,,,lec-adversarial-search
