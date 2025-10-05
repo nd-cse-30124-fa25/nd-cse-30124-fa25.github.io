@@ -117,7 +117,7 @@ naive-bayes-raschka,Naive Bayes (Raschka),blogpost,https://sebastianraschka.com/
 1998-a-comparison-of-event-models-for-naive-bayes-text-classification-mccallum-and-nigam,(1998) A Comparison of Event Models for Naive Bayes Text Classification (McCallum and Nigam),paper,https://cdn.aaai.org/Workshops/1998/WS-98-05/WS98-05-007.pdf,FALSE,,lec-bayesian-reasoning
 bayesian-networks-an-introduction,Bayesian networks - an introduction,reading,https://www.bayesserver.com/docs/introduction/bayesian-networks/,FALSE,,lec-bayesian-reasoning
 bayes-rule-explained-for-beginners,Bayes' Rule - Explained for Beginners,blogpost,https://www.freecodecamp.org/news/bayes-rule-explained/,TRUE,,lec-bayesian-reasoning
-slides,Slides,reading,https://docs.google.com/presentation/d/1Wj5eMtfT_ucHW6gIKhLz6pQkHNZtzz9H/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-bayesian-reasoning
+slides,Slides,reading,https://drive.google.com/file/d/1nxDdZ8CzZMQlwrP2puTnCKZVUcNzON5V/view?usp=sharing,FALSE,,lec-bayesian-reasoning
 probability-vs-likelihood,Probability vs. Likelihood,blogpost,https://medium.com/@wl8380/probability-vs-likelihood-the-most-misunderstood-duo-in-data-science-759fc4dcb730,FALSE,,lec-bayesian-reasoning
 slides,Slides,reading,https://drive.google.com/file/d/1w1-FYKkQ2WvjHC6ptI7VqxxcIyrU2Mfe/view?usp=sharing,FALSE,,lec-linear-regression
 sp25-panopto,sp25 Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f05aae98-bacc-46cd-86a0-b287016e7805,FALSE,,lec-linear-regression
