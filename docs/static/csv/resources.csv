@@ -165,7 +165,7 @@ panopto,Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.
 supplementary-review-material,Supplementary Review Material,reading,https://drive.google.com/file/d/1DBBNjQWo0S-oFf9i_UMxjRHD76fxn5Bg/view?usp=sharing,FALSE,,lec-review-01
 practice-packet-01,Practice Packet 01,assignment,https://docs.google.com/document/d/1TmptiHTret5FSFLSDB-IdbjZzGZDWPJ4MBuxtjnjZ3M/edit?usp=sharing,FALSE,,lec-exam-01
 practice-packet-01-solutions,Practice Packet 01 Solutions,assignment,https://drive.google.com/file/d/1dJkVsdXi2sO9TvZXiwR_9jUy7FIgCwho/view?usp=sharing,FALSE,,lec-exam-01
-slides,Slides,reading,,FALSE,,lec-logistic-regression-and-gradient-descent
+slides,Slides,reading,https://docs.google.com/presentation/d/1CZcnpLjxqz9HeFFaFa7-ehdtVZqbHTZS/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-logistic-regression-and-gradient-descent
 pantopto,Pantopto,video,,FALSE,,lec-logistic-regression-and-gradient-descent
 fca-section-732,FCA - Section 7.3.2,reading,https://artint.info/3e/html/ArtInt3e.Ch7.S3.html,FALSE,,lec-logistic-regression-and-gradient-descent
 pml-chapter-10,PML - Chapter 10,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-logistic-regression-and-gradient-descent
