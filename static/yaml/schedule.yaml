@@ -38,7 +38,7 @@
     topics: Linear Regression
     assignments:
     - Reading 05
-- name: Supervised Learning
+- name: Supervised Learning I
   days:
   - date: Mon 09/29
     topics: Perceptrons
@@ -52,7 +52,7 @@
     - Practice Packet 01
     - Practice Packet 01 Solutions
     - Exam 01
-- name: Supervised Learning
+- name: Supervised Learning II
   days:
   - date: Wed 10/08
     topics: Logistic Regression and Gradient Descent
