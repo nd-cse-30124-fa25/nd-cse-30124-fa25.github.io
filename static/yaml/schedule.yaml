@@ -63,12 +63,12 @@
     assignments:
     - Homework 02
     - Reading 07
-- name: Unsupervised Learning
+- name: Unsupervised Learning I
   days:
   - date: Wed 10/15
     topics: Clustering
 - name: Fall Break
-- name: Dimensionality Reduction
+- name: Unsupervised Learning II
   days:
   - date: Mon 10/27
     topics: Dimensionality Reduction
@@ -87,7 +87,7 @@
     - Reading 09
   - date: Wed 11/05
     topics: Gradient Descent and Backpropagation
-- name: Foundations of Deep Learning
+- name: Foundations of Deep Learning I
   days:
   - date: Mon 11/10
     topics: Convolutional Neural Networks
@@ -105,7 +105,7 @@
     - Exam 02 Practice Packet
     - Exam 02
 - name: 'Unit 03: Deep Learning'
-- name: Foundations of Deep Learning
+- name: Foundations of Deep Learning II
   days:
   - date: Wed 11/19
     topics: Recurrent Neural Networks
