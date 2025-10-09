@@ -78,16 +78,17 @@
   days:
   - date: Wed 10/29
     topics: Practicum - Exploratory Data Analysis
-- name: ML to DL
+- name: 'Unit 03: Deep Learning'
+- name: Foundations of Deep Learning
   days:
   - date: Mon 11/03
-    topics: Multi-Layer Perceptrons (FFNs)
+    topics: Feedforward Neural Networks
     assignments:
     - Homework 03
     - Reading 09
   - date: Wed 11/05
     topics: Gradient Descent and Backpropagation
-- name: Foundations of Deep Learning I
+- name: Computer Vision
   days:
   - date: Mon 11/10
     topics: Convolutional Neural Networks
@@ -104,8 +105,7 @@
     assignments:
     - Exam 02 Practice Packet
     - Exam 02
-- name: 'Unit 03: Deep Learning'
-- name: Foundations of Deep Learning II
+- name: Natural Language Processing
   days:
   - date: Wed 11/19
     topics: Recurrent Neural Networks
@@ -125,7 +125,7 @@
     assignments:
     - Reading 14
   - date: Wed 12/03
-    topics: LLMs and Agents (Guest Lecture)
+    topics: LLMs and Agents
   - date: Mon 12/08
     topics: Diffusion Models
     assignments:
