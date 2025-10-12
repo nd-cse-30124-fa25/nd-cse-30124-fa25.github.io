@@ -221,7 +221,7 @@ gmm-clustering,GMM Clustering,notebook,https://colab.research.google.com/drive/1
 hierarchical-statquest,Hierarchical (StatQuest),video,https://youtu.be/7xHsRkOdVwo?si=f8UkfIYcaxpyEUVk,FALSE,,lec-clustering
 kmeans-statquest,K-Means (StatQuest),video,https://youtu.be/4b5d3muPQmA?si=T2ow71QcEXdbKt7V,FALSE,,lec-clustering
 clustering-rasbt,Clustering (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch10/ch10.ipynb,FALSE,,lec-clustering
-clustering-how-it-works-in-plain-english,Clustering: How It Works (In Plain English!),blogpost,https://blog.dataiku.com/clustering-how-it-works-in-plain-english?utm_source=chatgpt.com,TRUE,,lec-clustering
+clustering-how-it-works-in-plain-english,Clustering: How It Works (In Plain English!),blogpost,https://web.archive.org/web/20250115001509/https://blog.dataiku.com/clustering-how-it-works-in-plain-english#expand,TRUE,,lec-clustering
 slides,Slides,reading,,FALSE,,lec-dimensionality-reduction
 pantopto,Pantopto,video,,FALSE,,lec-dimensionality-reduction
 pml-section-201,PML - Section 20.1,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-dimensionality-reduction
