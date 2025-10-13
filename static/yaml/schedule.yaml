@@ -61,12 +61,13 @@
   - date: Mon 10/13
     topics: SVMs and KNNs
     assignments:
-    - Homework 02
     - Reading 07
 - name: Unsupervised Learning I
   days:
   - date: Wed 10/15
     topics: Clustering
+    assignments:
+    - Homework 02
 - name: Fall Break
 - name: Unsupervised Learning II
   days:
