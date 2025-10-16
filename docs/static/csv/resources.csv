@@ -209,8 +209,8 @@ kernel-methods-raschka,Kernel Methods (Raschka),blogpost,https://sebastianraschk
 an-idiots-guide-to-support-vector-machines,An Idiot's Guide to Support Vector Machines,reading,https://web.mit.edu/6.034/wwwbob/svm.pdf,FALSE,,lec-svms-and-knns
 machine-learning-algorithms-explained-support-vector-machine,Machine Learning Algorithms Explained: Support Vector Machine,blogpost,https://www.stratascratch.com/blog/machine-learning-algorithms-explained-support-vector-machine/,FALSE,,lec-svms-and-knns
 knearest-neighbor-knn-explained,K-Nearest Neighbor (KNN) Explained,blogpost,https://www.pinecone.io/learn/k-nearest-neighbor/,FALSE,,lec-svms-and-knns
-slides,Slides,reading,https://docs.google.com/presentation/d/1vJb1YxNOvBh4Nm_lXSDKFcNBLJOOuzUt/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-clustering
-pantopto,Pantopto,video,,FALSE,,lec-clustering
+slides,Slides,reading,https://drive.google.com/file/d/1kN_yxJ8wi8fihyIGKKreMDGRSDDUhpUV/view?usp=sharing,FALSE,,lec-clustering
+pantopto,Pantopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=088ead92-85cd-4139-81cf-b377015d58fc,FALSE,,lec-clustering
 fca-section-103,FCA - Section 10.3,reading,https://artint.info/3e/html/ArtInt3e.Ch10.S3.html,FALSE,,lec-clustering
 pml-chapter-21,PML - Chapter 21,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-clustering
 islp-section-124,ISLP - Section 12.4,reading,https://www.statlearning.com/,FALSE,,lec-clustering
