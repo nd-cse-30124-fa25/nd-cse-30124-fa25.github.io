@@ -230,7 +230,7 @@ uml-chapter-231,UML - Chapter 23.1,reading,https://www.cs.huji.ac.il/~shais/Unde
 pca-visualization,PCA Visualization,notebook,https://colab.research.google.com/drive/1v1DV3oqt-XiMxsqTGyek6stAJ_S8LjeJ?usp=sharing,FALSE,,lec-dimensionality-reduction
 covariance-statquest,Covariance (StatQuest),video,https://youtu.be/qtaqvPAeEJY?si=bw-zWo3JmyX0PvGg,FALSE,,lec-dimensionality-reduction
 pca-short-statquest,PCA (Short) (StatQuest),video,https://youtu.be/HMOI_lkzW08?si=MkLlaC0hgAeh9009,FALSE,,lec-dimensionality-reduction
-pca-statquest,PCA (StatQuest),video,https://youtu.be/FgakZw6K1QQ?si=rvTJ67NAVVYZhoOh,FALSE,,lec-dimensionality-reduction
+pca-statquest,PCA (StatQuest),video,https://youtu.be/FgakZw6K1QQ?si=rvTJ67NAVVYZhoOh,TRUE,,lec-dimensionality-reduction
 tsne-statquest,t-SNE (StatQuest),video,https://youtu.be/NEaUSP4YerM?si=lME2kIla7hilnX4w,FALSE,,lec-dimensionality-reduction
 pca-rasbt,PCA (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch05/ch05.ipynb,FALSE,,lec-dimensionality-reduction
 mnist-olah,MNIST (Olah),blogpost,https://colah.github.io/posts/2014-10-Visualizing-MNIST/,FALSE,,lec-dimensionality-reduction
