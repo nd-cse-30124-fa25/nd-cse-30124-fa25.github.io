@@ -55,12 +55,11 @@ minimax-algorithm-blog-post,Minimax Algorithm (Blog Post),blogpost,https://notes
 tictactoe-understanding-the-minimax-algorithm,Tic-Tac-Toe: Understanding the Minimax Algorithm,blogpost,https://www.neverstopbuilding.com/blog/minimax,,,lec-adversarial-search
 panopto,Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a08df3ac-0172-4b89-b960-b352015c31e6,FALSE,,lec-adversarial-search
 slides,Slides,reading,https://drive.google.com/file/d/1DzF9yr3hcR3xoNJRnNVGskvEXTwh_YV5/view?usp=sharing,FALSE,,lec-adversarial-search
-logicalbased-artificial-intelligence-and-expert-systems,Logical-Based Artificial Intelligence and Expert Systems,blogpost,https://www.primaryobjects.com/2018/07/23/logical-based-artificial-intelligence-and-expert-systems/,TRUE,,lec-k-nearest-neighbors
-harvard-cs50,Harvard CS50,video,https://www.youtube.com/watch?v=HWQLez87vqM,,,lec-k-nearest-neighbors
-stanford-cs221,Stanford CS221,video,https://www.youtube.com/watch?v=RIk67yGMVv4&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=44,,,lec-k-nearest-neighbors
-foundations-of-computational-agents-chapters-5-15-and-16,"Foundations of Computational Agents - Chapters 5, 15, and 16",reading,https://artint.info/3e/html/ArtInt3e.Ch5.html,,,lec-k-nearest-neighbors
-designing-an-artificial-intelligence-agent-to-navigate-a-world,Designing an Artificial Intelligence Agent to Navigate a World,blogpost,https://www.primaryobjects.com/2020/10/26/designing-an-artificial-intelligence-agent-to-navigate-a-world/,,,lec-k-nearest-neighbors
-slides,Slides,reading,https://drive.google.com/file/d/1lPO80o2cwPmuqaqvJTpTQWo4UkCBKJPI/view?usp=sharing,,,lec-k-nearest-neighbors
+knearest-neighbors-clearly-explained,"K-Nearest Neighbors, Clearly Explained!!!!!",video, https://youtu.be/HVXime0nQeI?si=vUOtkw1Q6nxt9Aj3,TRUE,,lec-k-nearest-neighbors
+mit-6034-knns,MIT 6.034 KNNs,video,https://www.youtube.com/watch?v=09mb78oiPkA,FALSE,,lec-k-nearest-neighbors
+cornell-cs4780,Cornell CS4780,video,https://youtu.be/oymtGlGdT-k?si=Lg6X6xXHV2BlrJsF,FALSE,,lec-k-nearest-neighbors
+knns-hdm,KNNs (HdM),reading,https://hannibunny.github.io/mlbook/machinelearning/knn.html,FALSE,,lec-k-nearest-neighbors
+knearest-neighbor-knn-explained,K-Nearest Neighbor (KNN) Explained,blogpost,https://www.pinecone.io/learn/k-nearest-neighbor/,FALSE,,lec-k-nearest-neighbors
 fca-sections-72-and-731,FCA - Sections 7.2 and 7.3.1,reading,https://artint.info/3e/html/ArtInt3e.Ch7.S3.html,FALSE,,lec-decision-trees
 pml-chapter-18,PML - Chapter 18,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-decision-trees
 islp-chapter-8,ISLP - Chapter 8,reading,https://www.statlearning.com/,FALSE,,lec-decision-trees
