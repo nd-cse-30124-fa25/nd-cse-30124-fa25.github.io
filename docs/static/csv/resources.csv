@@ -43,6 +43,7 @@ fa25-panopto,fa25 Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pag
 slides,Slides,reading,https://drive.google.com/file/d/1Zap5C2R7DehHFriGWHMQ6sRbLxEclROF/view?usp=sharing,FALSE,,lec-constraint-satisfaction-problems
 blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1rBfoz6GbHCgya-2dXb82mTGksstt0_kH/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-constraint-satisfaction-problems
 panopto,Panopto,video,,FALSE,,lec-constraint-satisfaction-problems
+shidoku-simulator,Shidoku Simulator,blogpost,https://30124.williamtheisen.com/shidoku.html,FALSE,,lec-constraint-satisfaction-problems
 minimax-algorithm-and-alphabeta-pruning,Minimax Algorithm and Alpha-Beta Pruning,blogpost,https://mathspp.com/blog/minimax-algorithm-and-alpha-beta-pruning,TRUE,,lec-adversarial-search
 minimax-with-alpha-beta-pruning,Minimax with Alpha Beta Pruning,video,https://www.youtube.com/watch?v=zp3VMe0Jpf8,,,lec-adversarial-search
 foundations-of-computational-agents-sections-142-and-143,Foundations of Computational Agents - Sections 14.2 and 14.3,reading,https://artint.info/3e/html/ArtInt3e.Ch14.S2.html,,,lec-adversarial-search
