@@ -55,9 +55,11 @@ adversarial-search,Adversarial Search,video,https://stackabuse.com/minimax-and-a
 1975-an-analysis-of-alphabeta-pruning-knuth-and-moore,(1975) An Analysis of Alpha-Beta Pruning (Knuth and Moore),paper,https://www.sciencedirect.com/science/article/pii/0004370275900193,,,lec-adversarial-search
 minimax-algorithm-blog-post,Minimax Algorithm (Blog Post),blogpost,https://notes.bencuan.me/cs61b/algorithms/minimax/,,,lec-adversarial-search
 tictactoe-understanding-the-minimax-algorithm,Tic-Tac-Toe: Understanding the Minimax Algorithm,blogpost,https://www.neverstopbuilding.com/blog/minimax,,,lec-adversarial-search
-panopto,Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a08df3ac-0172-4b89-b960-b352015c31e6,FALSE,,lec-adversarial-search
-slides,Slides,reading,https://drive.google.com/file/d/1DzF9yr3hcR3xoNJRnNVGskvEXTwh_YV5/view?usp=sharing,FALSE,,lec-adversarial-search
+fa25-panopto,fa25 Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a08df3ac-0172-4b89-b960-b352015c31e6,FALSE,,lec-adversarial-search
+filled-slides,Filled Slides,reading,,FALSE,,lec-adversarial-search
 tropical-fck-storm-the-future-of-history,Tropical F*ck Storm - The Future Of History,video,https://www.youtube.com/watch?v=TueUWPhnRJQ,FALSE,,lec-adversarial-search
+blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1NT-vQ1_5XP3wtdTlFY7zoNubtSjVK_ua/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-adversarial-search
+panopto,Panopto,video,,FALSE,,lec-adversarial-search
 knearest-neighbors-clearly-explained,"K-Nearest Neighbors, Clearly Explained!!!!!",video, https://youtu.be/HVXime0nQeI?si=vUOtkw1Q6nxt9Aj3,TRUE,,lec-k-nearest-neighbors
 mit-6034-knns,MIT 6.034 KNNs,video,https://www.youtube.com/watch?v=09mb78oiPkA,FALSE,,lec-k-nearest-neighbors
 cornell-cs4780,Cornell CS4780,video,https://youtu.be/oymtGlGdT-k?si=Lg6X6xXHV2BlrJsF,FALSE,,lec-k-nearest-neighbors
