@@ -27,6 +27,7 @@ fa25-panopto,fa25 Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pag
 filled-slides,Filled Slides,reading,https://drive.google.com/file/d/1Ir-99SJIcfGAtTDAZOF_werU4EbsA9Fh/view?usp=sharing,FALSE,,lec-informed-search
 blank-slides,Blank Slides,reading,,FALSE,,lec-informed-search
 ai2ai-chapter-03,AI2AI Chapter 03,reading,https://docs.google.com/presentation/d/1L_ONCCVZtr7cgTWywuZ_UPABbI9NUPJTbk7gKVP_hxY/edit?usp=sharing,FALSE,,lec-informed-search
+a-visualizer,A* Visualizer,blogpost,https://30124.williamtheisen.com/astar.html,FALSE,,lec-informed-search
 constraint-satisfaction-introduction,Constraint Satisfaction: introduction,video,https://www.youtube.com/watch?v=_e64FiDWvqs,TRUE,Jack Mangione '26,lec-constraint-satisfaction-problems
 constraint-satisfaction-the-ac3-algorithm,Constraint Satisfaction: the AC-3 algorithm,video,https://www.youtube.com/watch?v=4cCS8rrYT14,FALSE,,lec-constraint-satisfaction-problems
 foundations-of-computational-agents-sections-41-through-46,Foundations of Computational Agents - Sections 4.1 through 4.6,reading,https://artint.info/3e/html/ArtInt3e.Ch4.html,,,lec-constraint-satisfaction-problems
@@ -43,7 +44,7 @@ fa25-panopto,fa25 Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pag
 slides,Slides,reading,https://drive.google.com/file/d/1Zap5C2R7DehHFriGWHMQ6sRbLxEclROF/view?usp=sharing,FALSE,,lec-constraint-satisfaction-problems
 blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1rBfoz6GbHCgya-2dXb82mTGksstt0_kH/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-constraint-satisfaction-problems
 panopto,Panopto,video,,FALSE,,lec-constraint-satisfaction-problems
-shidoku-simulator,Shidoku Simulator,blogpost,https://30124.williamtheisen.com/shidoku.html,FALSE,,lec-constraint-satisfaction-problems
+csp-visualizer,CSP Visualizer,blogpost,https://30124.williamtheisen.com/shidoku.html,FALSE,,lec-constraint-satisfaction-problems
 minimax-algorithm-and-alphabeta-pruning,Minimax Algorithm and Alpha-Beta Pruning,blogpost,https://mathspp.com/blog/minimax-algorithm-and-alpha-beta-pruning,TRUE,,lec-adversarial-search
 minimax-with-alpha-beta-pruning,Minimax with Alpha Beta Pruning,video,https://www.youtube.com/watch?v=zp3VMe0Jpf8,,,lec-adversarial-search
 foundations-of-computational-agents-sections-142-and-143,Foundations of Computational Agents - Sections 14.2 and 14.3,reading,https://artint.info/3e/html/ArtInt3e.Ch14.S2.html,,,lec-adversarial-search
@@ -61,6 +62,7 @@ filled-slides,Filled Slides,reading,,FALSE,,lec-adversarial-search
 tropical-fck-storm-the-future-of-history,Tropical F*ck Storm - The Future Of History,video,https://www.youtube.com/watch?v=TueUWPhnRJQ,FALSE,,lec-adversarial-search
 blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1NT-vQ1_5XP3wtdTlFY7zoNubtSjVK_ua/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-adversarial-search
 panopto,Panopto,video,,FALSE,,lec-adversarial-search
+minimax-visualizer,Minimax Visualizer,blogpost,https://30124.williamtheisen.com/minimax.html,FALSE,,lec-adversarial-search
 knearest-neighbors-clearly-explained,"K-Nearest Neighbors, Clearly Explained!!!!!",video, https://youtu.be/HVXime0nQeI?si=vUOtkw1Q6nxt9Aj3,TRUE,,lec-k-nearest-neighbors
 mit-6034-knns,MIT 6.034 KNNs,video,https://www.youtube.com/watch?v=09mb78oiPkA,FALSE,,lec-k-nearest-neighbors
 cornell-cs4780,Cornell CS4780,video,https://youtu.be/oymtGlGdT-k?si=Lg6X6xXHV2BlrJsF,FALSE,,lec-k-nearest-neighbors
