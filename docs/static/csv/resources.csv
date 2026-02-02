@@ -68,6 +68,7 @@ mit-6034-knns,MIT 6.034 KNNs,video,https://www.youtube.com/watch?v=09mb78oiPkA,F
 cornell-cs4780,Cornell CS4780,video,https://youtu.be/oymtGlGdT-k?si=Lg6X6xXHV2BlrJsF,FALSE,,lec-k-nearest-neighbors
 knns-hdm,KNNs (HdM),reading,https://hannibunny.github.io/mlbook/machinelearning/knn.html,FALSE,,lec-k-nearest-neighbors
 knearest-neighbor-knn-explained,K-Nearest Neighbor (KNN) Explained,blogpost,https://www.pinecone.io/learn/k-nearest-neighbor/,FALSE,,lec-k-nearest-neighbors
+blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1iVij_RXDROvklFN7HEU-x1-80KVR0JiU/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-k-nearest-neighbors
 fca-sections-72-and-731,FCA - Sections 7.2 and 7.3.1,reading,https://artint.info/3e/html/ArtInt3e.Ch7.S3.html,FALSE,,lec-decision-trees
 pml-chapter-18,PML - Chapter 18,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-decision-trees
 islp-chapter-8,ISLP - Chapter 8,reading,https://www.statlearning.com/,FALSE,,lec-decision-trees
