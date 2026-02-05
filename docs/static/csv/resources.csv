@@ -13,6 +13,7 @@ search-algorithms-in-ai-uninformed-search-section,Search Algorithms in AI (Uninf
 blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1l7s0LK8dC2_NRGBvOn64YJXc1Bgedfse/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-uninformed-search
 ai2ai-chapter-02,AI2AI Chapter 02,reading,https://docs.google.com/presentation/d/1Jes7NoCIbGAXb1dxU2B1R02Tss2e44e-ao2tneMZ2Dw/edit?usp=sharing,FALSE,,lec-uninformed-search
 panopto,Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=603ebe9f-d08a-4423-824f-b3d201694ca2,FALSE,,lec-uninformed-search
+filled-slides,Filled Slides,reading,https://drive.google.com/file/d/1bJzzf7agOTyedleydNfesK_YOj_ifQ9d/view?usp=sharing,FALSE,,lec-uninformed-search
 introduction-to-the-a-algorithm,Introduction to the A* Algorithm,reading,https://www.redblobgames.com/pathfinding/a-star/introduction.html,TRUE,,lec-informed-search
 foundations-of-computation-agents-section-36,Foundations of Computation Agents - Section 3.6,reading,https://artint.info/3e/html/ArtInt3e.Ch3.S6.html,,,lec-informed-search
 harvard-cs50,Harvard CS50,video,https://youtu.be/WbzNRTTrX0g?si=mqYHjM8hTRsed8h4&t=3269,,,lec-informed-search
@@ -24,7 +25,7 @@ heuristics,Heuristics,blogpost,https://theory.stanford.edu/~amitp/GameProgrammin
 1968-a-formal-basis-for-the-heuristic-determination-of-minimum-cost-paths,(1968) A Formal Basis for the Heuristic Determination of Minimum Cost Paths,paper,https://ieeexplore.ieee.org/document/4082128,,,lec-informed-search
 a-in-minecraft,A* in Minecraft,video,https://www.youtube.com/watch?v=Zg0Cxn8AVZA,,Grant Flesher '26,lec-informed-search
 fa25-panopto,fa25 Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=17f3a92c-9d44-41a4-9027-b34b015993fd,FALSE,,lec-informed-search
-filled-slides,Filled Slides,reading,https://drive.google.com/file/d/1Ir-99SJIcfGAtTDAZOF_werU4EbsA9Fh/view?usp=sharing,FALSE,,lec-informed-search
+bad-filled-slides,Bad Filled Slides,reading,https://drive.google.com/file/d/1wVx7o5CswFXX4dK2wFykmOTSLNTvP___/view?usp=sharing,FALSE,,lec-informed-search
 blank-slides,Blank Slides,reading,,FALSE,,lec-informed-search
 ai2ai-chapter-03,AI2AI Chapter 03,reading,https://docs.google.com/presentation/d/1L_ONCCVZtr7cgTWywuZ_UPABbI9NUPJTbk7gKVP_hxY/edit?usp=sharing,FALSE,,lec-informed-search
 a-visualizer,A* Visualizer,blogpost,https://30124.williamtheisen.com/astar.html,FALSE,,lec-informed-search
@@ -41,9 +42,9 @@ cmu-15281,CMU 15-281,blogpost,https://www.cs.cmu.edu/~15281-s23/coursenotes/cons
 1980-increasing-tree-search-efficiency-for-constraint-satisfaction-problems-haralick-and-elliot,(1980) Increasing Tree Search Efficiency for Constraint Satisfaction Problems (Haralick and Elliot),paper,https://www.sciencedirect.com/science/article/pii/000437028090051X,FALSE,,lec-constraint-satisfaction-problems
 sudoku-csp-python-code,Sudoku CSP python code,notebook,https://drive.google.com/file/d/18xHvWJXqeaI_CcPXUhRJVyXgjVHC9s-d/view?usp=sharing,FALSE,,lec-constraint-satisfaction-problems
 fa25-panopto,fa25 Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e7127bc8-8355-4d55-8aba-b34d015921a9,FALSE,,lec-constraint-satisfaction-problems
-slides,Slides,reading,https://drive.google.com/file/d/1Zap5C2R7DehHFriGWHMQ6sRbLxEclROF/view?usp=sharing,FALSE,,lec-constraint-satisfaction-problems
+filled-slides,Filled Slides,reading,https://drive.google.com/file/d/1G2y_E3OG3j2AXpphM8H8VWR0lxMQ4zF5/view?usp=sharing,FALSE,,lec-constraint-satisfaction-problems
 blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1rBfoz6GbHCgya-2dXb82mTGksstt0_kH/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-constraint-satisfaction-problems
-panopto,Panopto,video,,FALSE,,lec-constraint-satisfaction-problems
+panopto,Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=415c2bd4-5a24-4b5c-abaa-b3de016bdd05,FALSE,,lec-constraint-satisfaction-problems
 csp-visualizer,CSP Visualizer,blogpost,https://30124.williamtheisen.com/shidoku.html,FALSE,,lec-constraint-satisfaction-problems
 minimax-algorithm-and-alphabeta-pruning,Minimax Algorithm and Alpha-Beta Pruning,blogpost,https://mathspp.com/blog/minimax-algorithm-and-alpha-beta-pruning,TRUE,,lec-adversarial-search
 minimax-with-alpha-beta-pruning,Minimax with Alpha Beta Pruning,video,https://www.youtube.com/watch?v=zp3VMe0Jpf8,,,lec-adversarial-search
@@ -58,10 +59,10 @@ adversarial-search,Adversarial Search,video,https://stackabuse.com/minimax-and-a
 minimax-algorithm-blog-post,Minimax Algorithm (Blog Post),blogpost,https://notes.bencuan.me/cs61b/algorithms/minimax/,,,lec-adversarial-search
 tictactoe-understanding-the-minimax-algorithm,Tic-Tac-Toe: Understanding the Minimax Algorithm,blogpost,https://www.neverstopbuilding.com/blog/minimax,,,lec-adversarial-search
 fa25-panopto,fa25 Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a08df3ac-0172-4b89-b960-b352015c31e6,FALSE,,lec-adversarial-search
-filled-slides,Filled Slides,reading,,FALSE,,lec-adversarial-search
+filled-slides,Filled Slides,reading,https://drive.google.com/file/d/1-hVOwViVMMW7i_YHHj_i0MEB6VMkVEHP/view?usp=sharing,FALSE,,lec-adversarial-search
 tropical-fck-storm-the-future-of-history,Tropical F*ck Storm - The Future Of History,video,https://www.youtube.com/watch?v=TueUWPhnRJQ,FALSE,,lec-adversarial-search
 blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1NT-vQ1_5XP3wtdTlFY7zoNubtSjVK_ua/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-adversarial-search
-panopto,Panopto,video,,FALSE,,lec-adversarial-search
+panopto,Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0fbf372a-d100-48e0-aec4-b3e0016e938f,FALSE,,lec-adversarial-search
 minimax-visualizer,Minimax Visualizer,blogpost,https://30124.williamtheisen.com/minimax.html,FALSE,,lec-adversarial-search
 knearest-neighbors-clearly-explained,"K-Nearest Neighbors, Clearly Explained!!!!!",video, https://youtu.be/HVXime0nQeI?si=vUOtkw1Q6nxt9Aj3,TRUE,,lec-k-nearest-neighbors
 mit-6034-knns,MIT 6.034 KNNs,video,https://www.youtube.com/watch?v=09mb78oiPkA,FALSE,,lec-k-nearest-neighbors
@@ -69,6 +70,8 @@ cornell-cs4780,Cornell CS4780,video,https://youtu.be/oymtGlGdT-k?si=Lg6X6xXHV2Bl
 knns-hdm,KNNs (HdM),reading,https://hannibunny.github.io/mlbook/machinelearning/knn.html,FALSE,,lec-k-nearest-neighbors
 knearest-neighbor-knn-explained,K-Nearest Neighbor (KNN) Explained,blogpost,https://www.pinecone.io/learn/k-nearest-neighbor/,FALSE,,lec-k-nearest-neighbors
 blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1iVij_RXDROvklFN7HEU-x1-80KVR0JiU/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-k-nearest-neighbors
+panopto,Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3e6651dd-6f05-4ad6-8ace-b3e5016a39b0,FALSE,,lec-k-nearest-neighbors
+filled-slides,Filled Slides,reading,https://drive.google.com/file/d/1m1AI7kHVhXro7iUxbb8e86ijJRJMHg8u/view?usp=sharing,FALSE,,lec-k-nearest-neighbors
 fca-sections-72-and-731,FCA - Sections 7.2 and 7.3.1,reading,https://artint.info/3e/html/ArtInt3e.Ch7.S3.html,FALSE,,lec-decision-trees
 pml-chapter-18,PML - Chapter 18,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-decision-trees
 islp-chapter-8,ISLP - Chapter 8,reading,https://www.statlearning.com/,FALSE,,lec-decision-trees
@@ -87,10 +90,10 @@ information-theory-olah,Information Theory (Olah),blogpost,https://colah.github.
 1966-experiments-in-induction-hunt-et-al,(1966) Experiments in Induction (Hunt et al.),paper,https://www.sciencedirect.com/science/article/pii/S0020737369800283,FALSE,,lec-decision-trees
 1986-induction-of-decision-trees-quinlan,(1986) Induction of Decision Trees (Quinlan),paper,https://link.springer.com/article/10.1007/BF00116251,FALSE,,lec-decision-trees
 1984-classification-and-regression-trees-brieman-et-al,(1984) Classification and Regression Trees (Brieman et al.),paper,https://www.taylorfrancis.com/books/mono/10.1201/9781315139470/classification-regression-trees-leo-breiman-jerome-friedman-olshen-charles-stone,FALSE,,lec-decision-trees
-filled-slides,Filled Slides,reading,,FALSE,,lec-decision-trees
+filled-slides,Filled Slides,reading,https://drive.google.com/file/d/1JTVhbf9R9q7kGuAiPUjcMd0Tni5wMOgN/view?usp=sharing,FALSE,,lec-decision-trees
 fa25-panopto,fa25 Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e50e76af-fe7a-4b11-94d0-b3590157a71f,FALSE,,lec-decision-trees
 blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1vqQJpEJNN3_fPF-Zqe5sU4lIm-3bEzBu/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-decision-trees
-panopto,Panopto,video,,FALSE,,lec-decision-trees
+panopto,Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c03618ee-1961-4d56-a9d9-b3e7016a5a53,FALSE,,lec-decision-trees
 fca-section-96,FCA - Section 9.6,reading,https://artint.info/3e/html/ArtInt3e.Ch9.html,FALSE,,lec-markov-models
 markov-babbler,Markov Babbler,notebook,https://colab.research.google.com/drive/1dthRebtlLdXYt9ZSYuCsC11896ovNkCV?usp=sharing,FALSE,,lec-markov-models
 pml-sections-3612,PML - Sections 3.6.1.2,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-markov-models
