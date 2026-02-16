@@ -145,7 +145,7 @@ probability-vs-likelihood,Probability vs. Likelihood,blogpost,https://medium.com
 fa25-panopto,fa25 Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fcd2e1b6-c4f4-45a5-a961-b360015db604,FALSE,,lec-bayesian-reasoning
 blank-slides,Blank Slides,,https://docs.google.com/presentation/d/1Wj5eMtfT_ucHW6gIKhLz6pQkHNZtzz9H/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-bayesian-reasoning
 panopto,Panopto,,,FALSE,,lec-bayesian-reasoning
-slides,Slides,reading,https://drive.google.com/file/d/1w1-FYKkQ2WvjHC6ptI7VqxxcIyrU2Mfe/view?usp=sharing,FALSE,,lec-linear-regression
+blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1Q7wF9YruRBgDkFpnrG7dF9ZAEIaC8Uyj/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-linear-regression
 sp25-panopto,sp25 Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f05aae98-bacc-46cd-86a0-b287016e7805,FALSE,,lec-linear-regression
 fca-sections-732-first-few-paragraphs-and-742,FCA - Sections 7.3.2 (First few paragraphs) and 7.4.2,reading,https://artint.info/3e/html/ArtInt3e.Ch7.S3.html,FALSE,,lec-linear-regression
 pml-sections-75-813-chapter-11,"PML - Sections 7.5, 8.1.3, Chapter 11",reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-linear-regression
@@ -172,7 +172,9 @@ linear-regression-hdm,Linear Regression (HdM),reading,https://hannibunny.github.
 1809-theoria-motus-corporum-coelestium-in-sectionibus-conicis-solem-ambientium-gauss,(1809) Theoria Motus Corporum Coelestium in Sectionibus Conicis Solem Ambientium (Gauss),paper,https://archive.org/details/bub_gb_ORUOAAAAQAAJ,FALSE,,lec-linear-regression
 1970-ridge-regression-biased-estimation-for-nonorthogonal-problems-hoerl-and-kennard,(1970) Ridge Regression - Biased Estimation for Nonorthogonal Problems (Hoerl and Kennard),paper,https://homepages.math.uic.edu/~lreyzin/papers/ridge.pdf,FALSE,,lec-linear-regression
 1996-regression-shrinkage-and-selection-via-the-lasso-tibshirani,(1996) Regression Shrinkage and Selection via the Lasso (Tibshirani),paper,https://www.jstor.org/stable/2346178?seq=1,FALSE,,lec-linear-regression
-panopto,Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fcd2e1b6-c4f4-45a5-a961-b360015db604,FALSE,,lec-linear-regression
+fa25-panopto,fa25 Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fcd2e1b6-c4f4-45a5-a961-b360015db604,FALSE,,lec-linear-regression
+panopto,Panopto,video,,FALSE,,lec-linear-regression
+filled-slides,Filled Slides,reading,,FALSE,,lec-linear-regression
 slides,Slides,reading,https://drive.google.com/file/d/15waj2uQkXLuol_MGcQ9x7p4otdmddXpx/view?usp=sharing,FALSE,,lec-perceptrons
 pml-section-1025,PML - Section 10.2.5,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-perceptrons
 uml-section-912,UML - Section 9.1.2,reading,https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html,FALSE,,lec-perceptrons
