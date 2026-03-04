@@ -221,7 +221,7 @@ logistic-regression-hdm,Logistic Regression (HdM),reading,https://hannibunny.git
 1958-the-regression-analysis-of-binary-sequences-cox,(1958) The Regression Analysis of Binary Sequences (Cox),paper,https://www.jstor.org/stable/2983890?seq=1,FALSE,,lec-logistic-regression
 a-gentle-introduction-to-crossentropy-for-machine-learning,A Gentle Introduction to Cross-Entropy for Machine Learning,blogpost,https://machinelearningmastery.com/cross-entropy-for-machine-learning/,FALSE,,lec-logistic-regression
 blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1CZcnpLjxqz9HeFFaFa7-ehdtVZqbHTZS/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-logistic-regression
-slides,Slides,reading,https://drive.google.com/file/d/1Dt2Opwhal1aJkpnD5VoPxMWcOHNEdKlr/view?usp=drivesdk,FALSE,,lec-support-vector-machines
+slides,Slides,reading,,FALSE,,lec-support-vector-machines
 pantopto,Pantopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d19bd425-111d-4297-9a52-b375015995be,FALSE,,lec-support-vector-machines
 pml-sections-161-173,"PML - Sections 16.1, 17.3",reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-support-vector-machines
 -islp-sections-35-476-and-chapter-9," ISLP - Sections 3.5, 4.7.6 and Chapter 9",reading,https://www.statlearning.com/,FALSE,,lec-support-vector-machines
@@ -244,6 +244,7 @@ kernel-methods-raschka,Kernel Methods (Raschka),blogpost,https://sebastianraschk
 an-idiots-guide-to-support-vector-machines,An Idiot's Guide to Support Vector Machines,reading,https://web.mit.edu/6.034/wwwbob/svm.pdf,FALSE,,lec-support-vector-machines
 machine-learning-algorithms-explained-support-vector-machine,Machine Learning Algorithms Explained: Support Vector Machine,blogpost,https://www.stratascratch.com/blog/machine-learning-algorithms-explained-support-vector-machine/,FALSE,,lec-support-vector-machines
 knearest-neighbor-knn-explained,K-Nearest Neighbor (KNN) Explained,blogpost,https://www.pinecone.io/learn/k-nearest-neighbor/,FALSE,,lec-support-vector-machines
+blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1CNwFmV8_jqi01e8kcy8k_Y6-3uRAG3Mq/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-support-vector-machines
 slides,Slides,reading,https://drive.google.com/file/d/1kN_yxJ8wi8fihyIGKKreMDGRSDDUhpUV/view?usp=sharing,FALSE,,lec-clustering
 pantopto,Pantopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=088ead92-85cd-4139-81cf-b377015d58fc,FALSE,,lec-clustering
 fca-section-103,FCA - Section 10.3,reading,https://artint.info/3e/html/ArtInt3e.Ch10.S3.html,FALSE,,lec-clustering
