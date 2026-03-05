@@ -258,22 +258,22 @@ hierarchical-statquest,Hierarchical (StatQuest),video,https://youtu.be/7xHsRkOdV
 kmeans-statquest,K-Means (StatQuest),video,https://youtu.be/4b5d3muPQmA?si=T2ow71QcEXdbKt7V,FALSE,,lec-clustering
 clustering-rasbt,Clustering (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch10/ch10.ipynb,FALSE,,lec-clustering
 clustering-how-it-works-in-plain-english,Clustering: How It Works (In Plain English!),blogpost,https://web.archive.org/web/20250115001509/https://blog.dataiku.com/clustering-how-it-works-in-plain-english#expand,TRUE,,lec-clustering
-slides,Slides,reading,https://drive.google.com/file/d/1RZip1YWW0KqPpeYPPjb127FXacK2IB3G/view?usp=sharing,FALSE,,lec-dimensionality-reduction
-pantopto,Pantopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2161d20b-7c74-4640-a828-b383015107c9,FALSE,,lec-dimensionality-reduction
-pml-section-201,PML - Section 20.1,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-dimensionality-reduction
-islp-section-122,ISLP - Section 12.2,reading,https://www.statlearning.com/,FALSE,,lec-dimensionality-reduction
-uml-chapter-231,UML - Chapter 23.1,reading,https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html,FALSE,,lec-dimensionality-reduction
-pca-visualization,PCA Visualization,notebook,https://colab.research.google.com/drive/1v1DV3oqt-XiMxsqTGyek6stAJ_S8LjeJ?usp=sharing,FALSE,,lec-dimensionality-reduction
-covariance-statquest,Covariance (StatQuest),video,https://youtu.be/qtaqvPAeEJY?si=bw-zWo3JmyX0PvGg,FALSE,,lec-dimensionality-reduction
-pca-short-statquest,PCA (Short) (StatQuest),video,https://youtu.be/HMOI_lkzW08?si=MkLlaC0hgAeh9009,FALSE,,lec-dimensionality-reduction
-pca-statquest,PCA (StatQuest),video,https://youtu.be/FgakZw6K1QQ?si=rvTJ67NAVVYZhoOh,TRUE,,lec-dimensionality-reduction
-tsne-statquest,t-SNE (StatQuest),video,https://youtu.be/NEaUSP4YerM?si=lME2kIla7hilnX4w,FALSE,,lec-dimensionality-reduction
-pca-rasbt,PCA (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch05/ch05.ipynb,FALSE,,lec-dimensionality-reduction
-mnist-olah,MNIST (Olah),blogpost,https://colah.github.io/posts/2014-10-Visualizing-MNIST/,FALSE,,lec-dimensionality-reduction
-pca-raschka,PCA (Raschka),blogpost,https://sebastianraschka.com/Articles/2015_pca_in_3_steps.html,FALSE,,lec-dimensionality-reduction
-pca-from-scratch-raschka,PCA from scratch (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_pca_step_by_step.html,FALSE,,lec-dimensionality-reduction
-standardization-raschka,Standardization (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_about_feature_scaling.html,FALSE,,lec-dimensionality-reduction
-lda-raschka,LDA (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_python_lda.html,FALSE,,lec-dimensionality-reduction
+slides,Slides,reading,https://drive.google.com/file/d/1RZip1YWW0KqPpeYPPjb127FXacK2IB3G/view?usp=sharing,FALSE,,lec-principal-component-analysis
+pantopto,Pantopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2161d20b-7c74-4640-a828-b383015107c9,FALSE,,lec-principal-component-analysis
+pml-section-201,PML - Section 20.1,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-principal-component-analysis
+islp-section-122,ISLP - Section 12.2,reading,https://www.statlearning.com/,FALSE,,lec-principal-component-analysis
+uml-chapter-231,UML - Chapter 23.1,reading,https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html,FALSE,,lec-principal-component-analysis
+pca-visualization,PCA Visualization,notebook,https://colab.research.google.com/drive/1v1DV3oqt-XiMxsqTGyek6stAJ_S8LjeJ?usp=sharing,FALSE,,lec-principal-component-analysis
+covariance-statquest,Covariance (StatQuest),video,https://youtu.be/qtaqvPAeEJY?si=bw-zWo3JmyX0PvGg,FALSE,,lec-principal-component-analysis
+pca-short-statquest,PCA (Short) (StatQuest),video,https://youtu.be/HMOI_lkzW08?si=MkLlaC0hgAeh9009,FALSE,,lec-principal-component-analysis
+pca-statquest,PCA (StatQuest),video,https://youtu.be/FgakZw6K1QQ?si=rvTJ67NAVVYZhoOh,TRUE,,lec-principal-component-analysis
+tsne-statquest,t-SNE (StatQuest),video,https://youtu.be/NEaUSP4YerM?si=lME2kIla7hilnX4w,FALSE,,lec-principal-component-analysis
+pca-rasbt,PCA (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch05/ch05.ipynb,FALSE,,lec-principal-component-analysis
+mnist-olah,MNIST (Olah),blogpost,https://colah.github.io/posts/2014-10-Visualizing-MNIST/,FALSE,,lec-principal-component-analysis
+pca-raschka,PCA (Raschka),blogpost,https://sebastianraschka.com/Articles/2015_pca_in_3_steps.html,FALSE,,lec-principal-component-analysis
+pca-from-scratch-raschka,PCA from scratch (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_pca_step_by_step.html,FALSE,,lec-principal-component-analysis
+standardization-raschka,Standardization (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_about_feature_scaling.html,FALSE,,lec-principal-component-analysis
+lda-raschka,LDA (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_python_lda.html,FALSE,,lec-principal-component-analysis
 slides,Slides,reading,https://drive.google.com/file/d/1tc4trKCvnhgnmNvURMnq1kEBEVcmnZSw/view?usp=sharing,FALSE,,lec-practicum-exploratory-data-analysis
 pantopto,Pantopto,video,,FALSE,,lec-practicum-exploratory-data-analysis
 practicum,Practicum,notebook,https://drive.google.com/file/d/1aQxCPBx5poCkX--4cwZm5u4aIZKV2gVN/view?usp=sharing,FALSE,,lec-practicum-exploratory-data-analysis
