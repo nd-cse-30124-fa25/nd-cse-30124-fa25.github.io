@@ -245,8 +245,8 @@ an-idiots-guide-to-support-vector-machines,An Idiot's Guide to Support Vector Ma
 machine-learning-algorithms-explained-support-vector-machine,Machine Learning Algorithms Explained: Support Vector Machine,blogpost,https://www.stratascratch.com/blog/machine-learning-algorithms-explained-support-vector-machine/,FALSE,,lec-support-vector-machines
 knearest-neighbor-knn-explained,K-Nearest Neighbor (KNN) Explained,blogpost,https://www.pinecone.io/learn/k-nearest-neighbor/,FALSE,,lec-support-vector-machines
 blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1CNwFmV8_jqi01e8kcy8k_Y6-3uRAG3Mq/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-support-vector-machines
-slides,Slides,reading,https://drive.google.com/file/d/1kN_yxJ8wi8fihyIGKKreMDGRSDDUhpUV/view?usp=sharing,FALSE,,lec-clustering
-pantopto,Pantopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=088ead92-85cd-4139-81cf-b377015d58fc,FALSE,,lec-clustering
+blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1vJb1YxNOvBh4Nm_lXSDKFcNBLJOOuzUt/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-clustering
+fa25-pantopto,fa25 Pantopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=088ead92-85cd-4139-81cf-b377015d58fc,FALSE,,lec-clustering
 fca-section-103,FCA - Section 10.3,reading,https://artint.info/3e/html/ArtInt3e.Ch10.S3.html,FALSE,,lec-clustering
 pml-chapter-21,PML - Chapter 21,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-clustering
 islp-section-124,ISLP - Section 12.4,reading,https://www.statlearning.com/,FALSE,,lec-clustering
@@ -258,6 +258,7 @@ hierarchical-statquest,Hierarchical (StatQuest),video,https://youtu.be/7xHsRkOdV
 kmeans-statquest,K-Means (StatQuest),video,https://youtu.be/4b5d3muPQmA?si=T2ow71QcEXdbKt7V,FALSE,,lec-clustering
 clustering-rasbt,Clustering (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch10/ch10.ipynb,FALSE,,lec-clustering
 clustering-how-it-works-in-plain-english,Clustering: How It Works (In Plain English!),blogpost,https://web.archive.org/web/20250115001509/https://blog.dataiku.com/clustering-how-it-works-in-plain-english#expand,TRUE,,lec-clustering
+panopto,Panopto,video,,FALSE,,lec-clustering
 slides,Slides,reading,https://drive.google.com/file/d/1RZip1YWW0KqPpeYPPjb127FXacK2IB3G/view?usp=sharing,FALSE,,lec-principal-component-analysis
 pantopto,Pantopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2161d20b-7c74-4640-a828-b383015107c9,FALSE,,lec-principal-component-analysis
 pml-section-201,PML - Section 20.1,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-principal-component-analysis
