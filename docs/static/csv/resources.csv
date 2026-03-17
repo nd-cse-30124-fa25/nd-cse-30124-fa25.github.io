@@ -275,17 +275,17 @@ pca-raschka,PCA (Raschka),blogpost,https://sebastianraschka.com/Articles/2015_pc
 pca-from-scratch-raschka,PCA from scratch (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_pca_step_by_step.html,FALSE,,lec-principal-component-analysis
 standardization-raschka,Standardization (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_about_feature_scaling.html,FALSE,,lec-principal-component-analysis
 lda-raschka,LDA (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_python_lda.html,FALSE,,lec-principal-component-analysis
-slides,Slides,reading,https://drive.google.com/file/d/1tc4trKCvnhgnmNvURMnq1kEBEVcmnZSw/view?usp=sharing,FALSE,,lec-practicum-exploratory-data-analysis
-pantopto,Pantopto,video,,FALSE,,lec-practicum-exploratory-data-analysis
-practicum,Practicum,notebook,https://drive.google.com/file/d/1aQxCPBx5poCkX--4cwZm5u4aIZKV2gVN/view?usp=sharing,FALSE,,lec-practicum-exploratory-data-analysis
-confusion-matrix-statquest,Confusion Matrix (StatQuest),video,https://youtu.be/Kdsp6soqA7o?si=g3ssfI10Oqdms09K,TRUE,,lec-practicum-exploratory-data-analysis
-rocauc-statquest,ROC/AUC (StatQuest),video,https://youtu.be/4jRBRDbJemM?si=5sp5qUoMbHvygXYP,TRUE,,lec-practicum-exploratory-data-analysis
-model-evaluation-rasbt,Model Evaluation (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch06/ch06.ipynb,FALSE,,lec-practicum-exploratory-data-analysis
-ensemble-learning-rasbt,Ensemble Learning (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch07/ch07.ipynb,FALSE,,lec-practicum-exploratory-data-analysis
-model-evaluation-raschka,Model Evaluation (Raschka),paper,https://arxiv.org/pdf/1811.12808,FALSE,,lec-practicum-exploratory-data-analysis
-model-evaluation-raschka,Model Evaluation (Raschka),blogpost,https://sebastianraschka.com/blog/2016/model-evaluation-selection-part3.html,FALSE,,lec-practicum-exploratory-data-analysis
-ensemble-classifier-raschka,Ensemble Classifier (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_ensemble_classifier.html,FALSE,,lec-practicum-exploratory-data-analysis
-precision-vs-recall,Precision vs. Recall,video,https://www.youtube.com/watch?v=qWfzIYCvBqo,TRUE,Catherine Healy '26,lec-practicum-exploratory-data-analysis
+slides,Slides,reading,https://drive.google.com/file/d/1tc4trKCvnhgnmNvURMnq1kEBEVcmnZSw/view?usp=sharing,FALSE,,lec-exploratory-data-analysis
+pantopto,Pantopto,video,,FALSE,,lec-exploratory-data-analysis
+practicum,Practicum,notebook,https://drive.google.com/file/d/1aQxCPBx5poCkX--4cwZm5u4aIZKV2gVN/view?usp=sharing,FALSE,,lec-exploratory-data-analysis
+confusion-matrix-statquest,Confusion Matrix (StatQuest),video,https://youtu.be/Kdsp6soqA7o?si=g3ssfI10Oqdms09K,TRUE,,lec-exploratory-data-analysis
+rocauc-statquest,ROC/AUC (StatQuest),video,https://youtu.be/4jRBRDbJemM?si=5sp5qUoMbHvygXYP,TRUE,,lec-exploratory-data-analysis
+model-evaluation-rasbt,Model Evaluation (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch06/ch06.ipynb,FALSE,,lec-exploratory-data-analysis
+ensemble-learning-rasbt,Ensemble Learning (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch07/ch07.ipynb,FALSE,,lec-exploratory-data-analysis
+model-evaluation-raschka,Model Evaluation (Raschka),paper,https://arxiv.org/pdf/1811.12808,FALSE,,lec-exploratory-data-analysis
+model-evaluation-raschka,Model Evaluation (Raschka),blogpost,https://sebastianraschka.com/blog/2016/model-evaluation-selection-part3.html,FALSE,,lec-exploratory-data-analysis
+ensemble-classifier-raschka,Ensemble Classifier (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_ensemble_classifier.html,FALSE,,lec-exploratory-data-analysis
+precision-vs-recall,Precision vs. Recall,video,https://www.youtube.com/watch?v=qWfzIYCvBqo,TRUE,Catherine Healy '26,lec-exploratory-data-analysis
 slides,Slides,reading,https://drive.google.com/file/d/1htFlg0JoHfVZiey34iXp4MBnOCx_RLIy/view?usp=sharing,FALSE,,lec-feedforward-neural-networks
 fca-section-81-until-811,FCA - Section 8.1 (Until 8.1.1),reading,https://artint.info/3e/html/ArtInt3e.Ch8.html,FALSE,,lec-feedforward-neural-networks
 pml-section-132,PML - Section 13.2,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-feedforward-neural-networks
