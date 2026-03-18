@@ -259,7 +259,8 @@ kmeans-statquest,K-Means (StatQuest),video,https://youtu.be/4b5d3muPQmA?si=T2ow7
 clustering-rasbt,Clustering (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch10/ch10.ipynb,FALSE,,lec-clustering
 clustering-how-it-works-in-plain-english,Clustering: How It Works (In Plain English!),blogpost,https://web.archive.org/web/20250115001509/https://blog.dataiku.com/clustering-how-it-works-in-plain-english#expand,TRUE,,lec-clustering
 panopto,Panopto,video,,FALSE,,lec-clustering
-slides,Slides,reading,https://drive.google.com/file/d/1RZip1YWW0KqPpeYPPjb127FXacK2IB3G/view?usp=sharing,FALSE,,lec-principal-component-analysis
+blank-slides,Blank Slides,reading,"
+https://docs.google.com/presentation/d/1KemvsNZiJWmZiUEGz6qOw0z6IQydxi3AnHvwJuaapFc/edit?usp=sharing",FALSE,,lec-principal-component-analysis
 pantopto,Pantopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2161d20b-7c74-4640-a828-b383015107c9,FALSE,,lec-principal-component-analysis
 pml-section-201,PML - Section 20.1,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-principal-component-analysis
 islp-section-122,ISLP - Section 12.2,reading,https://www.statlearning.com/,FALSE,,lec-principal-component-analysis
