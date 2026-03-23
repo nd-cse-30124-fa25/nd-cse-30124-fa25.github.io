@@ -280,7 +280,7 @@ lda-raschka,LDA (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_py
 filled-slides,Filled Slides,reading,https://drive.google.com/file/d/1fRK8h-kr7LiApMHrpkRBfu3Sgx_uLlbn/view?usp=sharing,FALSE,,lec-principal-component-analysis
 slides,Slides,reading,https://drive.google.com/file/d/1tc4trKCvnhgnmNvURMnq1kEBEVcmnZSw/view?usp=sharing,FALSE,,lec-exploratory-data-analysis
 pantopto,Pantopto,video,,FALSE,,lec-exploratory-data-analysis
-practicum,Practicum,notebook,https://drive.google.com/file/d/1aQxCPBx5poCkX--4cwZm5u4aIZKV2gVN/view?usp=sharing,FALSE,,lec-exploratory-data-analysis
+practicum,Practicum,notebook,https://colab.research.google.com/drive/125tHtFWGSktG8d1fd2DVmoZLY9bh7xiz?usp=sharing,FALSE,,lec-exploratory-data-analysis
 confusion-matrix-statquest,Confusion Matrix (StatQuest),video,https://youtu.be/Kdsp6soqA7o?si=g3ssfI10Oqdms09K,TRUE,,lec-exploratory-data-analysis
 rocauc-statquest,ROC/AUC (StatQuest),video,https://youtu.be/4jRBRDbJemM?si=5sp5qUoMbHvygXYP,TRUE,,lec-exploratory-data-analysis
 model-evaluation-rasbt,Model Evaluation (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch06/ch06.ipynb,FALSE,,lec-exploratory-data-analysis
