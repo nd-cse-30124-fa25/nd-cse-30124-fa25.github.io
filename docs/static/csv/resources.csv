@@ -199,7 +199,7 @@ exam-01,Exam 01,assignment,,FALSE,,lec-exam-01
 exam-01-solutions,Exam 01 Solutions,assignment,,FALSE,,lec-exam-01
 super-slides-01,Super Slides 01,assignment,https://docs.google.com/presentation/d/1m-1QGsX8UrrbhZnK-NPYjtCKIsKfWDMK/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-exam-01
 old-exam-01,Old Exam 01,assignment,https://docs.google.com/document/d/1tPHD2uUXKTk-k526sWP_6wqx3qL7oMTjpLLpX6hB_w0/edit?usp=sharing,FALSE,,lec-exam-01
-slides,Slides,reading,,FALSE,,lec-logistic-regression
+filled-slides,Filled Slides,reading,https://drive.google.com/file/d/1y44an7a09eQ82AwHYRjbiSyec8uZUjFb/view?usp=sharing,FALSE,,lec-logistic-regression
 pantopto,Pantopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=57c3de67-0203-4b57-8137-b401016b0071,FALSE,,lec-logistic-regression
 fca-section-732,FCA - Section 7.3.2,reading,https://artint.info/3e/html/ArtInt3e.Ch7.S3.html,FALSE,,lec-logistic-regression
 pml-chapter-10,PML - Chapter 10,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-logistic-regression
@@ -221,7 +221,7 @@ logistic-regression-hdm,Logistic Regression (HdM),reading,https://hannibunny.git
 1958-the-regression-analysis-of-binary-sequences-cox,(1958) The Regression Analysis of Binary Sequences (Cox),paper,https://www.jstor.org/stable/2983890?seq=1,FALSE,,lec-logistic-regression
 a-gentle-introduction-to-crossentropy-for-machine-learning,A Gentle Introduction to Cross-Entropy for Machine Learning,blogpost,https://machinelearningmastery.com/cross-entropy-for-machine-learning/,FALSE,,lec-logistic-regression
 blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1CZcnpLjxqz9HeFFaFa7-ehdtVZqbHTZS/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-logistic-regression
-slides,Slides,reading,,FALSE,,lec-support-vector-machines
+filled-slides,Filled Slides,reading,https://drive.google.com/file/d/1smiBQzCRY-BYmIJENzT1nwbYe4UBjlzC/view?usp=sharing,FALSE,,lec-support-vector-machines
 pantopto,Pantopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d19bd425-111d-4297-9a52-b375015995be,FALSE,,lec-support-vector-machines
 pml-sections-161-173,"PML - Sections 16.1, 17.3",reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-support-vector-machines
 -islp-sections-35-476-and-chapter-9," ISLP - Sections 3.5, 4.7.6 and Chapter 9",reading,https://www.statlearning.com/,FALSE,,lec-support-vector-machines
@@ -259,7 +259,7 @@ kmeans-statquest,K-Means (StatQuest),video,https://youtu.be/4b5d3muPQmA?si=T2ow7
 clustering-rasbt,Clustering (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch10/ch10.ipynb,FALSE,,lec-clustering
 clustering-how-it-works-in-plain-english,Clustering: How It Works (In Plain English!),blogpost,https://web.archive.org/web/20250115001509/https://blog.dataiku.com/clustering-how-it-works-in-plain-english#expand,TRUE,,lec-clustering
 panopto,Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d33ba361-aacd-426f-9578-b40f015cdc79,FALSE,,lec-clustering
-filled-slides,Filled Slides,reading,,FALSE,,lec-clustering
+filled-slides,Filled Slides,reading,https://drive.google.com/file/d/1MKxbu2lxmwx_XZrkF_9zntTkML186EBw/view?usp=sharing,FALSE,,lec-clustering
 blank-slides,Blank Slides,reading,"
 https://docs.google.com/presentation/d/1KemvsNZiJWmZiUEGz6qOw0z6IQydxi3AnHvwJuaapFc/edit?usp=sharing",FALSE,,lec-principal-component-analysis
 pantopto,Pantopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2161d20b-7c74-4640-a828-b383015107c9,FALSE,,lec-principal-component-analysis
@@ -277,7 +277,7 @@ pca-raschka,PCA (Raschka),blogpost,https://sebastianraschka.com/Articles/2015_pc
 pca-from-scratch-raschka,PCA from scratch (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_pca_step_by_step.html,FALSE,,lec-principal-component-analysis
 standardization-raschka,Standardization (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_about_feature_scaling.html,FALSE,,lec-principal-component-analysis
 lda-raschka,LDA (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_python_lda.html,FALSE,,lec-principal-component-analysis
-filled-slides,Filled Slides,reading,,FALSE,,lec-principal-component-analysis
+filled-slides,Filled Slides,reading,https://drive.google.com/file/d/1fRK8h-kr7LiApMHrpkRBfu3Sgx_uLlbn/view?usp=sharing,FALSE,,lec-principal-component-analysis
 slides,Slides,reading,https://drive.google.com/file/d/1tc4trKCvnhgnmNvURMnq1kEBEVcmnZSw/view?usp=sharing,FALSE,,lec-exploratory-data-analysis
 pantopto,Pantopto,video,,FALSE,,lec-exploratory-data-analysis
 practicum,Practicum,notebook,https://drive.google.com/file/d/1aQxCPBx5poCkX--4cwZm5u4aIZKV2gVN/view?usp=sharing,FALSE,,lec-exploratory-data-analysis
