@@ -258,7 +258,8 @@ hierarchical-statquest,Hierarchical (StatQuest),video,https://youtu.be/7xHsRkOdV
 kmeans-statquest,K-Means (StatQuest),video,https://youtu.be/4b5d3muPQmA?si=T2ow71QcEXdbKt7V,FALSE,,lec-clustering
 clustering-rasbt,Clustering (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch10/ch10.ipynb,FALSE,,lec-clustering
 clustering-how-it-works-in-plain-english,Clustering: How It Works (In Plain English!),blogpost,https://web.archive.org/web/20250115001509/https://blog.dataiku.com/clustering-how-it-works-in-plain-english#expand,TRUE,,lec-clustering
-panopto,Panopto,video,,FALSE,,lec-clustering
+panopto,Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d33ba361-aacd-426f-9578-b40f015cdc79,FALSE,,lec-clustering
+filled-slides,Filled Slides,reading,,FALSE,,lec-clustering
 blank-slides,Blank Slides,reading,"
 https://docs.google.com/presentation/d/1KemvsNZiJWmZiUEGz6qOw0z6IQydxi3AnHvwJuaapFc/edit?usp=sharing",FALSE,,lec-principal-component-analysis
 pantopto,Pantopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2161d20b-7c74-4640-a828-b383015107c9,FALSE,,lec-principal-component-analysis
@@ -276,6 +277,7 @@ pca-raschka,PCA (Raschka),blogpost,https://sebastianraschka.com/Articles/2015_pc
 pca-from-scratch-raschka,PCA from scratch (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_pca_step_by_step.html,FALSE,,lec-principal-component-analysis
 standardization-raschka,Standardization (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_about_feature_scaling.html,FALSE,,lec-principal-component-analysis
 lda-raschka,LDA (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_python_lda.html,FALSE,,lec-principal-component-analysis
+filled-slides,Filled Slides,reading,,FALSE,,lec-principal-component-analysis
 slides,Slides,reading,https://drive.google.com/file/d/1tc4trKCvnhgnmNvURMnq1kEBEVcmnZSw/view?usp=sharing,FALSE,,lec-exploratory-data-analysis
 pantopto,Pantopto,video,,FALSE,,lec-exploratory-data-analysis
 practicum,Practicum,notebook,https://drive.google.com/file/d/1aQxCPBx5poCkX--4cwZm5u4aIZKV2gVN/view?usp=sharing,FALSE,,lec-exploratory-data-analysis
