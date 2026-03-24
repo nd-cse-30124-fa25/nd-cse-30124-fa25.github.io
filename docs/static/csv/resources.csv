@@ -311,29 +311,29 @@ onehot-zhou,One-hot (Zhou),blogpost,https://victorzhou.com/blog/one-hot/,FALSE,,
 loss-functions-raschka,Loss Functions (Raschka),blogpost,https://sebastianraschka.com/blog/2022/losses-learned-part1.html,FALSE,,lec-feedforward-neural-networks
 but-what-is-a-neural-network-deep-learning-chapter-1,But what is a neural network? | Deep learning chapter 1,video,https://www.youtube.com/watch?v=aircAruvnKk,TRUE,,lec-feedforward-neural-networks
 tom-notebook,Tom Notebook,notebook,https://colab.research.google.com/drive/1Xhw79tDJwihwBXQV01DVTPFs9GS_367R,FALSE,,lec-feedforward-neural-networks
-slides,Slides,reading,https://drive.google.com/file/d/1TxeOlQPCU1rFvGFdMyqKbjS7y2-Wy_nT/view?usp=sharing,FALSE,,lec-gradient-descent-and-backpropagation
-fca-sections-811-and-82,FCA - Sections 8.1.1 and 8.2,reading,https://artint.info/3e/html/ArtInt3e.Ch8.S1.html,FALSE,,lec-gradient-descent-and-backpropagation
-pml-section-133,PML - Section 13.3,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-gradient-descent-and-backpropagation
-islp-section-107,ISLP - Section 10.7,reading,https://www.statlearning.com/,FALSE,,lec-gradient-descent-and-backpropagation
-d2l-section-53,D2L - Section 5.3,reading,https://d2l.ai/chapter_multilayer-perceptrons/backprop.html,FALSE,,lec-gradient-descent-and-backpropagation
-uml-section-206,UML - Section 20.6,reading,https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html,FALSE,,lec-gradient-descent-and-backpropagation
-panopto-mltodllecture02,Panopto (ML_to_DL_Lecture02),video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a49a1e6d-2337-489f-9415-b38c0168496f,FALSE,,lec-gradient-descent-and-backpropagation
-harvard-cs50-1600-3900,Harvard CS50 (16:00 - 39:00),video,https://www.youtube.com/watch?v=J1QD9hLDEDY,FALSE,,lec-gradient-descent-and-backpropagation
-stanford-cs221-sgd,Stanford CS221 - SGD,video,https://www.youtube.com/watch?v=bl2WgBLH0tI&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=7,FALSE,,lec-gradient-descent-and-backpropagation
-stanford-cs221-backprop,Stanford CS221 - Backprop,video,https://www.youtube.com/watch?v=OcAF-l2xB9Y&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=12,FALSE,,lec-gradient-descent-and-backpropagation
-mit-6034,MIT 6.034,video,https://www.youtube.com/watch?v=uXt8qF2Zzfo,FALSE,,lec-gradient-descent-and-backpropagation
-numpy-backprop,Numpy Backprop,notebook,https://colab.research.google.com/drive/1ogAx_Bqe80PsFzloNR7W0Ijd1YePNGVU?usp=sharing,FALSE,,lec-gradient-descent-and-backpropagation
-sgd-statquest,SGD (StatQuest),video,https://youtu.be/vMh0zPT0tLI?si=V4gwCG8HGbcQ6kX7,FALSE,,lec-gradient-descent-and-backpropagation
-chain-rule-statquest,Chain Rule (StatQuest),video,https://youtu.be/wl1myxrtQHQ?si=npy0cR-pfY5RIT5t,FALSE,,lec-gradient-descent-and-backpropagation
-backprop-statquest,Backprop (StatQuest),video,https://youtu.be/IN2XmBhILt4?si=9tYxD7DT3xvBuYGz,FALSE,,lec-gradient-descent-and-backpropagation
-building-micograd-karpathy,Building Micograd (Karpathy),video,https://www.youtube.com/watch?v=VMj-3S1tku0,FALSE,,lec-gradient-descent-and-backpropagation
-pytorch-computation-graphs-rasbt,Pytorch Computation Graphs (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch13/ch13_part1.ipynb,FALSE,,lec-gradient-descent-and-backpropagation
-backprop-olah,Backprop (Olah),blogpost,https://colah.github.io/posts/2015-08-Backprop/,FALSE,,lec-gradient-descent-and-backpropagation
-backprop-karpathy,Backprop (Karpathy),blogpost,https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b,FALSE,,lec-gradient-descent-and-backpropagation
-gradient-descent-how-neural-networks-learn-deep-learning-chapter-2,"Gradient descent, how neural networks learn | Deep Learning Chapter 2",video,https://www.youtube.com/watch?v=IHZwWFHWa-w,TRUE,,lec-gradient-descent-and-backpropagation
-backpropagation-intuitively-deep-learning-chapter-3,"Backpropagation, intuitively | Deep Learning Chapter 3",video,https://www.youtube.com/watch?v=Ilg3gGewQ5U,TRUE,,lec-gradient-descent-and-backpropagation
-backpropagation-calculus-deep-learning-chapter-4,Backpropagation calculus | Deep Learning Chapter 4,video,https://www.youtube.com/watch?v=tIeHLnjs5U8,FALSE,,lec-gradient-descent-and-backpropagation
-ml-to-dl-lecture25-video-tom,ML to DL Lecture2.5 Video (Tom),video,https://drive.google.com/file/d/1vSnLhVt_F5HaWYV8saMTEBv7qjTg3Tb9/view?usp=drive_link,FALSE,,lec-gradient-descent-and-backpropagation
+slides,Slides,reading,https://drive.google.com/file/d/1TxeOlQPCU1rFvGFdMyqKbjS7y2-Wy_nT/view?usp=sharing,FALSE,,lec-backpropagation
+fca-sections-811-and-82,FCA - Sections 8.1.1 and 8.2,reading,https://artint.info/3e/html/ArtInt3e.Ch8.S1.html,FALSE,,lec-backpropagation
+pml-section-133,PML - Section 13.3,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-backpropagation
+islp-section-107,ISLP - Section 10.7,reading,https://www.statlearning.com/,FALSE,,lec-backpropagation
+d2l-section-53,D2L - Section 5.3,reading,https://d2l.ai/chapter_multilayer-perceptrons/backprop.html,FALSE,,lec-backpropagation
+uml-section-206,UML - Section 20.6,reading,https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html,FALSE,,lec-backpropagation
+panopto-mltodllecture02,Panopto (ML_to_DL_Lecture02),video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a49a1e6d-2337-489f-9415-b38c0168496f,FALSE,,lec-backpropagation
+harvard-cs50-1600-3900,Harvard CS50 (16:00 - 39:00),video,https://www.youtube.com/watch?v=J1QD9hLDEDY,FALSE,,lec-backpropagation
+stanford-cs221-sgd,Stanford CS221 - SGD,video,https://www.youtube.com/watch?v=bl2WgBLH0tI&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=7,FALSE,,lec-backpropagation
+stanford-cs221-backprop,Stanford CS221 - Backprop,video,https://www.youtube.com/watch?v=OcAF-l2xB9Y&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=12,FALSE,,lec-backpropagation
+mit-6034,MIT 6.034,video,https://www.youtube.com/watch?v=uXt8qF2Zzfo,FALSE,,lec-backpropagation
+numpy-backprop,Numpy Backprop,notebook,https://colab.research.google.com/drive/1ogAx_Bqe80PsFzloNR7W0Ijd1YePNGVU?usp=sharing,FALSE,,lec-backpropagation
+sgd-statquest,SGD (StatQuest),video,https://youtu.be/vMh0zPT0tLI?si=V4gwCG8HGbcQ6kX7,FALSE,,lec-backpropagation
+chain-rule-statquest,Chain Rule (StatQuest),video,https://youtu.be/wl1myxrtQHQ?si=npy0cR-pfY5RIT5t,FALSE,,lec-backpropagation
+backprop-statquest,Backprop (StatQuest),video,https://youtu.be/IN2XmBhILt4?si=9tYxD7DT3xvBuYGz,FALSE,,lec-backpropagation
+building-micograd-karpathy,Building Micograd (Karpathy),video,https://www.youtube.com/watch?v=VMj-3S1tku0,FALSE,,lec-backpropagation
+pytorch-computation-graphs-rasbt,Pytorch Computation Graphs (rasbt),notebook,https://github.com/rasbt/machine-learning-book/blob/main/ch13/ch13_part1.ipynb,FALSE,,lec-backpropagation
+backprop-olah,Backprop (Olah),blogpost,https://colah.github.io/posts/2015-08-Backprop/,FALSE,,lec-backpropagation
+backprop-karpathy,Backprop (Karpathy),blogpost,https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b,FALSE,,lec-backpropagation
+gradient-descent-how-neural-networks-learn-deep-learning-chapter-2,"Gradient descent, how neural networks learn | Deep Learning Chapter 2",video,https://www.youtube.com/watch?v=IHZwWFHWa-w,TRUE,,lec-backpropagation
+backpropagation-intuitively-deep-learning-chapter-3,"Backpropagation, intuitively | Deep Learning Chapter 3",video,https://www.youtube.com/watch?v=Ilg3gGewQ5U,TRUE,,lec-backpropagation
+backpropagation-calculus-deep-learning-chapter-4,Backpropagation calculus | Deep Learning Chapter 4,video,https://www.youtube.com/watch?v=tIeHLnjs5U8,FALSE,,lec-backpropagation
+ml-to-dl-lecture25-video-tom,ML to DL Lecture2.5 Video (Tom),video,https://drive.google.com/file/d/1vSnLhVt_F5HaWYV8saMTEBv7qjTg3Tb9/view?usp=drive_link,FALSE,,lec-backpropagation
 slides,Slides,reading,https://drive.google.com/file/d/1_Zh66I6B_2HQPSekFJDKrn98bYlET6Zb/view?usp=sharing,FALSE,,lec-convolutional-neural-networks
 fca-section-84,FCA - Section 8.4,reading,https://artint.info/3e/html/ArtInt3e.Ch8.S4.html,FALSE,,lec-convolutional-neural-networks
 pml-chapter-14,PML - Chapter 14,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-convolutional-neural-networks
