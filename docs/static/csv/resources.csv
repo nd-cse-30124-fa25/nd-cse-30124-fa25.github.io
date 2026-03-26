@@ -262,7 +262,7 @@ panopto,Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.
 filled-slides,Filled Slides,reading,https://drive.google.com/file/d/1MKxbu2lxmwx_XZrkF_9zntTkML186EBw/view?usp=sharing,FALSE,,lec-clustering
 blank-slides,Blank Slides,reading,"
 https://docs.google.com/presentation/d/1KemvsNZiJWmZiUEGz6qOw0z6IQydxi3AnHvwJuaapFc/edit?usp=sharing",FALSE,,lec-principal-component-analysis
-pantopto,Pantopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2161d20b-7c74-4640-a828-b383015107c9,FALSE,,lec-principal-component-analysis
+fa25-pantopto,fa25 Pantopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2161d20b-7c74-4640-a828-b383015107c9,FALSE,,lec-principal-component-analysis
 pml-section-201,PML - Section 20.1,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-principal-component-analysis
 islp-section-122,ISLP - Section 12.2,reading,https://www.statlearning.com/,FALSE,,lec-principal-component-analysis
 uml-chapter-231,UML - Chapter 23.1,reading,https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html,FALSE,,lec-principal-component-analysis
@@ -278,6 +278,7 @@ pca-from-scratch-raschka,PCA from scratch (Raschka),blogpost,https://sebastianra
 standardization-raschka,Standardization (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_about_feature_scaling.html,FALSE,,lec-principal-component-analysis
 lda-raschka,LDA (Raschka),blogpost,https://sebastianraschka.com/Articles/2014_python_lda.html,FALSE,,lec-principal-component-analysis
 filled-slides,Filled Slides,reading,https://drive.google.com/file/d/1fRK8h-kr7LiApMHrpkRBfu3Sgx_uLlbn/view?usp=sharing,FALSE,,lec-principal-component-analysis
+panopto,Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d33ba361-aacd-426f-9578-b40f015cdc79,FALSE,,lec-principal-component-analysis
 slides,Slides,reading,https://drive.google.com/file/d/1tc4trKCvnhgnmNvURMnq1kEBEVcmnZSw/view?usp=sharing,FALSE,,lec-exploratory-data-analysis
 pantopto,Pantopto,video,,FALSE,,lec-exploratory-data-analysis
 practicum,Practicum,notebook,https://colab.research.google.com/drive/125tHtFWGSktG8d1fd2DVmoZLY9bh7xiz?usp=sharing,FALSE,,lec-exploratory-data-analysis
@@ -295,7 +296,7 @@ pml-section-132,PML - Section 13.2,reading,https://probml.github.io/pml-book/boo
 islp-sections-101-102,"ISLP - Sections 10.1, 10.2",reading,https://www.statlearning.com/,FALSE,,lec-feedforward-neural-networks
 d2l-sections-51-and-52,D2L - Sections 5.1 and 5.2,reading,https://d2l.ai/chapter_multilayer-perceptrons/index.html,FALSE,,lec-feedforward-neural-networks
 uml-sections-201-205,UML - Sections 20.1 - 20.5,reading,https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html,FALSE,,lec-feedforward-neural-networks
-panopto-mltodllecture01,Panopto (ML_to_DL_Lecture01),video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=13903efc-0a4c-4793-9ec2-b38a016b3917,FALSE,,lec-feedforward-neural-networks
+fa25-panopto,fa25 Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=13903efc-0a4c-4793-9ec2-b38a016b3917,FALSE,,lec-feedforward-neural-networks
 harvard-cs50-000-1600,Harvard CS50 (0:00 - 16:00),video,https://www.youtube.com/watch?v=J1QD9hLDEDY,FALSE,,lec-feedforward-neural-networks
 stanford-cs221,Stanford CS221,video,https://www.youtube.com/watch?v=pnKXgBHuN58&list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2&index=11,FALSE,,lec-feedforward-neural-networks
 mit-6034,MIT 6.034,video,https://www.youtube.com/watch?v=uXt8qF2Zzfo,FALSE,,lec-feedforward-neural-networks
@@ -312,6 +313,7 @@ loss-functions-raschka,Loss Functions (Raschka),blogpost,https://sebastianraschk
 but-what-is-a-neural-network-deep-learning-chapter-1,But what is a neural network? | Deep learning chapter 1,video,https://www.youtube.com/watch?v=aircAruvnKk,TRUE,,lec-feedforward-neural-networks
 tom-notebook,Tom Notebook,notebook,https://colab.research.google.com/drive/1Xhw79tDJwihwBXQV01DVTPFs9GS_367R,FALSE,,lec-feedforward-neural-networks
 blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/11_vZWflF0fJv4NsRlxY25eBNBAT91JOd/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-feedforward-neural-networks
+panopto,Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fcc8e327-6eb1-44ba-a32d-b418015d21e8,FALSE,,lec-feedforward-neural-networks
 slides,Slides,reading,https://drive.google.com/file/d/1TxeOlQPCU1rFvGFdMyqKbjS7y2-Wy_nT/view?usp=sharing,FALSE,,lec-backpropagation
 fca-sections-811-and-82,FCA - Sections 8.1.1 and 8.2,reading,https://artint.info/3e/html/ArtInt3e.Ch8.S1.html,FALSE,,lec-backpropagation
 pml-section-133,PML - Section 13.3,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-backpropagation
