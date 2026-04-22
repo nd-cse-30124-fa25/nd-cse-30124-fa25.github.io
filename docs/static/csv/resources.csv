@@ -415,6 +415,7 @@ improving-language-understanding-by-generative-pretraining-radford-et-al,Improvi
 programming-selfattention-raschka,Programming Self-Attention (Raschka),blogpost,https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html,FALSE,,lec-transformers
 transformer-neural-networks-chatgpts-foundation-clearly-explained-statquest,"Transformer Neural Networks, ChatGPT's foundation, Clearly Explained!!! (Statquest)",video,https://youtu.be/zxQyTK8quyY?si=RmuILpPXyn2Ne-kY,FALSE,,lec-transformers
 weights-vol-1-pgs-11-16,"Weights, Vol 1. (pgs. 11 - 16)",reading,https://weights-press.netlify.app/pdfs/WEIGHTS-Volume-1-Digital.pdf,TRUE,,lec-transformers
+blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1w6V8dqma_jX8BGsD9R0jhByRgI_J8Jin/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-transformers
 slides,Slides,reading,https://drive.google.com/file/d/1-ol_zi_fjwfr5B21gLMZ9eVgqQF2kyT5/view?usp=sharing,FALSE,,lec-reinforcement-learning
 fca-chapter-13,FCA - Chapter 13,reading,https://artint.info/3e/html/ArtInt3e.Ch13.html,FALSE,,lec-reinforcement-learning
 d2l-chapter-17,D2L - Chapter 17,reading,https://d2l.ai/chapter_reinforcement-learning/index.html,FALSE,,lec-reinforcement-learning
