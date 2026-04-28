@@ -391,6 +391,8 @@ rnns-karpathy,RNNs (Karpathy),blogpost,https://karpathy.github.io/2015/05/21/rnn
 sp25-panopto,sp25 Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cb9b155b-1306-414b-b059-b2bf0156d398,FALSE,,lec-recurrent-neural-networks
 yes-you-should-understand-backprop,Yes you should understand backprop,blogpost,https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b,FALSE,,lec-recurrent-neural-networks
 fa25-panopto,fa25 Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=43622636-1f4b-40b9-a505-b39a016bad7d,FALSE,,lec-recurrent-neural-networks
+panopto,Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c056cbbd-4b9b-4f5b-8d51-b42d015b0642,FALSE,,lec-recurrent-neural-networks
+filled-slides,Filled Slides,reading,https://drive.google.com/file/d/1emgFRs4cPrYKe8_qa7HZ_sZni8jA0Vuo/view?usp=sharing,FALSE,,lec-recurrent-neural-networks
 slides,Slides,reading,https://drive.google.com/file/d/1ET4BCOB0mGCkeUMXtSD_NxqvZdEDdGLq/view?usp=sharing,FALSE,,lec-transformers
 fca-section-854,FCA - Section 8.5.4,reading,https://artint.info/3e/html/ArtInt3e.Ch8.S5.html,FALSE,,lec-transformers
 pml-section-154,PML - Section 15.4,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-transformers
