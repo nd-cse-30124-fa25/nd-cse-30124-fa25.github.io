@@ -193,12 +193,6 @@ slides,Slides,reading,https://docs.google.com/presentation/d/1vuIbgx_FHmIpSmmWRc
 fa25-panopto,fa25 Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3dd9db6b-22c5-4f96-8404-b369015fc155,FALSE,,lec-review-01
 supplementary-review-material,Supplementary Review Material,reading,https://drive.google.com/file/d/1DBBNjQWo0S-oFf9i_UMxjRHD76fxn5Bg/view?usp=sharing,FALSE,,lec-review-01
 panopto,Panopto,reading,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b651627f-a0de-4078-a263-b3fa016bab07,FALSE,,lec-review-01
-practice-packet-01,Practice Packet 01,assignment,https://docs.google.com/document/d/1TmptiHTret5FSFLSDB-IdbjZzGZDWPJ4MBuxtjnjZ3M/edit?usp=sharing,FALSE,,lec-exam-01
-practice-packet-01-solutions,Practice Packet 01 Solutions,assignment,https://drive.google.com/file/d/1RjPnHyv__MhDVAXsSGXHMLASBij7jkmn/view?usp=drivesdk,FALSE,,lec-exam-01
-exam-01,Exam 01,assignment,,FALSE,,lec-exam-01
-exam-01-solutions,Exam 01 Solutions,assignment,,FALSE,,lec-exam-01
-super-slides-01,Super Slides 01,assignment,https://docs.google.com/presentation/d/1m-1QGsX8UrrbhZnK-NPYjtCKIsKfWDMK/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-exam-01
-old-exam-01,Old Exam 01,assignment,https://docs.google.com/document/d/1tPHD2uUXKTk-k526sWP_6wqx3qL7oMTjpLLpX6hB_w0/edit?usp=sharing,FALSE,,lec-exam-01
 filled-slides,Filled Slides,reading,https://drive.google.com/file/d/1y44an7a09eQ82AwHYRjbiSyec8uZUjFb/view?usp=sharing,FALSE,,lec-logistic-regression
 pantopto,Pantopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=57c3de67-0203-4b57-8137-b401016b0071,FALSE,,lec-logistic-regression
 fca-section-732,FCA - Section 7.3.2,reading,https://artint.info/3e/html/ArtInt3e.Ch7.S3.html,FALSE,,lec-logistic-regression
@@ -363,10 +357,6 @@ blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1H-5JJZ
 slides,Slides,reading,https://drive.google.com/file/d/1UuyaHuv6DwVA8o7h5PsVY_DKz1x4Az7Q/view?usp=sharing,FALSE,,lec-review-02
 fa25-panopto,fa25 Panopto,video,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0e9cacd8-1429-4afb-9a16-b393016ebad3,FALSE,,lec-review-02
 panopto,Panopto,reading,https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f61f559b-1343-44a4-bd9c-b41f0161f5c5,FALSE,,lec-review-02
-practice-packet-02,Practice Packet 02,assignment,https://docs.google.com/document/d/1RkAbkSBonaqBAS3mcQ6rTafoNyEoaIw34au8HoDahYE/edit?usp=sharing,FALSE,,lec-exam-02
-practice-packet-02-solutions,Practice Packet 02 Solutions,assignment,https://drive.google.com/file/d/1jDzz82R0WKS1e--mjrNRh1CUprrRLQUr/view?usp=sharing,FALSE,,lec-exam-02
-exam-02,Exam 02,assignment,https://docs.google.com/document/d/1QEv0JhFUQl1xzhNhfzPQpEyhTWFKFzi6bMLWmFCb8i8/edit?usp=sharing,FALSE,,lec-exam-02
-exam-02-solutions,Exam 02 Solutions,assignment,,FALSE,,lec-exam-02
 blank-slides,Blank Slides,reading,https://docs.google.com/presentation/d/1rKJpuvkdtkj-beyGE3mqdnKi1SPjYGCl/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-recurrent-neural-networks
 fca-section-85-until-854,FCA - Section 8.5 until 8.5.4,reading,https://artint.info/3e/html/ArtInt3e.Ch8.S5.html,FALSE,,lec-recurrent-neural-networks
 pml-section-152,PML - Section 15.2,reading,https://probml.github.io/pml-book/book1.html,FALSE,,lec-recurrent-neural-networks
@@ -474,43 +464,3 @@ panopto,Panopto,video,,FALSE,,lec-review-03
 practice-packet-03,Practice Packet 03,assignment,https://docs.google.com/document/d/197DJth4qs4Dvj9ywxLZ8yvvKDXC0TSFnPYTkTcnhIx0/edit?usp=sharing,FALSE,,lec-review-03
 practice-packet-03-slides,Practice Packet 03 (Slides),assignment,https://docs.google.com/presentation/d/1T7wBU_95UE12aRzJ9kHZo3pQWYSHMIzc/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true,FALSE,,lec-review-03
 practice-packet-03-solutions,Practice Packet 03 Solutions,assignment,https://drive.google.com/file/d/1U-816BPsP1SwC8TiHxbdgB9e87RaApPI/view?usp=sharing,FALSE,,lec-review-03
-reading-01,Reading 01,reading,https://canvas.nd.edu/courses/133089/quizzes/76172/take,FALSE,,lec-assignments
-reading-02,Reading 02,reading,https://canvas.nd.edu/courses/133089/quizzes/76787/take,FALSE,,lec-assignments
-lab-00,Lab 00,lab,https://drive.google.com/file/d/1DVuL1sJgZ7MPqFrnvnYevwTma8c42Axs/view?usp=sharing,FALSE,,lec-assignments
-reading-03,Reading 03,reading,https://canvas.nd.edu/courses/133089/quizzes/76992/take,FALSE,,lec-assignments
-homework-01,Homework 01,homework,https://drive.google.com/file/d/1d3LOViH2ECYx4-hiXMr71MD2PEynS9Mb/view?usp=sharing,FALSE,,lec-assignments
-reading-04,Reading 04,homework,https://canvas.nd.edu/courses/133089/quizzes/76995/take,FALSE,,lec-assignments
-reading-05,Reading 05,reading,https://canvas.nd.edu/courses/133089/quizzes/76993/take,FALSE,,lec-assignments
-lab-01,Lab 01,lab,https://drive.google.com/file/d/1ToErlv28DCuDhJR4Q1_B-Ddca3sD78JE/view?usp=sharing,FALSE,,lec-assignments
-practice-packet-01,Practice Packet 01,practice,,FALSE,,lec-assignments
-practice-packet-01-solutions,Practice Packet 01 Solutions,practice,,FALSE,,lec-assignments
-exam-01,Exam 01,exam,,FALSE,,lec-assignments
-exam-01-solutions,Exam 01 Solutions,exam,,FALSE,,lec-assignments
-reading-06,Reading 06,reading,https://canvas.nd.edu/courses/133089/quizzes/76996/take,FALSE,,lec-assignments
-homework-02,Homework 02,homework,https://drive.google.com/file/d/1x5_IkUIQ1-dSAhvLKU5Oj5FSDl-lykHt/view?usp=sharing,FALSE,,lec-assignments
-reading-07,Reading 07,reading,https://canvas.nd.edu/courses/133089/quizzes/76997/take,FALSE,,lec-assignments
-lab-02,Lab 02,lab,https://drive.google.com/file/d/1BGQsBlOiPRNo35w58sgx0xU3AAQCpD47/view?usp=sharing,FALSE,,lec-assignments
-reading-08,Reading 08,reading,https://canvas.nd.edu/courses/133089/quizzes/77014/take,FALSE,,lec-assignments
-practice-packet-02,Practice Packet 02,practice,,FALSE,,lec-assignments
-practice-packet-02-solutions,Practice Packet 02 Solutions,practice,https://drive.google.com/file/d/1jDzz82R0WKS1e--mjrNRh1CUprrRLQUr/view?usp=sharing,FALSE,,lec-assignments
-exam-02,Exam 02,exam,,FALSE,,lec-assignments
-exam-02-solutions,Exam 02 Solutions,exam,,FALSE,,lec-assignments
-reading-09,Reading 09,reading,https://canvas.nd.edu/courses/133089/quizzes/77007/take,FALSE,,lec-assignments
-homework-03,Homework 03,homework,https://drive.google.com/file/d/1fOMPMNwGF9CM8rU_iLiPN8LDUcBznN5q/view?usp=sharing,FALSE,,lec-assignments
-reading-10,Reading 10,reading,https://canvas.nd.edu/courses/133089/quizzes/77008/take,FALSE,,lec-assignments
-lab-03,Lab 03,lab,https://drive.google.com/file/d/1h9E6IOtjRyl2txyf4ArdNiI4Z481Fy-R/view?usp=sharing,FALSE,,lec-assignments
-reading-11,Reading 11,reading,https://canvas.nd.edu/courses/133089/quizzes/77009/take,FALSE,,lec-assignments
-reading-12,Reading 12,reading,https://canvas.nd.edu/courses/133089/quizzes/77010/take,FALSE,,lec-assignments
-homework-04,Homework 04,homework,https://drive.google.com/file/d/1qMLH9gdkB2SbV797v0TvzvCqdYVl8pKD/view?usp=sharing,FALSE,,lec-assignments
-reading-13,Reading 13,reading,https://canvas.nd.edu/courses/133089/quizzes/77011/take,FALSE,,lec-assignments
-reading-14,Reading 14,reading,https://canvas.nd.edu/courses/133089/quizzes/77012/take,FALSE,,lec-assignments
-lab-04,Lab 04,lab,https://drive.google.com/file/d/1XOiQA6TsSxr6OVyhk8h59Df9EOQO7IAF/view?usp=sharing,FALSE,,lec-assignments
-reading-15,Reading 15,reading,https://canvas.nd.edu/courses/133089/quizzes/77013/take,FALSE,,lec-assignments
-homework-05,Homework 05,homework,https://drive.google.com/file/d/15CzUcp6ix3uH1UWU8U70diDv8gUqpOFz/view?usp=sharing,FALSE,,lec-assignments
-bonus-homework,Bonus Homework,homework,,FALSE,,lec-assignments
-cif-bribe,CIF Bribe,homework,,FALSE,,lec-assignments
-practice-packet-03,Practice Packet 03,practice,https://drive.google.com/file/d/1lg7T73M_pVIjBJpf5qmwi7m8gdSXWMv_/view?usp=sharing,FALSE,,lec-assignments
-practice-packet-03-solutions,Practice Packet 03 Solutions,practice,,FALSE,,lec-assignments
-exam-03,Exam 03,exam,,FALSE,,lec-assignments
-exam-03-solutions,Exam 03 Solutions,exam,,FALSE,,lec-assignments
-bonus-reflections,Bonus Reflections,reading,https://canvas.nd.edu/courses/133089/assignments/459384,FALSE,,lec-assignments
